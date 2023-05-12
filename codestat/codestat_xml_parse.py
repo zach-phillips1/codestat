@@ -1,6 +1,11 @@
 import xml.etree.ElementTree as ET
+import os
 
-tree = ET.parse("/XML_files/codestat/YTD_02_28_23_CPR summary report.xml")
+directory_path = 'XML_files/codestat'
+file_name = 'YTD_02_28_23_CPR summary report.xml'
+file_path = os.path.join(directory_path, file_name)
+
+tree = ET.parse(file_path)
 root = tree.getroot()
 
 
@@ -51,7 +56,7 @@ def average_longest_pause(num_cases: int):
     for child in root:
         sum_pauses += float(child[8].text)
     average_longest_pause = sum_pauses / num_cases
-    print(F"The average longest pause is {average_longest_pause:.2f} seconds")
+    print(f"The average longest pause is {average_longest_pause:.2f} seconds")
 
 
 def get_average_compression_ratio(num_cases: int):
