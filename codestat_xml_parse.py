@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as ET
 
-tree = ET.parse("/XML_files/codestat/YTD_02_28_23_CPR summary report.xml")
+tree = ET.parse("YTD_02_28_23_CPR summary report.xml")
 root = tree.getroot()
 
 
