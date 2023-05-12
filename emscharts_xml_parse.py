@@ -8,3 +8,7 @@ file_path = os.path.join(directory_path, file_name)
 tree = ET.parse(file_path)
 root = tree.getroot()
 
+def print_cases():
+    for child in root:
+        print(child)
+        print("-----------------------")
