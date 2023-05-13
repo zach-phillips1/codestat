@@ -2,13 +2,13 @@ import xml.etree.ElementTree as ET
 import os
 
 directory_path = 'XML_files/emscharts'
-file_name = 'YTD_emscharts_5_12_23.xml'
+file_name = 'YTD_emscharts_5_13_23.xml'
 file_path = os.path.join(directory_path, file_name)
 
 tree = ET.parse(file_path)
 root = tree.getroot()
 
-# [0] = RUNNING_COUNT
+# [0] = DATE_DISPATCHED
 # [1] = PRID
 # [2] = END_EVENT
 # [3] = AED_BY
@@ -34,7 +34,17 @@ root = tree.getroot()
 # [23] = INITIATE_IV___TYPE
 # [24] = DISPOSITION__OUTCOME_
 
-for child in root:
-    print(child[0].tag, child[0].text)
-    print(child[1].tag, child[1].text)
-    print(child[2].tag, child[2].text)
+
+def count_total_cases():
+    sum = 0
+    for child in root:
+        sum += 1
+    print(f"YTD (5/13/23): There have been {sum} total cases")
+
+
+def main():
+    count_total_cases()
+
+
+if __name__ == "__main__":
+    main()
