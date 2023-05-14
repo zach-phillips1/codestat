@@ -36,14 +36,38 @@ root = tree.getroot()
 
 
 def count_total_cases():
+    '''
+    This function counts the total amount of cases in the XML file.
+    '''
     sum = 0
     for child in root:
         sum += 1
     print(f"YTD (5/13/23): There have been {sum} total cases")
 
 
+def count_unique_cases():
+    '''
+    This function counts the number of unique cases based on the PRID.
+    '''
+    unique_cases = []
+    sum = 0
+    for child in root:
+        if child[1].text not in unique_cases:
+            unique_cases.append(child[1].text)
+            sum += 1
+
+    print(f"YTD (5/13/23): There have been {sum} unique cases")
+
+
+
+
+
+
+
+
 def main():
     count_total_cases()
+    count_unique_cases()
 
 
 if __name__ == "__main__":
