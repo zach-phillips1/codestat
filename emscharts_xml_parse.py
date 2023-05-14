@@ -59,7 +59,7 @@ def count_unique_cases():
     print(f"YTD (5/13/23): There have been {sum} unique cases")
     
 
-def create_unique_case_list() -> []:
+def create_unique_case_list() -> list:
     unique_cases = []
     unique_cases_by_PRID = []
     for child in root:
@@ -70,7 +70,7 @@ def create_unique_case_list() -> []:
     return unique_cases
 
 
-def etiology_unknown_count(unique_cases: []):
+def etiology_unknown_count(unique_cases: list):
     sum = 0
     for child in unique_cases:
         if child[9].text == "Not Known":
@@ -78,7 +78,7 @@ def etiology_unknown_count(unique_cases: []):
     print(f'The number of times the Etiology was listed as "Not Known" was {sum}.')
 
 
-def count_rosc_cases(unique_cases: []):
+def count_rosc_cases(unique_cases: list):
     sum = 0
     for child in unique_cases:
         if child[2].text == "ROSC in the Field":
