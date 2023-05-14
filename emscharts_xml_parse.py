@@ -57,18 +57,42 @@ def count_unique_cases():
             sum += 1
 
     print(f"YTD (5/13/23): There have been {sum} unique cases")
+    
+
+def create_unique_case_list() -> []:
+    unique_cases = []
+    unique_cases_by_PRID = []
+    for child in root:
+        if child[1].text not in unique_cases_by_PRID:
+            unique_cases_by_PRID.append(child[1].text)
+            unique_cases.append(child)
+    
+    return unique_cases
 
 
+def etiology_unknown_count(unique_cases: []):
+    sum = 0
+    for child in unique_cases:
+        if child[9].text == "Not Known":
+            sum += 1
+    print(f'The number of times the Etiology was listed as "Not Known" was {sum}.')
 
 
-
-
-
+def count_rosc_cases(unique_cases: []):
+    sum = 0
+    for child in unique_cases:
+        if child[2].text == "ROSC in the Field":
+            sum += 1
+    print(f"The number of times the End Event was ROSC in the Field was {sum}.")
 
 def main():
     count_total_cases()
     count_unique_cases()
-
+    unique_cases = create_unique_case_list()
+    # This will give the dispatch data/time for the first item in the list
+    # print(unique_cases[0][0].text)
+    etiology_unknown_count(unique_cases)
+    count_rosc_cases(unique_cases)
 
 if __name__ == "__main__":
     main()
