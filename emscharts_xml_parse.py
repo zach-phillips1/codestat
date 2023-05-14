@@ -85,6 +85,17 @@ def count_rosc_cases(unique_cases: list):
             sum += 1
     print(f"The number of times the End Event was ROSC in the Field was {sum}.")
 
+
+def count_aed_use(unique_cases: list):
+    sum = 0
+    for child in unique_cases:
+        if child[4].text:
+            if child[4].text.startswith("Yes"):
+                sum += 1
+    print(f"The number of times an AED was used was {sum}.")
+
+
+
 def main():
     count_total_cases()
     count_unique_cases()
@@ -93,6 +104,7 @@ def main():
     # print(unique_cases[0][0].text)
     etiology_unknown_count(unique_cases)
     count_rosc_cases(unique_cases)
+    count_aed_use(unique_cases)
 
 if __name__ == "__main__":
     main()
