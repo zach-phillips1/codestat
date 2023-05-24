@@ -1,0 +1,1945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <xs:schema xmlns="http://www.physiocontrol.com/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.physiocontrol.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Report">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DeviceID" type="xs:string" />
+          <xs:element name="DeviceType" type="deviceModelEnum" />
+          <xs:element name="CPRAnnotationEdited" type="xs:boolean" />
+          <xs:element name="PowerOn" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="DeviceConfiguration" type="xs:string" />
+          <xs:element name="TimeAdjustment" type="xs:duration" />
+          <xs:element minOccurs="0" name="CPRStatistics">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element minOccurs="0" name="OverallStatistic">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element minOccurs="0" name="AverageCompressionRatePerMin" type="xs:float" />
+                      <xs:element minOccurs="0" name="AverageVentilationRatePerMin" type="xs:float" />
+                      <xs:element minOccurs="0" name="MedianCompressionRatePerMin" type="xs:float" />
+                      <xs:element minOccurs="0" name="MedianVentilationRatePerMin" type="xs:float" />
+                      <xs:element minOccurs="0" name="TotalTimeCompressionsDuringPromptedCprSec" type="xs:float" />
+                      <xs:element minOccurs="0" name="TotalTimeCompressionsDuringValidSec" type="xs:float" />
+                      <xs:element minOccurs="0" name="TotalTimeCprDuringPromptedCprSec" type="xs:float" />
+                      <xs:element minOccurs="0" name="TotalTimeCprDuringValidSec" type="xs:float" />
+                      <xs:element minOccurs="0" name="TotalTimePromptedCprSec" type="xs:float" />
+                      <xs:element minOccurs="0" name="TotalTimeValidSec" type="xs:float" />
+                      <xs:element minOccurs="0" name="TotalTimeValidSecEx" type="xs:float" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" name="IntervalStatistics">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element maxOccurs="unbounded" name="CPRStatisticsItem">
+                        <xs:complexType>
+                          <xs:attribute name="Interval" type="xs:int" use="required" />
+                          <xs:attribute name="ResponsibleForCPR" type="xs:string" />
+                          <xs:attribute name="CPRStartTime" type="xs:dateTime" />
+                          <xs:attribute name="CPREndTime" type="xs:dateTime" />
+                          <xs:attribute name="CPRDurationSec" type="xs:double" />
+                          <xs:attribute name="PauseDurationSec" type="xs:double" />
+                          <xs:attribute name="ReasonForPause" type="xs:string" />
+                          <xs:attribute name="IntervalComments" type="xs:string" />
+                          <xs:attribute name="AverageCompressionRatePerMin" type="xs:double" />
+                          <xs:attribute name="AverageVentilationRatePerMin" type="xs:double" />
+                          <xs:attribute name="MedianCompressionRatePerMin" type="xs:double" />
+                          <xs:attribute name="MedianVentilationRatePerMin" type="xs:double" />
+                          <xs:attribute name="TotalTimeCompressionsDuringPromptedCprSec" type="xs:double" />
+                          <xs:attribute name="TotalTimeCompressionsDuringValidSec" type="xs:double" />
+                          <xs:attribute name="TotalTimeCprDuringPromptedCprSec" type="xs:double" />
+                          <xs:attribute name="TotalTimeCprDuringValidSec" type="xs:double" />
+                          <xs:attribute name="TotalTimePromptedCprSec" type="xs:double" />
+                          <xs:attribute name="TotalTimeValidSec" type="xs:double" />
+                          <xs:attribute name="TotalTimeValidSecEx" type="xs:double" />
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+              <xs:attribute name="SACVersion" type="xs:short" />
+              <xs:attribute name="CPRPauseThreshold" type="xs:double" use="required" />
+              <xs:attribute name="CompressionPauseThreshold" type="xs:double" use="required" />
+              <xs:attribute name="MinimumTimeInterval" type="xs:double" use="required" />
+              <xs:attribute name="MinimumCompressions" type="xs:int" use="required" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element minOccurs="0" name="CPRExtraData">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element minOccurs="0" name="Comment" type="xs:string" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element minOccurs="0" name="CPRShockPauseStatistics">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="CPRShockPauseStatisticsItem">
+                  <xs:complexType>
+                    <xs:attribute name="ShockNumber" type="xs:int" use="required" />
+                    <xs:attribute name="DateTime" type="xs:dateTime" use="required" />
+                    <xs:attribute name="Energy" type="xs:short" use="required" />
+                    <xs:attribute name="EnergyUnits" type="xs:string" use="required" />
+                    <xs:attribute name="PreShockPause" type="xs:duration" />
+                    <xs:attribute name="PostShockPause" type="xs:duration" />
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+        <xs:attributeGroup ref="ReportAttrsGroup" />
+      </xs:complexType>
+    </xs:element>
+    <xs:complexType name="CaseAttachmentsType">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="Attachment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="xs:string" />
+              <xs:element name="Modified" type="xs:dateTime" />
+              <xs:element name="Size" type="xs:unsignedInt" />
+              <xs:element minOccurs="0" name="Note" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CaseOutcomeType">
+      <xs:sequence>
+        <xs:choice>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="Admitted" type="threeWayBooleanEnum" />
+            <xs:element minOccurs="0" name="EffortsCeased" type="outcomeEffortsCeasedEnum" />
+          </xs:sequence>
+          <xs:element minOccurs="0" name="Disposition" type="outcomeDispositionEnum" />
+        </xs:choice>
+        <xs:element minOccurs="0" name="TimeOfDeath" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="DischargedAlive" type="threeWayBooleanEnum" />
+        <xs:element minOccurs="0" name="AliveAt1Year" type="threeWayBooleanEnum" />
+        <xs:element minOccurs="0" name="DischargeCPC" type="DischargePerformanceCategory" />
+        <xs:element minOccurs="0" name="DischargeOPC" type="DischargePerformanceCategory" />
+        <xs:element minOccurs="0" name="CustomFields" type="customFields">
+          <xs:key name="outcomeCustomFieldsKey">
+            <xs:selector xpath="CustomField" />
+            <xs:field xpath="@ID" />
+          </xs:key>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CaseCardiacType">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TimeOfCollapse" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="TimeOfOnsetSymptoms" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="TimeOfIntervention" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="ConfirmedArrest" type="xs:boolean" />
+        <xs:element minOccurs="0" name="ResuscitationAttempted" type="xs:boolean" />
+        <xs:element minOccurs="0" name="Etiology" type="etiologyEnum" />
+        <xs:element minOccurs="0" name="ArrestWitness">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="arrestWitnessEnum">
+                <xs:attribute name="Text" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="InitialRhythm">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="initialRhythmEnum">
+                <xs:attribute name="Text" type="xs:string" use="optional" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="BystanderCPR" type="xs:boolean" />
+        <xs:element minOccurs="0" name="AnyROSC" type="xs:boolean" />
+        <xs:element minOccurs="0" name="TreatedAsMI" type="xs:boolean" />
+        <xs:element minOccurs="0" name="STElevation" type="xs:boolean" />
+        <xs:element minOccurs="0" name="ConfirmedMI" type="confirmedMIEnum" />
+        <xs:element minOccurs="0" name="Intervention" type="xs:string" />
+        <xs:element minOccurs="0" name="CustomFields" type="customFields">
+          <xs:key name="cardiacCustomFieldsKey">
+            <xs:selector xpath="CustomField" />
+            <xs:field xpath="@ID" />
+          </xs:key>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CaseIncidentType">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IncidentID" type="xs:string" />
+        <xs:element minOccurs="0" name="Address" type="address" />
+        <xs:element minOccurs="0" name="CallReceipt" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="DepartScene">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:dateTime">
+                <xs:attribute name="TransportVehicleId" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="ArriveDestTransport">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:dateTime">
+                <xs:attribute name="Destination" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="AreaID" type="xs:string" />
+        <xs:element minOccurs="0" name="IncidentType" type="xs:string" />
+        <xs:element minOccurs="0" name="LocationName" type="xs:string" />
+        <xs:element minOccurs="0" name="LocationType" type="xs:string" />
+        <xs:element minOccurs="0" name="InsideFacilityLocation" type="xs:string" />
+        <xs:element minOccurs="0" name="Responses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Response">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="Responder" type="xs:string" />
+                    <xs:element minOccurs="0" name="ResponseType" type="xs:string" />
+                    <xs:element minOccurs="0" name="StatusAtDispatch" type="xs:string" />
+                    <xs:element minOccurs="0" name="DispatchTime" type="xs:dateTime" />
+                    <xs:choice>
+                      <xs:element minOccurs="0" name="TeamArrival" type="xs:dateTime" />
+                      <xs:sequence>
+                        <xs:element minOccurs="0" name="ArriveScene" type="xs:dateTime" />
+                        <xs:element minOccurs="0" name="ArrivePatient" type="xs:dateTime" />
+                      </xs:sequence>
+                    </xs:choice>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+          <xs:unique name="incidentResponderConstrain">
+            <xs:selector xpath="Response" />
+            <xs:field xpath="Responder" />
+          </xs:unique>
+        </xs:element>
+        <xs:element minOccurs="0" name="CustomFields" type="customFields">
+          <xs:key name="incidentCustomFieldsKey">
+            <xs:selector xpath="CustomField" />
+            <xs:field xpath="@ID" />
+          </xs:key>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CasePatientType">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NationalID" type="xs:string" />
+        <xs:element minOccurs="0" name="PatientID" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" type="patientName" />
+        <xs:element minOccurs="0" name="Age" type="patientAge" />
+        <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Sex" type="patientSexEnum" />
+        <xs:element minOccurs="0" name="Race" type="patientRace" />
+        <xs:element minOccurs="0" name="PhoneNumber" type="xs:string" />
+        <xs:element minOccurs="0" name="Address" type="address" />
+        <xs:element minOccurs="0" name="CustomFields" type="customFields">
+          <xs:key name="patientCustomFieldsKey">
+            <xs:selector xpath="CustomField" />
+            <xs:field xpath="@ID" />
+          </xs:key>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EventLogEventType">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="Event">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ElapsedTime" type="xs:duration" />
+              <xs:element name="DeviceTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="AdjustedTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Description" type="xs:string" />
+              <xs:element minOccurs="0" name="Notes" type="xs:string" />
+              <xs:element minOccurs="0" name="ProviderID" type="xs:string" />
+              <xs:element name="Values">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="Value">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="DataType" type="eventValueDataTypeEnum" use="optional" />
+                            <xs:attribute name="Type" type="eventValueEnum" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Type" type="eventTypeEnum" use="required" />
+            <xs:attribute name="DeviceKey" type="xs:integer" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DeviceLogsType">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="DeviceLog">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Created" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Name" type="xs:string" />
+              <xs:element minOccurs="0" name="StyleSheet" type="xs:string" />
+              <xs:element name="Type" type="deviceLogTypeEnum" />
+              <xs:element name="Visibility" type="deviceLogVisibilityEnum" />
+              <xs:element minOccurs="0" name="Xml" type="xs:string" />
+              <xs:element minOccurs="0" name="Entries">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="Entry">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ResultStatus" type="deviceLogEntryResultStatusEnum" />
+                          <xs:element name="SequenceNumber" type="xs:int" />
+                          <xs:element name="TestLogCounter" type="xs:int" />
+                          <xs:element minOccurs="0" name="Text" type="xs:string" />
+                          <xs:element name="Type" type="deviceLogEntryTypeEnum" />
+                          <xs:element minOccurs="0" name="Elements">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="Element">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Data" type="xs:int" />
+                                      <xs:element name="Hint" type="deviceLogElementHintEnum" />
+                                    </xs:sequence>
+                                    <xs:attribute name="Type" type="deviceLogElementTypeEnum" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="DateTime" type="xs:dateTime" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:attributeGroup name="ReportAttrsGroup">
+      <xs:attribute name="Type" type="xs:string" use="required" />
+      <xs:attribute name="Version" type="xs:string" use="required" />
+      <xs:attribute name="Generated" type="xs:dateTime" use="required" />
+      <xs:attribute name="IncidentID" type="xs:string" use="required" />
+      <xs:attribute name="PatientID" type="xs:string" use="required" />
+      <xs:attribute name="SoftwareVersion" type="xs:string" use="required" />
+    </xs:attributeGroup>
+    <xs:complexType name="ConverterType">
+      <xs:sequence>
+        <xs:element name="ID" type="xs:string" />
+        <xs:element name="Version" type="xs:string" />
+        <xs:element minOccurs="0" name="Converted" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="UnrecognizedDataType">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="UnrecognizedRecord">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="UnrecognizedSection">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="xs:int" />
+                    <xs:element name="Version" type="xs:string" />
+                    <xs:element name="Offset" type="xs:int" />
+                    <xs:element name="Length" type="xs:int" />
+                    <xs:element name="Description" type="xs:string" />
+                    <xs:element name="Reason" type="xs:string" />
+                    <xs:element name="RawDataSize" type="xs:int" />
+                    <xs:element name="RawData" type="xs:base64Binary" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+          <xs:key name="deviceEpisodeUnrecognizedSectionKey">
+            <xs:selector xpath="UnrecognizedSection" />
+            <xs:field xpath="ID" />
+          </xs:key>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AdditionalDataType">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SelkerData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="age40" type="xs:int" />
+              <xs:element name="age50" type="xs:int" />
+              <xs:element name="BleedScore" type="xs:int" />
+              <xs:element name="CardiacArrestNoT" type="xs:int" />
+              <xs:element name="CardiacArrestWithT" type="xs:int" />
+              <xs:element name="cpain" type="xs:int" />
+              <xs:element name="DiabeticStatus" type="diabeticStateEnum" />
+              <xs:element name="DiastolicNIBP" type="xs:int" />
+              <xs:element name="Hemorrhage" type="xs:int" />
+              <xs:element name="HypertensionStatus" type="hypertensionStateEnum" />
+              <xs:element name="malesex" type="xs:int" />
+              <xs:element name="MonthMortalityNoT" type="xs:int" />
+              <xs:element name="MonthMortalityWithT" type="xs:int" />
+              <xs:element name="OnsetTime" type="xs:int" />
+              <xs:element name="pad2" type="xs:int" />
+              <xs:element name="pad3" type="xs:int" />
+              <xs:element name="pad4" type="xs:int" />
+              <xs:element name="pad5" type="xs:int" />
+              <xs:element name="pad6" type="xs:int" />
+              <xs:element name="pad7" type="xs:int" />
+              <xs:element name="PainAssessment" type="painAssessmentEnum" />
+              <xs:element name="Populated" type="xs:boolean" />
+              <xs:element name="qwave" type="xs:int" />
+              <xs:element name="Randomizer" type="randomizerStateEnum" />
+              <xs:element name="sexage50" type="xs:int" />
+              <xs:element name="stdep" type="xs:int" />
+              <xs:element name="stel" type="xs:int" />
+              <xs:element name="sxicpain" type="xs:int" />
+              <xs:element name="SystolicNIBP" type="xs:int" />
+              <xs:element name="TIPIScore" type="xs:int" />
+              <xs:element name="TPIExecuted" type="tpiExecutedStateEnum" />
+              <xs:element name="TPIStatus" type="tpiStateEnum" />
+              <xs:element name="twel" type="xs:int" />
+              <xs:element name="twinv" type="xs:int" />
+              <xs:element name="twistdep" type="xs:int" />
+              <xs:element name="YearMortalityNoT" type="xs:int" />
+              <xs:element name="YearMortalityWithT" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="SimoonData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Populated" type="xs:boolean" />
+              <xs:element name="PTCA" type="xs:int" />
+              <xs:element name="ResultCode" type="xs:int" />
+              <xs:element name="STAnterior" type="xs:int" />
+              <xs:element name="STInferior" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ForwardingInstructionsType">
+      <xs:sequence>
+        <xs:element name="Type" type="destinationTypeEnum" />
+        <xs:element name="Status" type="forwardingStatusEnum" />
+        <xs:element name="Format" type="forwardingFormatEnum" />
+        <xs:element name="Priority" type="forwardingPriorityEnum" />
+        <xs:element name="DateTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="OriginatingDevice" type="xs:string" />
+        <xs:element minOccurs="0" name="DestinationName" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DeviceType">
+      <xs:sequence>
+        <xs:element name="ACLineFrequency" type="xs:short" />
+        <xs:element name="Capabilities" type="xs:short" />
+        <xs:element minOccurs="0" name="DeviceDescription" type="xs:string" />
+        <xs:element name="DeviceID" type="xs:short" />
+        <xs:element name="DeviceType" type="xs:short" />
+        <xs:element name="InstitutionNumber" type="xs:short" />
+        <xs:element minOccurs="0" name="InternetAddress" type="xs:string" />
+        <xs:element name="LanguageSupportCode" type="xs:short" />
+        <xs:element name="ManufacturerCode" type="xs:short" />
+        <xs:element name="PresName" type="xs:string" />
+        <xs:element name="Model">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="deviceModelEnum">
+                <xs:attribute name="ModelString" type="xs:string" use="required" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SCPCompatibility" type="xs:short" />
+        <xs:element name="SCPRevision" type="xs:short" />
+        <xs:element name="SerialNumber" type="xs:string" />
+        <xs:element minOccurs="0" name="SiteDescription" type="xs:string" />
+        <xs:element name="SiteID" type="xs:short" />
+        <xs:element minOccurs="0" name="SoftwareRevision" type="xs:string" />
+        <xs:element name="Configuration">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AlarmWidth" type="xs:short" />
+              <xs:element name="AMI" type="xs:boolean" />
+              <xs:element name="AutoAnalyze" type="xs:boolean" />
+              <xs:element name="AutoPrint12Lead" type="xs:boolean" />
+              <xs:element minOccurs="0" name="ConfigString" type="xs:string" />
+              <xs:element name="HrAlarm" type="xs:boolean" />
+              <xs:element name="Interpretation" type="xs:boolean" />
+              <xs:element name="Justification" type="xs:boolean" />
+              <xs:element name="Language" type="xs:short" />
+              <xs:element name="MotionDetection" type="xs:boolean" />
+              <xs:element name="Ohm300" type="xs:int" />
+              <xs:element name="OhmZero" type="xs:int" />
+              <xs:element name="ShockTone" type="xs:boolean" />
+              <xs:element name="VfVtAlarm" type="xs:boolean" />
+              <xs:element name="VoicePrompts" type="xs:boolean" />
+              <xs:element minOccurs="0" name="LucasConfiguration">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="VentilationPauseIn30C2VInStrokes" type="xs:byte" />
+                    <xs:element name="VentilationSoundAlertInContinuous" type="xs:boolean" />
+                    <xs:element name="VentilationAlertsInContinuousPerMinute" type="xs:byte" />
+                    <xs:element name="StrokePeriod" type="xs:byte" />
+                    <xs:element name="QuickFit" type="xs:byte" />
+                    <xs:element name="MaximumCompressionDepth" type="xs:byte" />
+                    <xs:element name="WirelessMode" type="xs:byte" />
+                    <xs:element name="VentilationPauseInContinuousInStrokes" type="xs:byte" />
+                    <xs:element name="MoveUpAtAdjust" type="xs:boolean" />
+                    <xs:element name="AllowedCompressionRates" type="xs:byte" />
+                    <xs:element name="AudibleTimer" type="xs:byte" />
+                    <xs:element name="StrokesIn30C2V" type="xs:byte" />
+                    <xs:element name="LiftPistonDistanceAtVentilation" type="xs:byte" />
+                    <xs:element name="LiftPistonDistanceAtPauseMode" type="xs:byte" />
+                    <xs:element name="LiftPistonDistanceAtActiveMode" type="xs:byte" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="DeviceFilters">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="DeviceFilter">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="deviceFilterIDEnum">
+                      <xs:attribute name="LeadType" type="leadTypeEnum" use="required" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:group name="ReportBodyGroup">
+      <xs:sequence>
+        <xs:element name="PowerOnDateTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="IncidentID" type="xs:string" />
+        <xs:element name="PatientRecordID" type="xs:string" />
+        <xs:element name="DisplayedPatientRecordID" type="xs:string" />
+        <xs:element name="ReportEventID" type="xs:short" />
+        <xs:element minOccurs="0" name="ElapsedTime" type="xs:duration" />
+        <xs:element name="DeviceTimeCorrection" type="xs:duration" />
+        <xs:element minOccurs="0" name="DeviceUTCOffset" type="xs:duration" />
+        <xs:element name="Total12Leads" type="xs:short" />
+        <xs:element name="TotalPaced" type="xs:duration" />
+        <xs:element name="TotalShocks" type="xs:short" />
+        <xs:element name="ReportGain" type="xs:int" />
+        <xs:element name="ReportSweepSpeed" type="xs:short" />
+        <xs:element name="ReportLowPass" type="xs:float" />
+        <xs:element name="ReportHighPass" type="xs:float" />
+        <xs:element minOccurs="0" name="ReportGUID" type="xs:string" />
+        <xs:element name="FilterBitMap" type="xs:short" />
+        <xs:element minOccurs="0" name="InHospitalLocation" type="xs:string" />
+        <xs:element name="AudioStatus" type="audioStatusEnum" />
+        <xs:element name="CheckSum" type="xs:short" />
+        <xs:element minOccurs="0" name="Comments" type="xs:string" />
+      </xs:sequence>
+    </xs:group>
+    <xs:complexType name="PatientType">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PatientID" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" type="patientName" />
+        <xs:element minOccurs="0" name="Age" type="patientAge" />
+        <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Sex" type="patientSexEnum" />
+        <xs:element minOccurs="0" name="Race" type="patientRace" />
+        <xs:element minOccurs="0" name="DisplayedPatientID" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MeasurementMatrixType">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="Measurements">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Measurement">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="Type" type="measurementEnum" use="required" />
+                      <xs:attribute name="DataType" type="measurementDataTypeEnum" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="LeadID" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="InterpretationsType">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="Interpretation" type="xs:string" />
+      </xs:sequence>
+      <xs:attribute name="Confirmed" type="xs:boolean" use="required" />
+    </xs:complexType>
+    <xs:complexType name="EventTemplatesType">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="EventTemplate">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PreEventSamples" type="xs:int" />
+              <xs:element name="PostEventSamples" type="xs:int" />
+              <xs:element name="PreResearchSamples" type="xs:int" />
+              <xs:element name="PostResearchSamples" type="xs:int" />
+            </xs:sequence>
+            <xs:attribute name="Index" type="xs:short" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EventsType">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="Event">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:short" />
+              <xs:element name="DateTime" type="xs:dateTime" />
+              <xs:element name="AdjustedTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Label" type="xs:string" />
+              <xs:element name="TemplateIndex" type="xs:short" />
+              <xs:element name="LeadID" type="xs:short" />
+              <xs:element minOccurs="0" name="LeadName" type="xs:string" />
+              <xs:element name="SampleNumber" type="xs:int" />
+              <xs:element name="SampleRate" type="xs:int" />
+              <xs:element minOccurs="0" name="Values">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="Value">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="Type" type="eventValueEnum" use="required" />
+                            <xs:attribute name="DataType" type="eventValueDataTypeEnum" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Type" type="eventTypeEnum" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="RateMeasurementUnits">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1/minute" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="DepthUnitsType">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Centimeters" />
+        <xs:enumeration value="Inches" />
+        <xs:enumeration value="Millimeters" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="deviceModelEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="FM" />
+        <xs:enumeration value="FM510" />
+        <xs:enumeration value="FM610" />
+        <xs:enumeration value="FM710" />
+        <xs:enumeration value="LP11" />
+        <xs:enumeration value="LP12" />
+        <xs:enumeration value="LP15" />
+        <xs:enumeration value="LP20" />
+        <xs:enumeration value="LP500" />
+        <xs:enumeration value="LP1000" />
+        <xs:enumeration value="LPCRP" />
+        <xs:enumeration value="TrueCPR" />
+        <xs:enumeration value="Lucas" />
+        <xs:enumeration value="MULTI" />
+        <xs:enumeration value="MPAK" />
+        <xs:enumeration value="LPT5" />
+        <xs:enumeration value="LPQ5" />
+        <xs:enumeration value="NONINX100M" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="leadTypeEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="ECG" />
+        <xs:enumeration value="Paddles" />
+        <xs:enumeration value="NIBP" />
+        <xs:enumeration value="IP" />
+        <xs:enumeration value="CO2" />
+        <xs:enumeration value="SP02" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="deviceFilterIDEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="UseDeviceDefault" />
+        <xs:enumeration value="LP12Diagnostic" />
+        <xs:enumeration value="LP12ModifiedDiagnostic" />
+        <xs:enumeration value="LP12MonitorFrequencyResponse1" />
+        <xs:enumeration value="LP12MonitorFrequencyResponse2" />
+        <xs:enumeration value="LP12PaddlesFrequencyResponse" />
+        <xs:enumeration value="LP12InvasivePressure" />
+        <xs:enumeration value="LP12PlethOffsetSubtraction" />
+        <xs:enumeration value="LP11Diagnostic" />
+        <xs:enumeration value="LP11ModifiedDiagnostic" />
+        <xs:enumeration value="LP11MonitorFrequencyResponse1" />
+        <xs:enumeration value="LP11MonitorFrequencyResponse2" />
+        <xs:enumeration value="LP11PaddlesFrequencyResponse" />
+        <xs:enumeration value="LP11InvasivePressure" />
+        <xs:enumeration value="LP11PlethOffsetSubtraction" />
+        <xs:enumeration value="LP20Diagnostic" />
+        <xs:enumeration value="LP20ModifiedDiagnostic" />
+        <xs:enumeration value="LP20MonitorFrequencyResponse1" />
+        <xs:enumeration value="LP20MonitorFrequencyResponse2" />
+        <xs:enumeration value="LP20PaddlesFrequencyResponse" />
+        <xs:enumeration value="LP20InvasivePressure" />
+        <xs:enumeration value="LP20PlethOffsetSubtraction" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="deviceLogTypeEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="LP500TestLog" />
+        <xs:enumeration value="LP12SelfTestLog" />
+        <xs:enumeration value="ColumbusTestLog" />
+        <xs:enumeration value="CruiserTestLog" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="deviceLogVisibilityEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Normal" />
+        <xs:enumeration value="PostMarketSurveillance" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="deviceLogEntryTypeEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="None" />
+        <xs:enumeration value="SimpleUserTest" />
+        <xs:enumeration value="AutoSelfTest" />
+        <xs:enumeration value="UserTest" />
+        <xs:enumeration value="DailyAutoTest" />
+        <xs:enumeration value="WeeklyAutoTest" />
+        <xs:enumeration value="SelfTest" />
+        <xs:enumeration value="UserPowerOn" />
+        <xs:enumeration value="ChargePakRemoved" />
+        <xs:enumeration value="ChargePakReplaced" />
+        <xs:enumeration value="FaultCodes" />
+        <xs:enumeration value="AutoTestPowerOn" />
+        <xs:enumeration value="ChargePakChanged" />
+        <xs:enumeration value="RechargeCheck" />
+        <xs:enumeration value="BatteryData" />
+        <xs:enumeration value="UserPowerOff" />
+        <xs:enumeration value="DevicePowerOff" />
+        <xs:enumeration value="BatteryRemoved" />
+        <xs:enumeration value="BatteryReplaced" />
+        <xs:enumeration value="BatteryChanged" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="deviceLogEntryResultStatusEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="Pass" />
+        <xs:enumeration value="Fail" />
+        <xs:enumeration value="Go" />
+        <xs:enumeration value="NoGo" />
+        <xs:enumeration value="Valid" />
+        <xs:enumeration value="Invalid" />
+        <xs:enumeration value="Ready" />
+        <xs:enumeration value="NotReady" />
+        <xs:enumeration value="OnLine" />
+        <xs:enumeration value="OffLine" />
+        <xs:enumeration value="TestNotCompleted" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="deviceLogElementTypeEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="MajorFault" />
+        <xs:enumeration value="MinorFault" />
+        <xs:enumeration value="ReadinessIndicator" />
+        <xs:enumeration value="PowerSystemVoltage" />
+        <xs:enumeration value="DeviceTemperature" />
+        <xs:enumeration value="CumulativeNumOfShocks" />
+        <xs:enumeration value="CumulativeOnTime" />
+        <xs:enumeration value="DiagnosticCode" />
+        <xs:enumeration value="BatteryInstallationDate" />
+        <xs:enumeration value="BatteryStatus" />
+        <xs:enumeration value="BatteryMinutesUsed" />
+        <xs:enumeration value="BatteryRechargeRate" />
+        <xs:enumeration value="DischargeCounter" />
+        <xs:enumeration value="PowerSource" />
+        <xs:enumeration value="Current" />
+        <xs:enumeration value="BatteryType" />
+        <xs:enumeration value="BatteryLotCode" />
+        <xs:enumeration value="BatteryNumber" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="deviceLogElementHintEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="BinaryByte" />
+        <xs:enumeration value="BinaryWord" />
+        <xs:enumeration value="BinaryDoubleWord" />
+        <xs:enumeration value="HexByte" />
+        <xs:enumeration value="HexWord" />
+        <xs:enumeration value="HexDoubleWord" />
+        <xs:enumeration value="Decimal" />
+        <xs:enumeration value="Enumeration" />
+        <xs:enumeration value="Date" />
+        <xs:enumeration value="Time" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="eventTypeEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="Defib" />
+        <xs:enumeration value="12Lead" />
+        <xs:enumeration value="Print" />
+        <xs:enumeration value="InitialRhythm" />
+        <xs:enumeration value="CPSS" />
+        <xs:enumeration value="DefibPostShock" />
+        <xs:enumeration value="PacingStarted" />
+        <xs:enumeration value="PacingSet" />
+        <xs:enumeration value="PacingChanged" />
+        <xs:enumeration value="PacingPaused" />
+        <xs:enumeration value="PacingStopped" />
+        <xs:enumeration value="PacingPauseOff" />
+        <xs:enumeration value="SASInitiated" />
+        <xs:enumeration value="SASSegmentStart" />
+        <xs:enumeration value="SASShockable" />
+        <xs:enumeration value="SASNonshockable" />
+        <xs:enumeration value="SASShockAdvised" />
+        <xs:enumeration value="SASNoShockAdvised" />
+        <xs:enumeration value="SASStopped" />
+        <xs:enumeration value="SASStopLeadsOff" />
+        <xs:enumeration value="SASStopCableOff" />
+        <xs:enumeration value="SASStopManual" />
+        <xs:enumeration value="SASStopMotionTimeout" />
+        <xs:enumeration value="SASStopDeviceError" />
+        <xs:enumeration value="SASStopCommand" />
+        <xs:enumeration value="SASMotion" />
+        <xs:enumeration value="SASMotionStopped" />
+        <xs:enumeration value="StartCPR" />
+        <xs:enumeration value="StopCPR" />
+        <xs:enumeration value="CPRAnnotation" />
+        <xs:enumeration value="CPRMetronome_Off" />
+        <xs:enumeration value="AlarmHRHigh" />
+        <xs:enumeration value="AlarmHRLow" />
+        <xs:enumeration value="AlarmSPO2High" />
+        <xs:enumeration value="AlarmSPO2Low" />
+        <xs:enumeration value="AlarmCO2High" />
+        <xs:enumeration value="AlarmCO2Low" />
+        <xs:enumeration value="AlarmNIBPSysHigh" />
+        <xs:enumeration value="AlarmNIBPSysLow" />
+        <xs:enumeration value="AlarmNIBPDiaHigh" />
+        <xs:enumeration value="AlarmNIBPDiaLow" />
+        <xs:enumeration value="AlarmIP1SysHigh" />
+        <xs:enumeration value="AlarmIP1SysLow" />
+        <xs:enumeration value="AlarmIP1DiaHigh" />
+        <xs:enumeration value="AlarmIP1DiaLow" />
+        <xs:enumeration value="AlarmIP2SysHigh" />
+        <xs:enumeration value="AlarmIP2SysLow" />
+        <xs:enumeration value="AlarmIP2DiaHigh" />
+        <xs:enumeration value="AlarmIP2DiaLow" />
+        <xs:enumeration value="AlarmSPO2PRHigh" />
+        <xs:enumeration value="AlarmSPO2PRLow" />
+        <xs:enumeration value="AlarmNIBPPRHigh" />
+        <xs:enumeration value="AlarmNIBPPRLow" />
+        <xs:enumeration value="AlarmInspCO2High" />
+        <xs:enumeration value="AlarmInspCO2Low" />
+        <xs:enumeration value="AlarmEtCO2High" />
+        <xs:enumeration value="AlarmEtCO2Low" />
+        <xs:enumeration value="AlarmRespRateHigh" />
+        <xs:enumeration value="AlarmRespRateLow" />
+        <xs:enumeration value="AlarmApnea" />
+        <xs:enumeration value="UnknownDevicePrompt" />
+        <xs:enumeration value="PromptPushAnalyze" />
+        <xs:enumeration value="PromptConnectElect" />
+        <xs:enumeration value="PromptReplaceBattery" />
+        <xs:enumeration value="PromptStandClear" />
+        <xs:enumeration value="PromptPushToShock" />
+        <xs:enumeration value="PromptCheckForPulse" />
+        <xs:enumeration value="PromptIfNoPulse" />
+        <xs:enumeration value="Annotations" />
+        <xs:enumeration value="PromptLowBattery" />
+        <xs:enumeration value="VitalSigns" />
+        <xs:enumeration value="NIBP" />
+        <xs:enumeration value="TrendData" />
+        <xs:enumeration value="TrendStartTime" />
+        <xs:enumeration value="TrendStopTime" />
+        <xs:enumeration value="BatteryRemoved" />
+        <xs:enumeration value="BatteryReplaced" />
+        <xs:enumeration value="PowerOff" />
+        <xs:enumeration value="PowerOn" />
+        <xs:enumeration value="ExternalPowerStatusChange" />
+        <xs:enumeration value="ChargeButtonPressed" />
+        <xs:enumeration value="ECGMode" />
+        <xs:enumeration value="RecoveryState" />
+        <xs:enumeration value="PatientConnected" />
+        <xs:enumeration value="LeadOff" />
+        <xs:enumeration value="ChargeRemoved" />
+        <xs:enumeration value="ChargeComplete" />
+        <xs:enumeration value="ConnectElectrodes" />
+        <xs:enumeration value="LowBattery" />
+        <xs:enumeration value="CPRPrompt" />
+        <xs:enumeration value="ReplaceBattery" />
+        <xs:enumeration value="OutOfMemCleared" />
+        <xs:enumeration value="OutOfMemGeneral" />
+        <xs:enumeration value="OutOfMemAudio" />
+        <xs:enumeration value="OutOfMemEvents" />
+        <xs:enumeration value="OutOfMemECG" />
+        <xs:enumeration value="AdvisoryMode" />
+        <xs:enumeration value="ManualMode" />
+        <xs:enumeration value="ServiceFault" />
+        <xs:enumeration value="SyncOn" />
+        <xs:enumeration value="SyncOff" />
+        <xs:enumeration value="Asystole" />
+        <xs:enumeration value="AlarmsOn" />
+        <xs:enumeration value="VFVTAlarmOn" />
+        <xs:enumeration value="VFVTAlarmOff" />
+        <xs:enumeration value="IntPacerDetectOn" />
+        <xs:enumeration value="IntPacerDetectOff" />
+        <xs:enumeration value="ApneaDetect" />
+        <xs:enumeration value="CO2AutoZero" />
+        <xs:enumeration value="CPRPrompt2" />
+        <xs:enumeration value="IPLabelChange" />
+        <xs:enumeration value="5WireCableOn" />
+        <xs:enumeration value="5WireCableOff" />
+        <xs:enumeration value="StopCPRPrompt" />
+        <xs:enumeration value="TransmitFailed" />
+        <xs:enumeration value="TransmitComplete" />
+        <xs:enumeration value="TransmitCancelled" />
+        <xs:enumeration value="RemoteSyncOn" />
+        <xs:enumeration value="RemoteSyncOff" />
+        <xs:enumeration value="Impedance" />
+        <xs:enumeration value="QuickSetWideAlarmEnabled" />
+        <xs:enumeration value="QuickSetWideAlarmDisabled" />
+        <xs:enumeration value="QuickSetNarrowAlarmEnabled" />
+        <xs:enumeration value="QuickSetNarrowAlarmDisabled" />
+        <xs:enumeration value="AEDMode" />
+        <xs:enumeration value="ImpedConnectElec" />
+        <xs:enumeration value="ImpedAnalysis" />
+        <xs:enumeration value="ImpedPreShock" />
+        <xs:enumeration value="ImpedPostShock" />
+        <xs:enumeration value="ImpedGeneric" />
+        <xs:enumeration value="WaveformData" />
+        <xs:enumeration value="StartCharging" />
+        <xs:enumeration value="ChargeNotReached" />
+        <xs:enumeration value="CheckPatientCleared" />
+        <xs:enumeration value="CO2InitOn" />
+        <xs:enumeration value="CO2InitOff" />
+        <xs:enumeration value="CO2AutozeroOn" />
+        <xs:enumeration value="CO2AutozeroOff" />
+        <xs:enumeration value="CO2PurgingOn" />
+        <xs:enumeration value="CO2PurgingOff" />
+        <xs:enumeration value="CO2FilterConnect" />
+        <xs:enumeration value="CO2FilterDisconnect" />
+        <xs:enumeration value="CO2FilterBlocked" />
+        <xs:enumeration value="CO2FilterCleared" />
+        <xs:enumeration value="IPZeroing" />
+        <xs:enumeration value="IPNotZeroed" />
+        <xs:enumeration value="IPZeroed" />
+        <xs:enumeration value="IPTransducerNotDetected" />
+        <xs:enumeration value="SPO2SearchingForPulse" />
+        <xs:enumeration value="SPO2NoSensorDetected" />
+        <xs:enumeration value="SPO2SensorOff" />
+        <xs:enumeration value="SPO2Normal" />
+        <xs:enumeration value="SPO2UnknownSensor" />
+        <xs:enumeration value="SPO2LowPerfusion" />
+        <xs:enumeration value="AlarmARTSysHigh" />
+        <xs:enumeration value="AlarmARTSysLow" />
+        <xs:enumeration value="AlarmARTDiaHigh" />
+        <xs:enumeration value="AlarmARTDiaLow" />
+        <xs:enumeration value="AlarmPASysHigh" />
+        <xs:enumeration value="AlarmPASysLow" />
+        <xs:enumeration value="AlarmPADiaHigh" />
+        <xs:enumeration value="AlarmPADiaLow" />
+        <xs:enumeration value="AlarmCVPHigh" />
+        <xs:enumeration value="AlarmCVPLow" />
+        <xs:enumeration value="AlarmICPHigh" />
+        <xs:enumeration value="AlarmICPLow" />
+        <xs:enumeration value="AlarmLAPHigh" />
+        <xs:enumeration value="AlarmLAPLow" />
+        <xs:enumeration value="AlarmIP1MeanHigh" />
+        <xs:enumeration value="AlarmIP1MeanLow" />
+        <xs:enumeration value="AlarmIP2MeanHigh" />
+        <xs:enumeration value="AlarmIP2MeanLow" />
+        <xs:enumeration value="LeadChange" />
+        <xs:enumeration value="Gain" />
+        <xs:enumeration value="FreqResponse" />
+        <xs:enumeration value="NDGEDepartScene" />
+        <xs:enumeration value="NDGEArriveDestination" />
+        <xs:enumeration value="NDGECallReceipt" />
+        <xs:enumeration value="NDGEDispatched" />
+        <xs:enumeration value="NDGEArriveScene" />
+        <xs:enumeration value="NDGEArrivePatient" />
+        <xs:enumeration value="NDGETimeOfCollapse" />
+        <xs:enumeration value="NDGEOnsetOfSymptoms" />
+        <xs:enumeration value="NDGETimeOfIntervention" />
+        <xs:enumeration value="NDGETimeOfDeath" />
+        <xs:enumeration value="NDGEUnitMobile" />
+        <xs:enumeration value="NDGEReturnToService" />
+        <xs:enumeration value="NDGEROSVTime" />
+        <xs:enumeration value="NDGECPRAbandonTime" />
+        <xs:enumeration value="NDGEDischargeTime" />
+        <xs:enumeration value="NDGEROSCTime" />
+        <xs:enumeration value="NDGEHospDischargeDiagnosis" />
+        <xs:enumeration value="NDGEEDDischargeDiagnosis" />
+        <xs:enumeration value="NDGEAdenosine" />
+        <xs:enumeration value="NDGEAminophylline" />
+        <xs:enumeration value="NDGEAmrinone" />
+        <xs:enumeration value="NDGEAspirin" />
+        <xs:enumeration value="NDGEAtenolol" />
+        <xs:enumeration value="NDGEAtropine" />
+        <xs:enumeration value="NDGEBretyliumTosylate" />
+        <xs:enumeration value="NDGECalciumChloride" />
+        <xs:enumeration value="NDGECharcoalActivated" />
+        <xs:enumeration value="NDGEDextroseAndWater" />
+        <xs:enumeration value="NDGEDiltiazem" />
+        <xs:enumeration value="NDGEDigoxin" />
+        <xs:enumeration value="NDGEDobutamine" />
+        <xs:enumeration value="NDGEDopamine" />
+        <xs:enumeration value="NDGENorepinephrine" />
+        <xs:enumeration value="NDGEEsmolol" />
+        <xs:enumeration value="NDGELabetalol" />
+        <xs:enumeration value="NDGEFlumazenil" />
+        <xs:enumeration value="NDGEHeparin" />
+        <xs:enumeration value="NDGEGlucagon" />
+        <xs:enumeration value="NDGEIsoproterenol" />
+        <xs:enumeration value="NDGEFurosemide" />
+        <xs:enumeration value="NDGELidocaine" />
+        <xs:enumeration value="NDGEEpinephrine" />
+        <xs:enumeration value="NDGEMetoprolol" />
+        <xs:enumeration value="NDGEMagnesiumSulfate" />
+        <xs:enumeration value="NDGEMorphine" />
+        <xs:enumeration value="NDGEMannitol" />
+        <xs:enumeration value="NDGESodiumBicarbonate" />
+        <xs:enumeration value="NDGENaloxone" />
+        <xs:enumeration value="NDGENitro" />
+        <xs:enumeration value="NDGEOxygen" />
+        <xs:enumeration value="NDGEThromAgents" />
+        <xs:enumeration value="NDGENrmlSaline" />
+        <xs:enumeration value="NDGELactRingers" />
+        <xs:enumeration value="NDGEProcainamide" />
+        <xs:enumeration value="NDGEPropanolol" />
+        <xs:enumeration value="NDGENitroprusside" />
+        <xs:enumeration value="NDGEStreptokinase" />
+        <xs:enumeration value="NDGEDiazepam" />
+        <xs:enumeration value="NDGEMidazolam" />
+        <xs:enumeration value="NDGEVerapamilHCL" />
+        <xs:enumeration value="NDGEEMSCPR" />
+        <xs:enumeration value="NDGECPR" />
+        <xs:enumeration value="NDGEShock" />
+        <xs:enumeration value="NDGEIntubation" />
+        <xs:enumeration value="NDGECentralLine" />
+        <xs:enumeration value="NDGEFlutterValve" />
+        <xs:enumeration value="NDGECutdown" />
+        <xs:enumeration value="NDGETracheostomy" />
+        <xs:enumeration value="NDGEIntraosAccess" />
+        <xs:enumeration value="NDGEForeignBdyRemoval" />
+        <xs:enumeration value="NDGEBagValveDevice" />
+        <xs:enumeration value="NDGEIVAccess" />
+        <xs:enumeration value="NDGEHeartRate" />
+        <xs:enumeration value="NDGEOrientation" />
+        <xs:enumeration value="NDGEPulse" />
+        <xs:enumeration value="NDGEPupils" />
+        <xs:enumeration value="NDGERespirationRate" />
+        <xs:enumeration value="NDGEBretylium" />
+        <xs:enumeration value="NDGELMWHeparin" />
+        <xs:enumeration value="NDGEArtAccess" />
+        <xs:enumeration value="NDGEChestXRay" />
+        <xs:enumeration value="NDGELabDraw" />
+        <xs:enumeration value="NDGEAdvAir" />
+        <xs:enumeration value="NDGEVentillator" />
+        <xs:enumeration value="NDGEPrecordialThump" />
+        <xs:enumeration value="NDGEShockImpedance" />
+        <xs:enumeration value="QRSSense" />
+        <xs:enumeration value="InternalPacer" />
+        <xs:enumeration value="ExternalPacer" />
+        <xs:enumeration value="SaturationEntered" />
+        <xs:enumeration value="SaturationCleared" />
+        <xs:enumeration value="TestSync" />
+        <xs:enumeration value="LeadsOnRegion" />
+        <xs:enumeration value="LeadsOffRegion" />
+        <xs:enumeration value="NDGEUserAnnotation" />
+        <xs:enumeration value="NDGECustomInitialRhythm" />
+        <xs:enumeration value="NDGEStartCPRAnalysis" />
+        <xs:enumeration value="NDGEStopCPRAnalysis" />
+        <xs:enumeration value="NDGEROSC" />
+        <xs:enumeration value="NDGEEndROSC" />
+        <xs:enumeration value="PatientAdvisory_SpCO" />
+        <xs:enumeration value="PatientAdvisory_SpMet" />
+        <xs:enumeration value="CPRMetronome_On" />
+        <xs:enumeration value="CPRMetronome_Off " />
+        <xs:enumeration value="CPRMetronome_Change" />
+        <xs:enumeration value="CancelInitCPRTime" />
+        <xs:enumeration value="ReplaceBatteryX" />
+        <xs:enumeration value="QRSSense_Internal" />
+        <xs:enumeration value="CustomInitialRhythm" />
+        <xs:enumeration value="EndROSC" />
+        <xs:enumeration value="ROSC" />
+        <xs:enumeration value="Start" />
+        <xs:enumeration value="Stop" />
+        <xs:enumeration value="ValidDataStateStart" />
+        <xs:enumeration value="ValidDataStateStop" />
+        <xs:enumeration value="PromptedCPRTimeStart" />
+        <xs:enumeration value="PromptedCPRTimeStop" />
+        <xs:enumeration value="AlarmTemperature1High" />
+        <xs:enumeration value="AlarmTemperature1Low" />
+        <xs:enumeration value="AlarmTemperature2High" />
+        <xs:enumeration value="AlarmTemperature2Low" />
+        <xs:enumeration value="TemperatureLabelChange" />
+        <xs:enumeration value="SPO2SensorCheck" />
+        <xs:enumeration value="ChestCompression" />
+        <xs:enumeration value="Ventilation" />
+        <xs:enumeration value="AccessoryLowBattery" />
+        <xs:enumeration value="TrueCPRInitializationComplete" />
+        <xs:enumeration value="TrueCPRBatteryLow" />
+        <xs:enumeration value="TrueCPRBackpadOutOfPositionDetected" />
+        <xs:enumeration value="TrueCPRBackpadOutOfPositionResolved" />
+        <xs:enumeration value="TrueCPRElectricalInterferenceDetected" />
+        <xs:enumeration value="TrueCPRElectricalInterferenceResolved" />
+        <xs:enumeration value="TrueCPRSystemStateChange" />
+        <xs:enumeration value="TrueCPRDataLogFull" />
+        <xs:enumeration value="TrueCPRServiceCode" />
+        <xs:enumeration value="TrueCPRVentilationPhaseInitiated" />
+        <xs:enumeration value="TrueCPRInactivityTimerStart" />
+        <xs:enumeration value="TrueCPRInactivityTimerEnd" />
+        <xs:enumeration value="TrueCPRBatteryMeasurementLoaded" />
+        <xs:enumeration value="TrueCPRAudioOn" />
+        <xs:enumeration value="TrueCPRAudioOff" />
+        <xs:enumeration value="TrueCPRIntubatedModeInitiated" />
+        <xs:enumeration value="TrueCPRNonIntubatedModeInitiated" />
+        <xs:enumeration value="TrueCPRUSBConnected" />
+        <xs:enumeration value="TrueCPRCRCModuleCheckFailed" />
+        <xs:enumeration value="TrueCPRHibernationTempStateMachineFailed" />
+        <xs:enumeration value="TrueCPRFLASHManagerQueueOverrun" />
+        <xs:enumeration value="TrueCPREventLogSizeMismatchOnReadout" />
+        <xs:enumeration value="TrueCPRRTCEventGetOrSetTime" />
+        <xs:enumeration value="TrueCPRWatchdogSequenceCalledOutOfOrder" />
+        <xs:enumeration value="TrueCPRMainLoopOverrun" />
+        <xs:enumeration value="TrueCPRDSPUpgradeFailedByteCheck" />
+        <xs:enumeration value="TrueCPRDSPUpgradeTimeoutWritingBootloader" />
+        <xs:enumeration value="TrueCPRDSPUpgradeTimeoutErasingFlash" />
+        <xs:enumeration value="TrueCPRDSPUpgradeTimeoutErasingFlashResponse" />
+        <xs:enumeration value="TrueCPRDSPUpgradeTimeoutReprogrammingFlash" />
+        <xs:enumeration value="TrueCPRDSPUpgradeTimeoutListeningForFlashReprogram" />
+        <xs:enumeration value="TrueCPRUSBModeChange" />
+        <xs:enumeration value="TrueCPRUSBBulkTxIdleTimeout" />
+        <xs:enumeration value="TrueCPRUSBBulkTxSpaceTimeout" />
+        <xs:enumeration value="TrueCPRUSBBufferReset" />
+        <xs:enumeration value="TrueCPRSystemShutdownDueToTimeout" />
+        <xs:enumeration value="TrueCPRShutdownByButtonPress" />
+        <xs:enumeration value="TrueCPRShutdownPower" />
+        <xs:enumeration value="TrueCPRAutoZeroNotAchieved" />
+        <xs:enumeration value="TrueCPRForceSensorTempRelatedAutozero" />
+        <xs:enumeration value="TrueCPRSystemLogReset" />
+        <xs:enumeration value="TrueCPRActivitySessionLogReset" />
+        <xs:enumeration value="TrueCPRCriticalBatteryLevelDetected" />
+        <xs:enumeration value="TrueCPRBatteryReplacementDetected" />
+        <xs:enumeration value="TrueCPRDSPRecoveryAttempt" />
+        <xs:enumeration value="TrueCPRAssertDetected" />
+        <xs:enumeration value="DeviceCompression" />
+        <xs:enumeration value="AdultMode" />
+        <xs:enumeration value="PediatricMode" />
+        <xs:enumeration value="ButtonUpNotPressed" />
+        <xs:enumeration value="ButtonDownPressed" />
+        <xs:enumeration value="ButtonDownHeld" />
+        <xs:enumeration value="ButtonDownStuck" />
+        <xs:enumeration value="ButtonOpen" />
+        <xs:enumeration value="ButtonClosed" />
+        <xs:enumeration value="CPRIsNotBeingPerformed" />
+        <xs:enumeration value="CPRIsBeingPerformed" />
+        <xs:enumeration value="ElectrodeConnectionStatusUnknown" />
+        <xs:enumeration value="ElectrodeConnected" />
+        <xs:enumeration value="ElectrodeDisconnected" />
+        <xs:enumeration value="RosettaAnalysisInitiated" />
+        <xs:enumeration value="RosettaAnalysisShockAdvised" />
+        <xs:enumeration value="RosettaAnalysisNoShockAdvised" />
+        <xs:enumeration value="RosettaAnalysisIndeterminate" />
+        <xs:enumeration value="RosettaAnalysisAborted" />
+        <xs:enumeration value="VoicePromptLanguage" />
+        <xs:enumeration value="ShutdownBattery" />
+        <xs:enumeration value="NotCPRIsNotBeingPerformed" />
+        <xs:enumeration value="NotCPRIsBeingPerformed" />
+        <xs:enumeration value="Lucas30_2Mode" />
+        <xs:enumeration value="LucasAdjustMode" />
+        <xs:enumeration value="LucasBatteryDepleted" />
+        <xs:enumeration value="LucasBatteryLowCharge" />
+        <xs:enumeration value="LucasBatteryTooHighTemperature" />
+        <xs:enumeration value="LucasCompressionsOutOfRange" />
+        <xs:enumeration value="LucasContinuousMode" />
+        <xs:enumeration value="LucasControlModeChanged" />
+        <xs:enumeration value="LucasControlErrors" />
+        <xs:enumeration value="LucasControlWarning" />
+        <xs:enumeration value="LucasControlWarnings" />
+        <xs:enumeration value="LucasInternalFault" />
+        <xs:enumeration value="LucasNotProprietaryBattery" />
+        <xs:enumeration value="LucasPauseMode" />
+        <xs:enumeration value="LucasReplaceBattery" />
+        <xs:enumeration value="LucasProtectiveErrors" />
+        <xs:enumeration value="LucasProtectiveModeChanged" />
+        <xs:enumeration value="LucasStartPositionAdjustmentRequired" />
+        <xs:enumeration value="LucasSuctionCupDisruption" />
+        <xs:enumeration value="LucasTooSmallPatient" />
+        <xs:enumeration value="LucasUserActions" />
+        <xs:enumeration value="ExternalPowerDisconnected" />
+        <xs:enumeration value="ExternalPowerConnected" />
+        <xs:enumeration value="FirstCompression" />
+        <xs:enumeration value="LastCompression" />
+        <xs:enumeration value="SelfTestFault" />
+        <xs:enumeration value="TooHighTemperature" />
+        <xs:enumeration value="HighTemperature" />
+        <xs:enumeration value="BatteryReplacedWithSerialNumbers" />
+        <xs:enumeration value="LucasAudibleTimerAlert" />
+        <xs:enumeration value="LucasCompressionRateChanged" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="eventValueEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="SharedSampleNumber" />
+        <xs:enumeration value="SharedRegionNumber" />
+        <xs:enumeration value="SharedSequenceNumber" />
+        <xs:enumeration value="SharedPaceRate" />
+        <xs:enumeration value="SharedPaceCurrent" />
+        <xs:enumeration value="SharedPaceMode" />
+        <xs:enumeration value="SharedSyncMode" />
+        <xs:enumeration value="SharedQRSSensingLead" />
+        <xs:enumeration value="SharedInternalPacerDetectionLead" />
+        <xs:enumeration value="SharedPaceSpikesInWaveform" />
+        <xs:enumeration value="SharedRemoteSyncMode" />
+        <xs:enumeration value="DefibEnergy" />
+        <xs:enumeration value="DefibPaddleType" />
+        <xs:enumeration value="DefibSyncModeStatus" />
+        <xs:enumeration value="DefibPostShockSampleNumber" />
+        <xs:enumeration value="DefibPostShockTime" />
+        <xs:enumeration value="DefibWaveformType" />
+        <xs:enumeration value="DefibSASEventLink" />
+        <xs:enumeration value="DefibDeliverStatus" />
+        <xs:enumeration value="DefibVoltageCompImpedance" />
+        <xs:enumeration value="DefibDynamicImpedance" />
+        <xs:enumeration value="DefibGeneralImpedanceLead" />
+        <xs:enumeration value="DefibGeneralImpedanceType" />
+        <xs:enumeration value="DefibGeneralImpedanceFrequency" />
+        <xs:enumeration value="DefibGeneralImpedanceValue" />
+        <xs:enumeration value="SASSegmentNumber" />
+        <xs:enumeration value="SASDefibEventLink" />
+        <xs:enumeration value="SASResult" />
+        <xs:enumeration value="SASHisto1" />
+        <xs:enumeration value="SASHisto2" />
+        <xs:enumeration value="SASAveFreq" />
+        <xs:enumeration value="SASAveAmp" />
+        <xs:enumeration value="SASRate" />
+        <xs:enumeration value="SASPrNum" />
+        <xs:enumeration value="SASPrNumLim" />
+        <xs:enumeration value="SASNrNum" />
+        <xs:enumeration value="SASNrNumLim" />
+        <xs:enumeration value="CPSSOutcome" />
+        <xs:enumeration value="PatientAlarmLimitHigh" />
+        <xs:enumeration value="PatientAlarmLimitLow" />
+        <xs:enumeration value="PatientAlarmLead" />
+        <xs:enumeration value="12LeadOverrideActive" />
+        <xs:enumeration value="12LeadHeartRate" />
+        <xs:enumeration value="12LeadPR" />
+        <xs:enumeration value="12LeadQRS" />
+        <xs:enumeration value="12LeadQT" />
+        <xs:enumeration value="12LeadQTc" />
+        <xs:enumeration value="12LeadPAxis" />
+        <xs:enumeration value="12LeadQRSAxis" />
+        <xs:enumeration value="12LeadTAxis" />
+        <xs:enumeration value="12LeadPOnset" />
+        <xs:enumeration value="12LeadPOffset" />
+        <xs:enumeration value="12LeadQRSOnset" />
+        <xs:enumeration value="12LeadQRSOffset" />
+        <xs:enumeration value="12LeadTOffset" />
+        <xs:enumeration value="12LeadLossyCompressed" />
+        <xs:enumeration value="AnnotationText" />
+        <xs:enumeration value="VitalsHeartRate" />
+        <xs:enumeration value="VitalsSPO2Saturation" />
+        <xs:enumeration value="VitalsSPO2PulseRate" />
+        <xs:enumeration value="VitalsCO2" />
+        <xs:enumeration value="VitalsRespRate" />
+        <xs:enumeration value="VitalsNIBPSystolic" />
+        <xs:enumeration value="VitalsNIBPDiastolic" />
+        <xs:enumeration value="VitalsNIBPMean" />
+        <xs:enumeration value="VitalsNIBPPulseRate" />
+        <xs:enumeration value="VitalsIP1Lead" />
+        <xs:enumeration value="VitalsIP1SubsystemStatus" />
+        <xs:enumeration value="VitalsIP1Systolic" />
+        <xs:enumeration value="VitalsIP1SystolicStatus" />
+        <xs:enumeration value="VitalsIP1Diastolic" />
+        <xs:enumeration value="VitalsIP1DiastolicStatus" />
+        <xs:enumeration value="VitalsIP1Mean" />
+        <xs:enumeration value="VitalsIP1MeanStatus" />
+        <xs:enumeration value="VitalsIP1PulseRate" />
+        <xs:enumeration value="VitalsIP1PulseRateStatus" />
+        <xs:enumeration value="VitalsIP2Lead" />
+        <xs:enumeration value="VitalsIP2SubsystemStatus" />
+        <xs:enumeration value="VitalsIP2Systolic" />
+        <xs:enumeration value="VitalsIP2SystolicStatus" />
+        <xs:enumeration value="VitalsIP2Diastolic" />
+        <xs:enumeration value="VitalsIP2DiastolicStatus" />
+        <xs:enumeration value="VitalsIP2Mean" />
+        <xs:enumeration value="VitalsIP2MeanStatus" />
+        <xs:enumeration value="VitalsIP2PulseRate" />
+        <xs:enumeration value="VitalsIP2PulseRateStatus" />
+        <xs:enumeration value="VitalsPaddlesType" />
+        <xs:enumeration value="VitalsPaddlesImpedance" />
+        <xs:enumeration value="VitalsPaddlesZeroOhmCal" />
+        <xs:enumeration value="VitalsPaddles300OhmCal" />
+        <xs:enumeration value="VitalsPulseRate" />
+        <xs:enumeration value="VitalsPulseRateMode" />
+        <xs:enumeration value="VitalsFICO2" />
+        <xs:enumeration value="VitalsAmbientPressure" />
+        <xs:enumeration value="VitalsSTMostProminentLead" />
+        <xs:enumeration value="VitalsSTLeadID1" />
+        <xs:enumeration value="VitalsSTLeadName1" />
+        <xs:enumeration value="VitalsSTAVM1" />
+        <xs:enumeration value="VitalsSTMean1" />
+        <xs:enumeration value="VitalsSTEnd1" />
+        <xs:enumeration value="VitalsSTJPoint1" />
+        <xs:enumeration value="VitalsSTJPointAbsolute1" />
+        <xs:enumeration value="VitalsSTM1" />
+        <xs:enumeration value="VitalsSTMAbsolute1" />
+        <xs:enumeration value="VitalsSTBaseline1" />
+        <xs:enumeration value="VitalsSTLeadID2" />
+        <xs:enumeration value="VitalsSTLeadName2" />
+        <xs:enumeration value="VitalsSTAVM2" />
+        <xs:enumeration value="VitalsSTMean2" />
+        <xs:enumeration value="VitalsSTEnd2" />
+        <xs:enumeration value="VitalsSTJPoint2" />
+        <xs:enumeration value="VitalsSTJPointAbsolute2" />
+        <xs:enumeration value="VitalsSTM2" />
+        <xs:enumeration value="VitalsSTMAbsolute2" />
+        <xs:enumeration value="VitalsSTBaseline2" />
+        <xs:enumeration value="VitalsSTLeadID3" />
+        <xs:enumeration value="VitalsSTLeadName3" />
+        <xs:enumeration value="VitalsSTAVM3" />
+        <xs:enumeration value="VitalsSTMean3" />
+        <xs:enumeration value="VitalsSTEnd3" />
+        <xs:enumeration value="VitalsSTJPoint3" />
+        <xs:enumeration value="VitalsSTJPointAbsolute3" />
+        <xs:enumeration value="VitalsSTM3" />
+        <xs:enumeration value="VitalsSTMAbsolute3" />
+        <xs:enumeration value="VitalsSTBaseline3" />
+        <xs:enumeration value="VitalsSTLeadID4" />
+        <xs:enumeration value="VitalsSTLeadName4" />
+        <xs:enumeration value="VitalsSTAVM4" />
+        <xs:enumeration value="VitalsSTMean4" />
+        <xs:enumeration value="VitalsSTEnd4" />
+        <xs:enumeration value="VitalsSTJPoint4" />
+        <xs:enumeration value="VitalsSTJPointAbsolute4" />
+        <xs:enumeration value="VitalsSTM4" />
+        <xs:enumeration value="VitalsSTMAbsolute4" />
+        <xs:enumeration value="VitalsSTBaseline4" />
+        <xs:enumeration value="VitalsSTLeadID5" />
+        <xs:enumeration value="VitalsSTLeadName5" />
+        <xs:enumeration value="VitalsSTAVM5" />
+        <xs:enumeration value="VitalsSTMean5" />
+        <xs:enumeration value="VitalsSTEnd5" />
+        <xs:enumeration value="VitalsSTJPoint5" />
+        <xs:enumeration value="VitalsSTJPointAbsolute5" />
+        <xs:enumeration value="VitalsSTM5" />
+        <xs:enumeration value="VitalsSTMAbsolute5" />
+        <xs:enumeration value="VitalsSTBaseline5" />
+        <xs:enumeration value="VitalsSTLeadID6" />
+        <xs:enumeration value="VitalsSTLeadName6" />
+        <xs:enumeration value="VitalsSTAVM6" />
+        <xs:enumeration value="VitalsSTMean6" />
+        <xs:enumeration value="VitalsSTEnd6" />
+        <xs:enumeration value="VitalsSTJPoint6" />
+        <xs:enumeration value="VitalsSTJPointAbsolute6" />
+        <xs:enumeration value="VitalsSTM6" />
+        <xs:enumeration value="VitalsSTMAbsolute6" />
+        <xs:enumeration value="VitalsSTBaseline6" />
+        <xs:enumeration value="VitalsSTLeadID7" />
+        <xs:enumeration value="VitalsSTLeadName7" />
+        <xs:enumeration value="VitalsSTAVM7" />
+        <xs:enumeration value="VitalsSTMean7" />
+        <xs:enumeration value="VitalsSTEnd7" />
+        <xs:enumeration value="VitalsSTJPoint7" />
+        <xs:enumeration value="VitalsSTJPointAbsolute7" />
+        <xs:enumeration value="VitalsSTM7" />
+        <xs:enumeration value="VitalsSTMAbsolute7" />
+        <xs:enumeration value="VitalsSTBaseline7" />
+        <xs:enumeration value="VitalsSTLeadID8" />
+        <xs:enumeration value="VitalsSTLeadName8" />
+        <xs:enumeration value="VitalsSTAVM8" />
+        <xs:enumeration value="VitalsSTMean8" />
+        <xs:enumeration value="VitalsSTEnd8" />
+        <xs:enumeration value="VitalsSTJPoint8" />
+        <xs:enumeration value="VitalsSTJPointAbsolute8" />
+        <xs:enumeration value="VitalsSTM8" />
+        <xs:enumeration value="VitalsSTMAbsolute8" />
+        <xs:enumeration value="VitalsSTBaseline8" />
+        <xs:enumeration value="VitalsSTLeadID9" />
+        <xs:enumeration value="VitalsSTLeadName9" />
+        <xs:enumeration value="VitalsSTAVM9" />
+        <xs:enumeration value="VitalsSTMean9" />
+        <xs:enumeration value="VitalsSTEnd9" />
+        <xs:enumeration value="VitalsSTJPoint9" />
+        <xs:enumeration value="VitalsSTJPointAbsolute9" />
+        <xs:enumeration value="VitalsSTM9" />
+        <xs:enumeration value="VitalsSTMAbsolute9" />
+        <xs:enumeration value="VitalsSTBaseline9" />
+        <xs:enumeration value="VitalsSTLeadID10" />
+        <xs:enumeration value="VitalsSTLeadName10" />
+        <xs:enumeration value="VitalsSTAVM10" />
+        <xs:enumeration value="VitalsSTMean10" />
+        <xs:enumeration value="VitalsSTEnd10" />
+        <xs:enumeration value="VitalsSTJPoint10" />
+        <xs:enumeration value="VitalsSTJPointAbsolute10" />
+        <xs:enumeration value="VitalsSTM10" />
+        <xs:enumeration value="VitalsSTMAbsolute10" />
+        <xs:enumeration value="VitalsSTBaseline10" />
+        <xs:enumeration value="VitalsSTLeadID11" />
+        <xs:enumeration value="VitalsSTLeadName11" />
+        <xs:enumeration value="VitalsSTAVM11" />
+        <xs:enumeration value="VitalsSTMean11" />
+        <xs:enumeration value="VitalsSTEnd11" />
+        <xs:enumeration value="VitalsSTJPoint11" />
+        <xs:enumeration value="VitalsSTJPointAbsolute11" />
+        <xs:enumeration value="VitalsSTM11" />
+        <xs:enumeration value="VitalsSTMAbsolute11" />
+        <xs:enumeration value="VitalsSTBaseline11" />
+        <xs:enumeration value="VitalsSTLeadID12" />
+        <xs:enumeration value="VitalsSTLeadName12" />
+        <xs:enumeration value="VitalsSTAVM12" />
+        <xs:enumeration value="VitalsSTMean12" />
+        <xs:enumeration value="VitalsSTEnd12" />
+        <xs:enumeration value="VitalsSTJPoint12" />
+        <xs:enumeration value="VitalsSTJPointAbsolute12" />
+        <xs:enumeration value="VitalsSTM12" />
+        <xs:enumeration value="VitalsSTMAbsolute12" />
+        <xs:enumeration value="VitalsSTBaseline12" />
+        <xs:enumeration value="DataTransferText" />
+        <xs:enumeration value="FreeFormAssociate" />
+        <xs:enumeration value="ImpedanceValue" />
+        <xs:enumeration value="ImpedanceAbsEventID" />
+        <xs:enumeration value="ImpedanceLead" />
+        <xs:enumeration value="ImpedanceType" />
+        <xs:enumeration value="ImpedanceFrequency" />
+        <xs:enumeration value="ImpedanceValue1" />
+        <xs:enumeration value="ImpedanceSource1" />
+        <xs:enumeration value="ImpedanceValue2" />
+        <xs:enumeration value="ImpedanceSource2" />
+        <xs:enumeration value="ExternalPowerType" />
+        <xs:enumeration value="ExternalPowerStatus" />
+        <xs:enumeration value="ExternalPowerText" />
+        <xs:enumeration value="VehicleID" />
+        <xs:enumeration value="Destination" />
+        <xs:enumeration value="MedicationDosage" />
+        <xs:enumeration value="MedicationRoute" />
+        <xs:enumeration value="ProcedureAttemptCount" />
+        <xs:enumeration value="LeadChangeRegion" />
+        <xs:enumeration value="LeadChangeLead" />
+        <xs:enumeration value="GainValue" />
+        <xs:enumeration value="FreqResponseType" />
+        <xs:enumeration value="IPLabelChangeLead" />
+        <xs:enumeration value="IPLabelChangeChannel" />
+        <xs:enumeration value="ServiceFaultCodeCode" />
+        <xs:enumeration value="ServiceFaultCodeAux" />
+        <xs:enumeration value="Responder" />
+        <xs:enumeration value="VitalsSpCO" />
+        <xs:enumeration value="VitalsSpMet" />
+        <xs:enumeration value="CompressionsPerCPRInterval" />
+        <xs:enumeration value="VentillationsPerCPRInterval" />
+        <xs:enumeration value="VentPauseDuration" />
+        <xs:enumeration value="Age" />
+        <xs:enumeration value="Airway" />
+        <xs:enumeration value="PatientAdvisorySpCOThreshold" />
+        <xs:enumeration value="PatientAdvisorySpMetThreshold" />
+        <xs:enumeration value="ReplaceBatteryXBatteryNumber" />
+        <xs:enumeration value="TemperatureLabelChangeChannel" />
+        <xs:enumeration value="TemperatureLabelChangeLead" />
+        <xs:enumeration value="AutomaticallyCreatedAnnotation" />
+        <xs:enumeration value="CPRSpecificAnnotation1" />
+        <xs:enumeration value="CPRSpecificAnnotation2" />
+        <xs:enumeration value="CPRSpecificAnnotation3" />
+        <xs:enumeration value="VitalsTemperature1" />
+        <xs:enumeration value="VitalsTemperature1Lead" />
+        <xs:enumeration value="VitalsTemperature1SubSystemStatus" />
+        <xs:enumeration value="VitalsTemperature2" />
+        <xs:enumeration value="VitalsTemperature2Lead" />
+        <xs:enumeration value="VitalsTemperature2SubSystemStatus" />
+        <xs:enumeration value="AccessoryLowBatteryDetected" />
+        <xs:enumeration value="AccessoryIdentification" />
+        <xs:enumeration value="TrueCPRHighLevelState" />
+        <xs:enumeration value="TrueCPRServiceCode" />
+        <xs:enumeration value="TrueCPRVoltageTemperature" />
+        <xs:enumeration value="TrueCPRModuleType" />
+        <xs:enumeration value="TrueCPRPriority" />
+        <xs:enumeration value="TrueCPRLogIndex" />
+        <xs:enumeration value="TrueCPRRTCAccessState" />
+        <xs:enumeration value="TrueCPRMainLoopOverrunTimeNumber" />
+        <xs:enumeration value="TrueCPRFailedDataByte" />
+        <xs:enumeration value="TrueCPRUSBMode" />
+        <xs:enumeration value="TrueCPRFileIdAndLineNumber" />
+        <xs:enumeration value="TrueCPRPOSTSuccessFlags" />
+        <xs:enumeration value="TrueCPRBatteryVoltage" />
+        <xs:enumeration value="TrueCPROOPReasonFlags" />
+        <xs:enumeration value="TrueCPRDSPRecoveryAttemptReason" />
+        <xs:enumeration value="TrueCPRUnknownEventValue" />
+        <xs:enumeration value="ChestHeightHMethod" />
+        <xs:enumeration value="ChestHeightXDimension" />
+        <xs:enumeration value="ChestHeight" />
+        <xs:enumeration value="DeletedByUser" />
+        <xs:enumeration value="Depth" />
+        <xs:enumeration value="Force" />
+        <xs:enumeration value="GoodRecoil" />
+        <xs:enumeration value="Rate" />
+        <xs:enumeration value="DisableEventBehavior" />
+        <xs:enumeration value="ButtonID" />
+        <xs:enumeration value="LanguageRegion" />
+        <xs:enumeration value="ElectrodeID" />
+        <xs:enumeration value="LucasMode" />
+        <xs:enumeration value="LucasErrorWarningCode" />
+        <xs:enumeration value="SerialNumber" />
+        <xs:enumeration value="OldSerialNumber" />
+        <xs:enumeration value="NewSerialNumber" />
+        <xs:enumeration value="CompressionRate" />
+        <xs:enumeration value="DeviceModel" />
+        <xs:enumeration value="CPRDetectionCapabilities" />
+        <xs:enumeration value="RosettaShockIndex" />
+        <xs:enumeration value="RosettaResearchData" />
+        <xs:enumeration value="TimerDurationDays" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="eventValueDataTypeEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="String" />
+        <xs:enumeration value="Integer" />
+        <xs:enumeration value="Decimal" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="audioStatusEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="None" />
+        <xs:enumeration value="OK" />
+        <xs:enumeration value="ChecksumFailed" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="measurementEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="PA" />
+        <xs:enumeration value="PPA" />
+        <xs:enumeration value="QA" />
+        <xs:enumeration value="QD" />
+        <xs:enumeration value="RA" />
+        <xs:enumeration value="RD" />
+        <xs:enumeration value="SA" />
+        <xs:enumeration value="SD" />
+        <xs:enumeration value="RPA" />
+        <xs:enumeration value="RPD" />
+        <xs:enumeration value="SPA" />
+        <xs:enumeration value="SPD" />
+        <xs:enumeration value="STJ" />
+        <xs:enumeration value="STM" />
+        <xs:enumeration value="STE" />
+        <xs:enumeration value="TA" />
+        <xs:enumeration value="TPA" />
+        <xs:enumeration value="MTA" />
+        <xs:enumeration value="EQD" />
+        <xs:enumeration value="FLAG" />
+        <xs:enumeration value="PPLUS" />
+        <xs:enumeration value="PMINUS" />
+        <xs:enumeration value="TPLUS" />
+        <xs:enumeration value="TMINUS" />
+        <xs:enumeration value="STSLOPE" />
+        <xs:enumeration value="ST80" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="measurementDataTypeEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="String" />
+        <xs:enumeration value="Integer" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="reportTypeEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="Defib" />
+        <xs:enumeration value="Pacer" />
+        <xs:enumeration value="SAS" />
+        <xs:enumeration value="CPSS" />
+        <xs:enumeration value="Alarm" />
+        <xs:enumeration value="12Lead" />
+        <xs:enumeration value="PrinterEvent" />
+        <xs:enumeration value="OperatorEvent" />
+        <xs:enumeration value="FirstWaveform" />
+        <xs:enumeration value="AbstractLog" />
+        <xs:enumeration value="Continuous" />
+        <xs:enumeration value="Summary" />
+        <xs:enumeration value="TestLog" />
+        <xs:enumeration value="SpecialContin" />
+        <xs:enumeration value="AnalysisStopped" />
+        <xs:enumeration value="TrendData" />
+        <xs:enumeration value="AudioOnly" />
+        <xs:enumeration value="TrueCPR" />
+        <xs:enumeration value="TrueCPRSystem" />
+        <xs:enumeration value="Lucas" />
+        <xs:enumeration value="VideoScope" />
+        <xs:enumeration value="NoninRSO2" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="randomizerStateEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="TPIExecuted" />
+        <xs:enumeration value="Just12sl" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="painAssessmentEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Primary" />
+        <xs:enumeration value="Secondary" />
+        <xs:enumeration value="NoChest" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="diabeticStateEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="Yes" />
+        <xs:enumeration value="No" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="hypertensionStateEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="Yes" />
+        <xs:enumeration value="No" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tpiStateEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="NotAsked" />
+        <xs:enumeration value="Asked" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tpiExecutedStateEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="NotExecuted" />
+        <xs:enumeration value="Executed" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="destinationTypeEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="None" />
+        <xs:enumeration value="TelephoneNumber" />
+        <xs:enumeration value="InternetAddress" />
+        <xs:enumeration value="EmailAddress" />
+        <xs:enumeration value="V25DialingString" />
+        <xs:enumeration value="Hub" />
+        <xs:enumeration value="Unknown" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="forwardingStatusEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="Pending" />
+        <xs:enumeration value="Forwarded" />
+        <xs:enumeration value="NoForwardingAllowed" />
+        <xs:enumeration value="NoForwardingRequested" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="forwardingFormatEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="SCP" />
+        <xs:enumeration value="FAX" />
+        <xs:enumeration value="PDF" />
+        <xs:enumeration value="SMTP" />
+        <xs:enumeration value="TextFieldsOnly" />
+        <xs:enumeration value="NotSpecified" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="forwardingPriorityEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="Diagnostic" />
+        <xs:enumeration value="Informative" />
+        <xs:enumeration value="NotSpecified" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="cprProcessingStatusEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="NoErrors" />
+        <xs:enumeration value="CDACFailed" />
+        <xs:enumeration value="SACFailed" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="patientSexEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unknown" />
+        <xs:enumeration value="Male" />
+        <xs:enumeration value="Female" />
+        <xs:enumeration value="Unspecified" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="patientAgeUnitsEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unspecified" />
+        <xs:enumeration value="Years" />
+        <xs:enumeration value="Months" />
+        <xs:enumeration value="Weeks" />
+        <xs:enumeration value="Days" />
+        <xs:enumeration value="Hours" />
+        <xs:enumeration value="Minutes" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="patientRaceEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Unspecified" />
+        <xs:enumeration value="Caucasian" />
+        <xs:enumeration value="AfricanAmerican" />
+        <xs:enumeration value="Asian" />
+        <xs:enumeration value="AmericanIndian" />
+        <xs:enumeration value="Hispanic" />
+        <xs:enumeration value="Other" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="etiologyEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Cardiac" />
+        <xs:enumeration value="NonCardiac" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="arrestWitnessEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="None" />
+        <xs:enumeration value="Staff" />
+        <xs:enumeration value="Bystander" />
+        <xs:enumeration value="Other" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="initialRhythmEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Asystole" />
+        <xs:enumeration value="VF" />
+        <xs:enumeration value="VT" />
+        <xs:enumeration value="Other" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="confirmedMIEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Yes" />
+        <xs:enumeration value="OtherCardiac" />
+        <xs:enumeration value="NonCardiac" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="preferredTimeAdjustmentEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="None" />
+        <xs:enumeration value="Device" />
+        <xs:enumeration value="User" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="threeWayBooleanEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Yes" />
+        <xs:enumeration value="No" />
+        <xs:enumeration value="Unknown" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="outcomeDispositionEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="Admitted" />
+        <xs:enumeration value="NotTransported" />
+        <xs:enumeration value="TransportedToICU" />
+        <xs:enumeration value="EffortsCeased" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="outcomeEffortsCeasedEnum">
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="No" />
+        <xs:enumeration value="NotTransported" />
+        <xs:enumeration value="ExpiredInField" />
+        <xs:enumeration value="ExpiredInED" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="patientAge">
+      <xs:simpleContent>
+        <xs:extension base="xs:short">
+          <xs:attribute name="Units" type="patientAgeUnitsEnum" use="required" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="patientName">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="First" type="xs:string" />
+        <xs:element minOccurs="0" name="Middle" type="xs:string" />
+        <xs:element minOccurs="0" name="Last" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="patientRace">
+      <xs:simpleContent>
+        <xs:extension base="patientRaceEnum">
+          <xs:attribute name="Text" type="xs:string" use="optional" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="address">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Line1" type="xs:string" />
+        <xs:element minOccurs="0" name="Line2" type="xs:string" />
+        <xs:element minOccurs="0" name="City" type="xs:string" />
+        <xs:element minOccurs="0" name="County" type="xs:string" />
+        <xs:element minOccurs="0" name="State" type="xs:string" />
+        <xs:element minOccurs="0" name="Country" type="xs:string" />
+        <xs:element minOccurs="0" name="PostalCode" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="deviceEpisodeIDs">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="customFields">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="CustomField">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Label" type="xs:string" />
+              <xs:element name="Value" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="ID" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="DischargePerformanceCategory">
+      <xs:restriction base="xs:unsignedByte">
+        <xs:minInclusive value="1" />
+        <xs:maxInclusive value="5" />
+      </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="CaseCommentType">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="Comment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Text" type="xs:string" />
+              <xs:element name="UserID" type="xs:string" />
+              <xs:element name="Modified" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TrueCPRSystemLogRecord">
+      <xs:sequence>
+        <xs:element name="DeviceTime" type="xs:dateTime" />
+        <xs:element name="Description" type="xs:string" />
+        <xs:element name="EventId" type="xs:int" />
+        <xs:element minOccurs="0" maxOccurs="1" name="RawValues">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="RawValue">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="DataType" type="eventValueDataTypeEnum" use="optional" />
+                      <xs:attribute name="Type" type="eventValueEnum" use="required" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Type" type="eventTypeEnum" use="required" />
+    </xs:complexType>
+    <xs:complexType name="CaseProviderType">
+      <xs:sequence>
+        <xs:element name="ProviderID" type="xs:string" />
+        <xs:element minOccurs="0" name="Type" type="xs:string" />
+        <xs:element minOccurs="0" name="FirstName" type="xs:string" />
+        <xs:element minOccurs="0" name="LastName" type="xs:string" />
+        <xs:element minOccurs="0" name="MiddleName" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Device">
+      <xs:attribute name="Key" type="xs:integer" />
+      <xs:attribute name="DeviceID" type="xs:string" />
+      <xs:attribute name="DeviceType" type="xs:string" />
+    </xs:complexType>
+  </xs:schema>
+  <Report Type="CprReport" Version="1.3" Generated="2023-05-20T23:18:08.71170" IncidentID="23-03959" PatientID="2023020912532300-LP1547545108" SoftwareVersion="11.0.0.1036" xmlns="http://www.physiocontrol.com/">
+    <DeviceID>MICU 103A</DeviceID>
+    <DeviceType>LP15</DeviceType>
+    <CPRAnnotationEdited>true</CPRAnnotationEdited>
+    <PowerOn>2023-02-09T12:53:23.00000</PowerOn>
+    <DeviceConfiguration>2L355RO40200OR</DeviceConfiguration>
+    <TimeAdjustment>PT0S</TimeAdjustment>
+    <CPRStatistics SACVersion="10" CPRPauseThreshold="10" CompressionPauseThreshold="3" MinimumTimeInterval="30" MinimumCompressions="5">
+      <OverallStatistic>
+        <AverageCompressionRatePerMin>110.233895394653</AverageCompressionRatePerMin>
+        <AverageVentilationRatePerMin>7.44317571511967</AverageVentilationRatePerMin>
+        <MedianCompressionRatePerMin>147.813338496366</MedianCompressionRatePerMin>
+        <MedianVentilationRatePerMin>2.13305278097635</MedianVentilationRatePerMin>
+        <TotalTimeCompressionsDuringPromptedCprSec>0</TotalTimeCompressionsDuringPromptedCprSec>
+        <TotalTimeCompressionsDuringValidSec>2329.45050624201</TotalTimeCompressionsDuringValidSec>
+        <TotalTimeCprDuringPromptedCprSec>0</TotalTimeCprDuringPromptedCprSec>
+        <TotalTimeCprDuringValidSec>2442.96995314394</TotalTimeCprDuringValidSec>
+        <TotalTimePromptedCprSec>0</TotalTimePromptedCprSec>
+        <TotalTimeValidSec>2972.95127625414</TotalTimeValidSec>
+        <TotalTimeValidSecEx>2972.95127625414</TotalTimeValidSecEx>
+      </OverallStatistic>
+      <IntervalStatistics>
+        <CPRStatisticsItem Interval="1" ResponsibleForCPR="" CPRDurationSec="0" PauseDurationSec="0.016" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="-1" AverageVentilationRatePerMin="-1" MedianCompressionRatePerMin="-1" MedianVentilationRatePerMin="-1" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="0.016383236672237" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="0" TotalTimePromptedCprSec="0" TotalTimeValidSec="0.016383236672237" TotalTimeValidSecEx="0.016383236672237" />
+        <CPRStatisticsItem Interval="2" ResponsibleForCPR="" CPRStartTime="2023-02-09T12:54:29.95800" CPREndTime="2023-02-09T12:55:39.63600" CPRDurationSec="69.678" PauseDurationSec="17.678" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="107.835326331583" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="148.75070437018" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="65.5165634522756" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="69.6779055670238" TotalTimePromptedCprSec="0" TotalTimeValidSec="87.3718011730398" TotalTimeValidSecEx="87.3718011730398" />
+        <CPRStatisticsItem Interval="3" ResponsibleForCPR="" CPRStartTime="2023-02-09T12:55:57.33000" CPREndTime="2023-02-09T12:58:01.12200" CPRDurationSec="123.792" PauseDurationSec="10.141" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="133.947611009174" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="147.513963480129" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="123.791736295423" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="123.791736295423" TotalTimePromptedCprSec="0" TotalTimeValidSec="133.949343032209" TotalTimeValidSecEx="133.949343032209" />
+        <CPRStatisticsItem Interval="4" ResponsibleForCPR="" CPRStartTime="2023-02-09T12:58:11.27900" CPREndTime="2023-02-09T13:02:01.30000" CPRDurationSec="230.021" PauseDurationSec="12.042" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="132.362607106599" AverageVentilationRatePerMin="7.93184162436548" MedianCompressionRatePerMin="143.702934114202" MedianVentilationRatePerMin="8.08623076923077" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="225.990366656837" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="230.020642878207" TotalTimePromptedCprSec="0" TotalTimeValidSec="242.078705068973" TotalTimeValidSecEx="242.078705068973" />
+        <CPRStatisticsItem Interval="5" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:02:13.35800" CPREndTime="2023-02-09T13:04:03.22400" CPRDurationSec="109.866" PauseDurationSec="28.196" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="112.558504805981" AverageVentilationRatePerMin="8.69177643289427" MedianCompressionRatePerMin="143.014839291078" MedianVentilationRatePerMin="8.19179838950194" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="109.865985124021" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="109.865985124021" TotalTimePromptedCprSec="0" TotalTimeValidSec="138.077918673613" TotalTimeValidSecEx="138.077918673613" />
+        <CPRStatisticsItem Interval="6" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:04:31.43600" CPREndTime="2023-02-09T13:07:33.27400" CPRDurationSec="181.838" PauseDurationSec="9.74799999999999" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="128.606381363244" AverageVentilationRatePerMin="6.00373770491803" MedianCompressionRatePerMin="145.464392523364" MedianVentilationRatePerMin="6.26933237228579" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="171.548871194993" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="180.133687211245" TotalTimePromptedCprSec="0" TotalTimeValidSec="189.898096267899" TotalTimeValidSecEx="189.898096267899" />
+        <CPRStatisticsItem Interval="7" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:07:43.03800" CPREndTime="2023-02-09T13:11:31.99400" CPRDurationSec="228.956" PauseDurationSec="36.731" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="120.837228413123" AverageVentilationRatePerMin="5.24387972358837" MedianCompressionRatePerMin="149.308338461538" MedianVentilationRatePerMin="5.76530661896243" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="216.291490546872" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="226.432714046987" TotalTimePromptedCprSec="0" TotalTimeValidSec="263.180313902815" TotalTimeValidSecEx="263.180313902815" />
+        <CPRStatisticsItem Interval="8" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:12:08.74100" CPREndTime="2023-02-09T13:14:08.74900" CPRDurationSec="120.008" PauseDurationSec="14.253" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="131.386250152532" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="148.579342105263" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="119.990825387464" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="120.007208624136" TotalTimePromptedCprSec="0" TotalTimeValidSec="134.277007765654" TotalTimeValidSecEx="134.277007765654" />
+        <CPRStatisticsItem Interval="9" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:14:23.01800" CPREndTime="2023-02-09T13:14:29.29300" CPRDurationSec="6.275" PauseDurationSec="12.582" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="-1" AverageVentilationRatePerMin="-1" MedianCompressionRatePerMin="145.040792079208" MedianVentilationRatePerMin="-1" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="6.25839640879452" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="6.27477964546676" TotalTimePromptedCprSec="0" TotalTimeValidSec="16.6781349323372" TotalTimeValidSecEx="16.6781349323372" />
+        <CPRStatisticsItem Interval="10" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:14:41.89200" CPREndTime="2023-02-09T13:20:15.12700" CPRDurationSec="333.235" PauseDurationSec="23.461" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="134.400225978321" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="156.333553011661" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="314.85304236705" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="333.2350339133" TotalTimePromptedCprSec="0" TotalTimeValidSec="356.712212064616" TotalTimeValidSecEx="356.712212064616" />
+        <CPRStatisticsItem Interval="11" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:20:38.60400" CPREndTime="2023-02-09T13:22:04.61600" CPRDurationSec="86.012" PauseDurationSec="22.986" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="85.8733924545318" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="132.065575589459" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="75.3792719289623" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="86.0119925292441" TotalTimePromptedCprSec="0" TotalTimeValidSec="109.014056817065" TotalTimeValidSecEx="109.014056817065" />
+        <CPRStatisticsItem Interval="12" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:22:27.61800" CPREndTime="2023-02-09T13:25:47.36300" CPRDurationSec="199.745" PauseDurationSec="9.50199999999998" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="137.349837143752" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="152.886971647243" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="196.320325043416" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="199.744421507913" TotalTimePromptedCprSec="0" TotalTimeValidSec="209.263082014483" TotalTimeValidSecEx="209.263082014483" />
+        <CPRStatisticsItem Interval="13" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:25:56.88100" CPREndTime="2023-02-09T13:26:58.69500" CPRDurationSec="61.814" PauseDurationSec="24.772" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="108.794315988647" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="154.853276955603" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="61.7975687276778" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="61.8139519643501" TotalTimePromptedCprSec="0" TotalTimeValidSec="86.6017890494446" TotalTimeValidSecEx="86.6017890494446" />
+        <CPRStatisticsItem Interval="14" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:27:23.48300" CPREndTime="2023-02-09T13:30:15.98200" CPRDurationSec="172.499" PauseDurationSec="11.796" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="143.248573206507" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="155.288541826554" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="172.482715685311" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="172.499098921983" TotalTimePromptedCprSec="0" TotalTimeValidSec="184.311412562666" TotalTimeValidSecEx="184.311412562666" />
+        <CPRStatisticsItem Interval="15" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:30:27.79400" CPREndTime="2023-02-09T13:32:10.58300" CPRDurationSec="102.789" PauseDurationSec="27.245" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="89.5152223762127" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="151.804352331606" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="85.1436809856155" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="102.788426881615" TotalTimePromptedCprSec="0" TotalTimeValidSec="130.050132704217" TotalTimeValidSecEx="130.050132704217" />
+        <CPRStatisticsItem Interval="16" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:32:37.84500" CPREndTime="2023-02-09T13:32:43.89000" CPRDurationSec="6.045" PauseDurationSec="96.219" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="8.21402114706825" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="151.021855670103" MedianVentilationRatePerMin="-1" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="6.04541433205544" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="6.04541433205544" TotalTimePromptedCprSec="0" TotalTimeValidSec="102.280546544775" TotalTimeValidSecEx="102.280546544775" />
+        <CPRStatisticsItem Interval="17" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:34:20.12500" CPREndTime="2023-02-09T13:34:34.90300" CPRDurationSec="14.778" PauseDurationSec="38.468" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="18.0296861538462" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="120.074754098361" MedianVentilationRatePerMin="-1" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="9.1746125364527" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="14.7776794783577" TotalTimePromptedCprSec="0" TotalTimeValidSec="53.2619024214424" TotalTimeValidSecEx="53.2619024214424" />
+        <CPRStatisticsItem Interval="18" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:35:13.38700" CPREndTime="2023-02-09T13:36:21.60700" CPRDurationSec="68.22" PauseDurationSec="27.917" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="81.7584662576687" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="124.979565667011" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="65.4674137422589" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="68.2197975031947" TotalTimePromptedCprSec="0" TotalTimeValidSec="96.1532160293588" TotalTimeValidSecEx="96.1532160293588" />
+        <CPRStatisticsItem Interval="19" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:36:49.54000" CPREndTime="2023-02-09T13:38:13.57000" CPRDurationSec="84.03" PauseDurationSec="55.015" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="70.7686956521739" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="125.862095557418" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="80.1631770372555" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="84.0296208919034" TotalTimePromptedCprSec="0" TotalTimeValidSec="139.060912873947" TotalTimeValidSecEx="139.060912873947" />
+        <CPRStatisticsItem Interval="20" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:39:08.60100" CPREndTime="2023-02-09T13:40:39.83900" CPRDurationSec="91.238" PauseDurationSec="41.548" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="49.7039851943245" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="106.008104860732" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="69.3010911235624" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="91.2382450276877" TotalTimePromptedCprSec="0" TotalTimeValidSec="132.802516465153" TotalTimeValidSecEx="132.802516465153" />
+        <CPRStatisticsItem Interval="21" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:41:21.40400" CPREndTime="2023-02-09T13:43:16.02100" CPRDurationSec="114.617" PauseDurationSec="11.534" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="102.258467532468" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="119.74757493188" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="112.307087388184" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="114.61712375897" TotalTimePromptedCprSec="0" TotalTimeValidSec="126.167305612897" TotalTimeValidSecEx="126.167305612897" />
+        <CPRStatisticsItem Interval="22" ResponsibleForCPR="" CPRStartTime="2023-02-09T13:43:27.57100" CPREndTime="2023-02-09T13:44:09.31500" CPRDurationSec="41.744" PauseDurationSec="0" ReasonForPause="" IntervalComments="" AverageCompressionRatePerMin="135.107660910518" AverageVentilationRatePerMin="0" MedianCompressionRatePerMin="138.744625098658" MedianVentilationRatePerMin="0" TotalTimeCompressionsDuringPromptedCprSec="0" TotalTimeCompressionsDuringValidSec="41.7444870408598" TotalTimeCprDuringPromptedCprSec="0" TotalTimeCprDuringValidSec="41.7444870408598" TotalTimePromptedCprSec="0" TotalTimeValidSec="41.7444870408598" TotalTimeValidSecEx="41.7444870408598" />
+      </IntervalStatistics>
+    </CPRStatistics>
+    <CPRShockPauseStatistics>
+      <CPRShockPauseStatisticsItem ShockNumber="1" DateTime="2023-02-09T13:04:46.38596" Energy="200" EnergyUnits="Joules" />
+      <CPRShockPauseStatisticsItem ShockNumber="2" DateTime="2023-02-09T13:07:52.50003" Energy="200" EnergyUnits="Joules" />
+      <CPRShockPauseStatisticsItem ShockNumber="3" DateTime="2023-02-09T13:14:31.83003" Energy="200" EnergyUnits="Joules" PreShockPause="PT3S" PostShockPause="PT10S" />
+    </CPRShockPauseStatistics>
+  </Report>
+</root>

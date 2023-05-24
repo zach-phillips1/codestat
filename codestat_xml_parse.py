@@ -28,7 +28,7 @@ def print_cases():
     # [10] = AnyROSC
     # [11] = CPREdited
 
-    for child in root:
+    for child in reversed(root):
         print(child[0].tag, child[0].text)
         print(child[1].tag, child[1].text)
         print(child[3].tag, child[3].text)
@@ -78,6 +78,25 @@ def get_average_compression_ratio(num_cases: int):
             sum_compression_ratio += float(child[3].text)
     average_compression_ratio = sum_compression_ratio / num_cases
     print(f"The average compression ratio is {average_compression_ratio:.2f}.")
+
+def get_lowest_compression_ratio(num_cases: int):
+    '''
+    This function gets the case with the lowest compression ratio
+    Args:
+        num_cases (int): The total number of cases
+
+    Returns:
+        No return, prints results
+    '''
+    lowest_compression_ratio = 100.0
+    case_number = ""
+    for child in root:
+        if child[3].text != None and child[0].text != "23-03998":
+            if float(child[3].text) < lowest_compression_ratio:
+                lowest_compression_ratio = float(child[3].text)
+                case_number = child[0].text
+    
+    print(f"The case with the lowest compression ratio was {case_number} with a ratio of {lowest_compression_ratio}")
 
 
 def get_average_compression_rate(num_cases: int):
@@ -211,6 +230,7 @@ def main():
     max_longest_pause()
     average_longest_pause(num_cases)
     get_average_compression_ratio(num_cases)
+    get_lowest_compression_ratio(num_cases)
     get_average_compression_rate(num_cases)
     max_compression_rate()
     num_jan_cases()
