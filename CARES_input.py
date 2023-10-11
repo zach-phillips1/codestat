@@ -6,15 +6,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import WebDriverException
 import time
 
 USER_NAME = "zphillips"
-PASSWORD = "Winter2023!"
+PASSWORD = "Summer2023!"
 
 
-file_path = "XML_files/emscharts/emsCharts_4-12_6-6.xml"
+file_path = "XML_files/emscharts/emsCharts_6-7_10-11.xml"
 
 # Parse the XML file
 tree = ET.parse(file_path)
@@ -421,7 +421,7 @@ def main():
         )
 
         if aed_use == "Yes, Applied with Defibrillation":
-            button_AED_use_with_defib.click * ()
+            button_AED_use_with_defib.click()
         elif aed_use == "Yes, Applied without Defibrillation":
             button_AED_use_no_defib.click()
         else:
