@@ -9,12 +9,18 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import WebDriverException
 import time
+import logging
 
 USER_NAME = "zphillips"
 PASSWORD = "Summer2023!"
 
 
 file_path = "XML_files/emscharts/emsCharts_6-7_10-11.xml"
+logging.basicConfig(
+    filename='log/CARES_input.log',  # Specify the name of your log file
+    level=logging.DEBUG,  # Set the logging level (you can adjust this)
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
 
 # Parse the XML file
 tree = ET.parse(file_path)
@@ -691,12 +697,12 @@ def main():
         except WebDriverException as e:
             pass
 
-        print(f"Case {case[2].text} has been entered.")
+        logging.info(f"Case {case[2].text} has been entered.")
         time.sleep(2)
         driver.get("https://mycares.net/secure/formCaresRev4.jsp")
         time.sleep(2)
 
-    print(f"The following cases need to be reviewed {cases_that_need_looking}")
+    logging.warning(f"The following cases need to be reviewed {cases_that_need_looking}")
     input("Press Enter to close the Chrome window...")
     driver.quit()
 
