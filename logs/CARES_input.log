@@ -1,58 +1,117 @@
-2023-10-11 21:01:05,728 - root - WARNING - Hospital mapping not found for 'None'
-2023-10-11 21:01:11,953 - root - INFO - Case 23-15316 has been entered.
-2023-10-11 21:01:23,208 - root - INFO - Case 23-15386 has been entered.
-2023-10-11 21:01:34,742 - root - INFO - Case 23-15597 has been entered.
-2023-10-11 21:01:46,448 - root - INFO - Case 23-15800 has been entered.
-2023-10-11 21:01:58,605 - root - INFO - Case 23-15807 has been entered.
-2023-10-11 21:02:03,847 - root - WARNING - Hospital mapping not found for 'None'
-2023-10-11 21:02:09,830 - root - INFO - Case 23-15836 has been entered.
-2023-10-11 21:02:15,421 - root - WARNING - Hospital mapping not found for 'None'
-2023-10-11 21:02:21,499 - root - INFO - Case 23-15862 has been entered.
-2023-10-11 21:02:32,858 - root - INFO - Case 23-15897 has been entered.
-2023-10-11 21:02:44,395 - root - INFO - Case 23-15980 has been entered.
-2023-10-11 21:02:55,788 - root - INFO - Case 23-16144 has been entered.
-2023-10-11 21:03:01,066 - root - WARNING - Hospital mapping not found for 'None'
-2023-10-11 21:03:07,124 - root - INFO - Case 23-16282 has been entered.
-2023-10-11 21:03:12,471 - root - WARNING - Hospital mapping not found for 'None'
-2023-10-11 21:03:18,467 - root - INFO - Case 23-16275 has been entered.
-2023-10-11 21:03:30,174 - root - INFO - Case 23-16775 has been entered.
-2023-10-11 21:03:42,378 - root - INFO - Case 23-16483 has been entered.
-2023-10-11 21:03:53,706 - root - INFO - Case 23-16494 has been entered.
-2023-10-11 21:04:05,312 - root - INFO - Case 23-16624 has been entered.
-2023-10-11 21:04:16,653 - root - INFO - Case 23-16526 has been entered.
-2023-10-11 21:04:21,869 - root - WARNING - Hospital mapping not found for 'None'
-2023-10-11 21:04:27,850 - root - INFO - Case 23-16689 has been entered.
-2023-10-11 21:04:39,784 - root - INFO - Case 23-17550 has been entered.
-2023-10-11 21:04:45,052 - root - WARNING - Hospital mapping not found for 'None'
-2023-10-11 21:04:51,211 - root - INFO - Case 23-17712 has been entered.
-2023-10-11 21:05:02,672 - root - INFO - Case 23-17820 has been entered.
-2023-10-11 21:05:14,462 - root - INFO - Case 23-17913 has been entered.
-2023-10-11 21:05:19,928 - root - WARNING - Hospital mapping not found for 'None'
-2023-10-11 21:05:26,163 - root - INFO - Case 23-18108 has been entered.
-2023-10-11 21:05:37,569 - root - INFO - Case 23-18125 has been entered.
-2023-10-11 21:05:42,918 - root - WARNING - Hospital mapping not found for 'None'
-2023-10-11 21:05:49,374 - root - INFO - Case 23-18811 has been entered.
-2023-10-11 21:06:00,733 - root - INFO - Case 23-19044 has been entered.
-2023-10-11 21:06:12,052 - root - INFO - Case 23-19332 has been entered.
-2023-10-11 21:06:23,978 - root - INFO - Case 23-19447 has been entered.
-2023-10-11 21:06:35,532 - root - INFO - Case 23-19524 has been entered.
-2023-10-11 21:06:46,832 - root - INFO - Case 23-19496 has been entered.
-2023-10-11 21:06:52,123 - root - WARNING - Hospital mapping not found for 'None'
-2023-10-11 21:06:58,355 - root - INFO - Case 23-19535 has been entered.
-2023-10-11 21:07:09,759 - root - INFO - Case 23-19560 has been entered.
-2023-10-11 21:07:21,193 - root - INFO - Case 23-19578 has been entered.
-2023-10-11 21:07:32,584 - root - INFO - Case 23-19939 has been entered.
-2023-10-11 21:07:37,890 - root - WARNING - Hospital mapping not found for 'None'
-2023-10-11 21:07:43,919 - root - INFO - Case 23-20084 has been entered.
-2023-10-11 21:07:55,256 - root - INFO - Case 23-20176 has been entered.
-2023-10-11 21:08:06,732 - root - INFO - Case 23-20336 has been entered.
-2023-10-11 21:08:18,360 - root - INFO - Case 23-20417 has been entered.
-2023-10-11 21:08:29,617 - root - INFO - Case 23-20612 has been entered.
-2023-10-11 21:08:34,946 - root - WARNING - Hospital mapping not found for 'None'
-2023-10-11 21:08:41,276 - root - INFO - Case 23-52615 has been entered.
-2023-10-11 21:08:52,693 - root - INFO - Case 23-52799 has been entered.
-2023-10-11 21:08:57,979 - root - WARNING - Hospital mapping not found for 'None'
-2023-10-11 21:09:04,065 - root - INFO - Case 23-53391 has been entered.
-2023-10-11 21:09:10,523 - root - INFO - Case 23-53974 has been entered.
-2023-10-11 21:09:22,013 - root - INFO - Case 23-54079 has been entered.
-2023-10-11 21:09:33,438 - root - INFO - Case 23-55015 has been entered.
+2023-10-11 21:32:44,943 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:32:51,188 - root - INFO - Case 23-15316 has been entered.
+2023-10-11 21:33:02,584 - root - INFO - Case 23-15386 has been entered.
+2023-10-11 21:33:14,050 - root - INFO - Case 23-15597 has been entered.
+2023-10-11 21:33:26,166 - root - INFO - Case 23-15800 has been entered.
+2023-10-11 21:33:37,729 - root - INFO - Case 23-15807 has been entered.
+2023-10-11 21:33:42,936 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:33:48,876 - root - INFO - Case 23-15836 has been entered.
+2023-10-11 21:33:54,468 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:34:00,760 - root - INFO - Case 23-15862 has been entered.
+2023-10-11 21:34:14,640 - root - INFO - Case 23-15897 has been entered.
+2023-10-11 21:34:28,785 - root - INFO - Case 23-15980 has been entered.
+2023-10-11 21:34:40,368 - root - INFO - Case 23-16144 has been entered.
+2023-10-11 21:34:45,811 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:34:51,875 - root - INFO - Case 23-16282 has been entered.
+2023-10-11 21:34:57,191 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:35:03,184 - root - INFO - Case 23-16275 has been entered.
+2023-10-11 21:35:15,149 - root - INFO - Case 23-16775 has been entered.
+2023-10-11 21:35:26,716 - root - INFO - Case 23-16483 has been entered.
+2023-10-11 21:35:38,141 - root - INFO - Case 23-16494 has been entered.
+2023-10-11 21:35:49,508 - root - INFO - Case 23-16624 has been entered.
+2023-10-11 21:36:01,072 - root - INFO - Case 23-16526 has been entered.
+2023-10-11 21:36:06,291 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:36:12,271 - root - INFO - Case 23-16689 has been entered.
+2023-10-11 21:36:24,086 - root - INFO - Case 23-17550 has been entered.
+2023-10-11 21:36:29,638 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:36:35,760 - root - INFO - Case 23-17712 has been entered.
+2023-10-11 21:36:47,302 - root - INFO - Case 23-17820 has been entered.
+2023-10-11 21:36:58,742 - root - INFO - Case 23-17913 has been entered.
+2023-10-11 21:37:04,128 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:37:10,234 - root - INFO - Case 23-18108 has been entered.
+2023-10-11 21:37:21,802 - root - INFO - Case 23-18125 has been entered.
+2023-10-11 21:37:27,256 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:37:33,585 - root - INFO - Case 23-18811 has been entered.
+2023-10-11 21:37:44,919 - root - INFO - Case 23-19044 has been entered.
+2023-10-11 21:37:56,160 - root - INFO - Case 23-19332 has been entered.
+2023-10-11 21:38:07,716 - root - INFO - Case 23-19447 has been entered.
+2023-10-11 21:38:19,082 - root - INFO - Case 23-19524 has been entered.
+2023-10-11 21:38:30,675 - root - INFO - Case 23-19496 has been entered.
+2023-10-11 21:38:36,138 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:38:42,376 - root - INFO - Case 23-19535 has been entered.
+2023-10-11 21:38:53,935 - root - INFO - Case 23-19560 has been entered.
+2023-10-11 21:39:05,583 - root - INFO - Case 23-19578 has been entered.
+2023-10-11 21:39:17,064 - root - INFO - Case 23-19939 has been entered.
+2023-10-11 21:39:22,488 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:39:28,643 - root - INFO - Case 23-20084 has been entered.
+2023-10-11 21:39:40,032 - root - INFO - Case 23-20176 has been entered.
+2023-10-11 21:39:51,484 - root - INFO - Case 23-20336 has been entered.
+2023-10-11 21:40:03,032 - root - INFO - Case 23-20417 has been entered.
+2023-10-11 21:40:14,208 - root - INFO - Case 23-20612 has been entered.
+2023-10-11 21:40:19,529 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:40:25,854 - root - INFO - Case 23-52615 has been entered.
+2023-10-11 21:40:37,271 - root - INFO - Case 23-52799 has been entered.
+2023-10-11 21:40:42,727 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:40:48,740 - root - INFO - Case 23-53391 has been entered.
+2023-10-11 21:40:55,444 - root - INFO - Case 23-53974 has been entered.
+2023-10-11 21:41:07,083 - root - INFO - Case 23-54079 has been entered.
+2023-10-11 21:41:18,447 - root - INFO - Case 23-55015 has been entered.
+2023-10-11 21:41:30,306 - root - INFO - Case 23-55537 has been entered.
+2023-10-11 21:41:36,324 - root - ERROR - Error: 'N/A' selected, but first defibrillation time is provided.
+2023-10-11 21:41:42,393 - root - INFO - Case F23056684 has been entered.
+2023-10-11 21:41:47,785 - root - WARNING - Hospital mapping not found for 'Children's Hospital of Philadelphia'
+2023-10-11 21:41:54,109 - root - INFO - Case 23-56782 has been entered.
+2023-10-11 21:42:06,031 - root - INFO - Case 23-57088 has been entered.
+2023-10-11 21:42:18,272 - root - INFO - Case 23-57345 has been entered.
+2023-10-11 21:42:30,406 - root - INFO - Case 23-58271 has been entered.
+2023-10-11 21:42:41,795 - root - INFO - Case 23-8350 has been entered.
+2023-10-11 21:42:47,202 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:42:47,608 - root - ERROR - Error: 'N/A' selected, but first defibrillation time is provided.
+2023-10-11 21:42:53,386 - root - INFO - Case 23-58914 has been entered.
+2023-10-11 21:42:58,637 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:43:04,817 - root - INFO - Case 23-60172 has been entered.
+2023-10-11 21:43:16,289 - root - INFO - Case 23-60190 has been entered.
+2023-10-11 21:43:28,311 - root - INFO - Case 23-60606 has been entered.
+2023-10-11 21:43:39,948 - root - INFO - Case 23-60619 has been entered.
+2023-10-11 21:43:45,766 - root - ERROR - Error: 'N/A' selected, but first defibrillation time is provided.
+2023-10-11 21:43:51,926 - root - INFO - Case 23-61028 has been entered.
+2023-10-11 21:43:57,363 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:44:03,444 - root - INFO - Case 23-61030 has been entered.
+2023-10-11 21:44:08,816 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:44:15,395 - root - INFO - Case F23061073 has been entered.
+2023-10-11 21:44:20,688 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:44:26,804 - root - INFO - Case 23-61351 has been entered.
+2023-10-11 21:44:32,883 - root - ERROR - Error: 'N/A' selected, but first defibrillation time is provided.
+2023-10-11 21:44:39,116 - root - INFO - Case 23-61645 has been entered.
+2023-10-11 21:44:44,851 - root - ERROR - Error: 'N/A' selected, but first defibrillation time is provided.
+2023-10-11 21:44:51,016 - root - INFO - Case 23-62148 has been entered.
+2023-10-11 21:45:03,710 - root - INFO - Case 23-62159 has been entered.
+2023-10-11 21:45:16,022 - root - INFO - Case 23-62232 has been entered.
+2023-10-11 21:45:21,469 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:45:27,486 - root - INFO - Case 23-62906 has been entered.
+2023-10-11 21:45:33,195 - root - WARNING - Hospital mapping not found for 'Riddle Memorial Hospital'
+2023-10-11 21:45:39,462 - root - INFO - Case 23-63636 has been entered.
+2023-10-11 21:45:51,449 - root - INFO - Case F23064322 has been entered.
+2023-10-11 21:45:56,824 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:46:02,890 - root - INFO - Case 23-64926 has been entered.
+2023-10-11 21:46:08,360 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:46:14,738 - root - INFO - Case 23-65583 has been entered.
+2023-10-11 21:46:26,276 - root - INFO - Case 23-65644 has been entered.
+2023-10-11 21:46:38,302 - root - INFO - Case 23-65842 has been entered.
+2023-10-11 21:46:43,618 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:46:49,563 - root - INFO - Case 23-66604 has been entered.
+2023-10-11 21:47:02,066 - root - INFO - Case 23-66946 has been entered.
+2023-10-11 21:47:07,512 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:47:13,595 - root - INFO - Case 23-67032 has been entered.
+2023-10-11 21:47:19,042 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:47:19,411 - root - ERROR - Error: 'N/A' selected, but first defibrillation time is provided.
+2023-10-11 21:47:25,270 - root - INFO - Case 23-67288 has been entered.
+2023-10-11 21:47:36,702 - root - INFO - Case 23-67337 has been entered.
+2023-10-11 21:47:48,956 - root - INFO - Case 23-67424 has been entered.
+2023-10-11 21:48:00,853 - root - INFO - Case 23-67806 has been entered.
+2023-10-11 21:48:12,670 - root - INFO - Case 23-68087 has been entered.
+2023-10-11 21:48:24,471 - root - INFO - Case 23069014 has been entered.
+2023-10-11 21:48:29,761 - root - WARNING - Hospital mapping not found for 'None'
+2023-10-11 21:48:35,930 - root - INFO - Case 23-69131 has been entered.
+2023-10-11 21:48:47,938 - root - INFO - Case 23-69527 has been entered.
+2023-10-11 21:48:52,097 - root - WARNING - The following cases need to be reviewed ['Case 23-15836 needs initial rhythm checked.', 'Case 23-19332 needs initial rhythm checked.', 'Case 23-19560 needs initial rhythm checked.', 'Case F23056684 needs defib checked.', 'Case 23-8350 needs initial rhythm checked.', 'Case 23-58914 needs defib checked.', 'Case 23-60606 needs initial rhythm checked.', 'Case 23-61028 needs defib checked.', 'Case 23-61645 needs defib checked.', 'Case 23-62148 needs defib checked.', 'Case 23-63636 needs initial rhythm checked.', 'Case 23-67288 needs defib checked.']

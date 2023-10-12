@@ -324,6 +324,7 @@ def main():
             "Main Line Health - Bryn Mawr Hospital": 1165,
             "Mercy Fitzgerald Hospital": 973,
             "Taylor Hospital": 1571,
+            "Children's Hospital of Philadelphia": 1045,
         }
         # Check if the hospital name exists in the hospital mapping
         if destination_hospital in hospital_mapping:
@@ -407,6 +408,7 @@ def main():
                 cases_that_need_looking.append(
                     f"Case {case[2].text} needs etiology checked."
                 )
+                logging.warning(f"{case[2].text} needs to be checked for etiology")
 
         # CARES 21
         button_resus_attempted = driver.find_element(
@@ -501,6 +503,7 @@ def main():
                     cases_that_need_looking.append(
                     f"Case {case[2].text} needs defib checked."
                     )
+                    logging.warning(f"{case[2].text} needs defib checked.")
             case "AED":
                 button_who_defib_non_law_first.click()
             case "Manual":
@@ -560,6 +563,7 @@ def main():
                 cases_that_need_looking.append(
                     f"Case {case[2].text} needs initial rhythm checked."
                 )
+                logging.warning(f"{case[2].text} needs initial rhythm")
 
         # CARES 30 - Sustained ROSC
 
