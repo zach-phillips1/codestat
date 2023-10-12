@@ -21,7 +21,7 @@ current_time = time.strftime("%Y-%m-%d_%H-%M-%S")
 logging.basicConfig(
     filename=f'logs/CARES_input{current_time}.log',  # Specify the name of your log file
     level=logging.INFO,  # Set the logging level (you can adjust this)
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
 # Parse the XML file
