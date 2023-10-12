@@ -11,12 +11,15 @@ from selenium.common.exceptions import WebDriverException
 import time
 import logging
 
+# TODO: Maybe look into using command line for this so it's not hard coded into script.
 USER_NAME = "zphillips"
 PASSWORD = "Summer2023!"
 XML_FILE_PATH = "XML_files/emscharts/emsCharts_6-7_10-11.xml"
 
+
+current_time = time.strftime("%Y-%m-%d_%H-%M-%S")
 logging.basicConfig(
-    filename='logs/CARES_input.log',  # Specify the name of your log file
+    filename=f'logs/CARES_input{current_time}.log',  # Specify the name of your log file
     level=logging.INFO,  # Set the logging level (you can adjust this)
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
@@ -716,6 +719,8 @@ def main():
         time.sleep(2)
 
     logging.warning(f"The following cases need to be reviewed {cases_that_need_looking}")
+    end_time = time.strftime("%Y-%m-%d_%H-%M-%S")
+    logging.info(f"Finished at {end_time}")
     input("Press Enter to close the Chrome window...")
     driver.quit()
 
