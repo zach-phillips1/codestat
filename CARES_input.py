@@ -327,6 +327,7 @@ def main():
             "Mercy Fitzgerald Hospital": 973,
             "Taylor Hospital": 1571,
             "Children's Hospital of Philadelphia": 1045,
+            "Riddle Memorial Hospital": 1051,
         }
         # Check if the hospital name exists in the hospital mapping
         if destination_hospital in hospital_mapping:
