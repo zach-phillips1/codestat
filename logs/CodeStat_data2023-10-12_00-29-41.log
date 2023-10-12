@@ -1,0 +1,499 @@
+2023-10-12 00:29:41,987 - root - INFO - IncidentID, 23-00118
+2023-10-12 00:29:41,987 - root - INFO - CaseStart, 1/2/2023 10:34:35 AM
+2023-10-12 00:29:41,987 - root - INFO - CompressionsRatio, 88.293586677868959
+2023-10-12 00:29:41,988 - root - INFO - CompressionRate, 129.88350200326457
+2023-10-12 00:29:41,988 - root - INFO - LongestPause, 20.865
+2023-10-12 00:29:41,988 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,988 - root - INFO - ------------------------
+2023-10-12 00:29:41,988 - root - INFO - IncidentID, 23-00784
+2023-10-12 00:29:41,988 - root - INFO - CaseStart, 1/3/2023 7:56:09 AM
+2023-10-12 00:29:41,988 - root - INFO - CompressionsRatio, 93.528227694036147
+2023-10-12 00:29:41,989 - root - INFO - CompressionRate, 123.75449460272209
+2023-10-12 00:29:41,989 - root - INFO - LongestPause, 16.088
+2023-10-12 00:29:41,989 - root - INFO - NumberOfShocks, 6
+2023-10-12 00:29:41,989 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,989 - root - INFO - ------------------------
+2023-10-12 00:29:41,989 - root - INFO - IncidentID, 23-01176
+2023-10-12 00:29:41,989 - root - INFO - CaseStart, 1/12/2023 7:40:04 PM
+2023-10-12 00:29:41,989 - root - INFO - CompressionsRatio, 84.4143131639053
+2023-10-12 00:29:41,989 - root - INFO - CompressionRate, 132.77640833778727
+2023-10-12 00:29:41,989 - root - INFO - LongestPause, 22.592
+2023-10-12 00:29:41,990 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:41,990 - root - INFO - ------------------------
+2023-10-12 00:29:41,990 - root - INFO - IncidentID, 23-01215
+2023-10-12 00:29:41,990 - root - INFO - CaseStart, 1/13/2023 4:42:39 AM
+2023-10-12 00:29:41,990 - root - INFO - CompressionsRatio, 82.859031267133844
+2023-10-12 00:29:41,990 - root - INFO - CompressionRate, 143.94448979591834
+2023-10-12 00:29:41,990 - root - INFO - LongestPause, 61.846
+2023-10-12 00:29:41,990 - root - INFO - NumberOfShocks, 6
+2023-10-12 00:29:41,990 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,990 - root - INFO - ------------------------
+2023-10-12 00:29:41,991 - root - INFO - IncidentID, 23-01393
+2023-10-12 00:29:41,991 - root - INFO - CaseStart, 1/14/2023 9:41:00 PM
+2023-10-12 00:29:41,991 - root - INFO - CompressionsRatio, 89.405764359553629
+2023-10-12 00:29:41,991 - root - INFO - CompressionRate, 118.67308503162333
+2023-10-12 00:29:41,991 - root - INFO - LongestPause, 29.473
+2023-10-12 00:29:41,991 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:41,991 - root - INFO - ------------------------
+2023-10-12 00:29:41,991 - root - INFO - IncidentID, 23-01420
+2023-10-12 00:29:41,991 - root - INFO - CaseStart, 1/15/2023 9:53:27 AM
+2023-10-12 00:29:41,992 - root - INFO - CompressionsRatio, 89.745520252973961
+2023-10-12 00:29:41,992 - root - INFO - CompressionRate, 117.03855124467368
+2023-10-12 00:29:41,992 - root - INFO - LongestPause, 13.867999999999999
+2023-10-12 00:29:41,992 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,992 - root - INFO - ------------------------
+2023-10-12 00:29:41,992 - root - INFO - IncidentID, 23-01676
+2023-10-12 00:29:41,992 - root - INFO - CaseStart, 1/16/2023 5:06:40 AM
+2023-10-12 00:29:41,992 - root - INFO - CompressionsRatio, 83.636541590711687
+2023-10-12 00:29:41,992 - root - INFO - CompressionRate, 136.02235673130537
+2023-10-12 00:29:41,992 - root - INFO - LongestPause, 46.921
+2023-10-12 00:29:41,992 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,992 - root - INFO - ------------------------
+2023-10-12 00:29:41,993 - root - INFO - IncidentID, 23-01608
+2023-10-12 00:29:41,993 - root - INFO - CaseStart, 1/17/2023 11:16:41 AM
+2023-10-12 00:29:41,993 - root - INFO - CompressionsRatio, 86.974097015525714
+2023-10-12 00:29:41,993 - root - INFO - CompressionRate, 124.53974664033524
+2023-10-12 00:29:41,993 - root - INFO - LongestPause, 29.291999999999998
+2023-10-12 00:29:41,993 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,993 - root - INFO - ------------------------
+2023-10-12 00:29:41,993 - root - INFO - IncidentID, 23-01720
+2023-10-12 00:29:41,993 - root - INFO - CaseStart, 1/18/2023 8:27:46 AM
+2023-10-12 00:29:41,993 - root - INFO - CompressionsRatio, 76.064074078671354
+2023-10-12 00:29:41,993 - root - INFO - CompressionRate, 124.15557493409045
+2023-10-12 00:29:41,993 - root - INFO - LongestPause, 93.298999999999992
+2023-10-12 00:29:41,993 - root - INFO - NumberOfShocks, 3
+2023-10-12 00:29:41,994 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:41,994 - root - INFO - ------------------------
+2023-10-12 00:29:41,994 - root - INFO - IncidentID, 23-02049
+2023-10-12 00:29:41,994 - root - INFO - CaseStart, 1/19/2023 12:36:11 AM
+2023-10-12 00:29:41,994 - root - INFO - CompressionsRatio, 87.857013533698449
+2023-10-12 00:29:41,994 - root - INFO - CompressionRate, 122.78966605269478
+2023-10-12 00:29:41,994 - root - INFO - LongestPause, 36.157
+2023-10-12 00:29:41,994 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:41,994 - root - INFO - ------------------------
+2023-10-12 00:29:41,994 - root - INFO - IncidentID, 23-01804
+2023-10-12 00:29:41,994 - root - INFO - CaseStart, 1/19/2023 8:21:38 AM
+2023-10-12 00:29:41,994 - root - INFO - CompressionsRatio, 85.603127326880113
+2023-10-12 00:29:41,994 - root - INFO - CompressionRate, 134.27599537243034
+2023-10-12 00:29:41,995 - root - INFO - LongestPause, 35.797
+2023-10-12 00:29:41,995 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,995 - root - INFO - ------------------------
+2023-10-12 00:29:41,995 - root - INFO - IncidentID, 23-01853
+2023-10-12 00:29:41,995 - root - INFO - CaseStart, 1/19/2023 2:26:37 PM
+2023-10-12 00:29:41,995 - root - INFO - CompressionsRatio, 90.413343965975542
+2023-10-12 00:29:41,995 - root - INFO - CompressionRate, 101.72999999999999
+2023-10-12 00:29:41,995 - root - INFO - LongestPause, 54.309999999999995
+2023-10-12 00:29:41,995 - root - INFO - NumberOfShocks, 10
+2023-10-12 00:29:41,995 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,995 - root - INFO - ------------------------
+2023-10-12 00:29:41,995 - root - INFO - IncidentID, 23-01891
+2023-10-12 00:29:41,995 - root - INFO - CaseStart, 1/19/2023 9:22:25 PM
+2023-10-12 00:29:41,996 - root - INFO - CompressionsRatio, 83.082736902376183
+2023-10-12 00:29:41,996 - root - INFO - CompressionRate, 123.40130392100248
+2023-10-12 00:29:41,996 - root - INFO - LongestPause, 24.82
+2023-10-12 00:29:41,996 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,996 - root - INFO - ------------------------
+2023-10-12 00:29:41,996 - root - INFO - IncidentID, 23-01961
+2023-10-12 00:29:41,996 - root - INFO - CaseStart, 1/20/2023 4:20:42 PM
+2023-10-12 00:29:41,996 - root - INFO - CompressionsRatio, 85.048803419631867
+2023-10-12 00:29:41,996 - root - INFO - CompressionRate, 123.38931616980736
+2023-10-12 00:29:41,996 - root - INFO - LongestPause, 64.478
+2023-10-12 00:29:41,996 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:41,996 - root - INFO - ------------------------
+2023-10-12 00:29:41,996 - root - INFO - IncidentID, 23-01994
+2023-10-12 00:29:41,997 - root - INFO - CaseStart, 1/20/2023 8:33:23 PM
+2023-10-12 00:29:41,997 - root - INFO - CompressionsRatio, 94.756944897081254
+2023-10-12 00:29:41,997 - root - INFO - CompressionRate, 101.72999999999999
+2023-10-12 00:29:41,997 - root - INFO - LongestPause, 18.037
+2023-10-12 00:29:41,997 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,997 - root - INFO - ------------------------
+2023-10-12 00:29:41,997 - root - INFO - IncidentID, 23-02021
+2023-10-12 00:29:41,997 - root - INFO - CaseStart, 1/21/2023 9:40:34 AM
+2023-10-12 00:29:41,997 - root - INFO - CompressionsRatio, 99.249282402296316
+2023-10-12 00:29:41,997 - root - INFO - CompressionRate, 137.76601880877743
+2023-10-12 00:29:41,997 - root - INFO - LongestPause, 0.56199999999999994
+2023-10-12 00:29:41,997 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,997 - root - INFO - ------------------------
+2023-10-12 00:29:41,997 - root - INFO - IncidentID, 23-02198
+2023-10-12 00:29:41,997 - root - INFO - CaseStart, 1/23/2023 5:05:00 AM
+2023-10-12 00:29:41,997 - root - INFO - CompressionsRatio, 95.907747885689687
+2023-10-12 00:29:41,998 - root - INFO - CompressionRate, 140.35418098974813
+2023-10-12 00:29:41,998 - root - INFO - LongestPause, 13.482999999999999
+2023-10-12 00:29:41,998 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,998 - root - INFO - ------------------------
+2023-10-12 00:29:41,998 - root - INFO - IncidentID, 23-02566
+2023-10-12 00:29:41,998 - root - INFO - CaseStart, 1/26/2023 11:20:16 PM
+2023-10-12 00:29:41,998 - root - INFO - CompressionsRatio, 89.199412412780021
+2023-10-12 00:29:41,998 - root - INFO - CompressionRate, 122.18151080380294
+2023-10-12 00:29:41,998 - root - INFO - LongestPause, 22.459999999999997
+2023-10-12 00:29:41,998 - root - INFO - NumberOfShocks, 1
+2023-10-12 00:29:41,998 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:41,998 - root - INFO - ------------------------
+2023-10-12 00:29:41,998 - root - INFO - IncidentID, 23-02731
+2023-10-12 00:29:41,998 - root - INFO - CaseStart, 1/28/2023 3:49:05 PM
+2023-10-12 00:29:41,999 - root - INFO - CompressionsRatio, 87.60005183258076
+2023-10-12 00:29:41,999 - root - INFO - CompressionRate, 122.56075102715357
+2023-10-12 00:29:41,999 - root - INFO - LongestPause, 31.16
+2023-10-12 00:29:41,999 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,999 - root - INFO - ------------------------
+2023-10-12 00:29:41,999 - root - INFO - IncidentID, 23-02748
+2023-10-12 00:29:41,999 - root - INFO - CaseStart, 1/28/2023 7:48:18 PM
+2023-10-12 00:29:41,999 - root - INFO - CompressionsRatio, 87.840334184265487
+2023-10-12 00:29:41,999 - root - INFO - CompressionRate, 122.42024902386116
+2023-10-12 00:29:41,999 - root - INFO - LongestPause, 25.131
+2023-10-12 00:29:41,999 - root - INFO - AnyROSC, No
+2023-10-12 00:29:41,999 - root - INFO - ------------------------
+2023-10-12 00:29:42,000 - root - INFO - IncidentID, 23-03057
+2023-10-12 00:29:42,000 - root - INFO - CaseStart, 1/31/2023 4:05:58 PM
+2023-10-12 00:29:42,000 - root - INFO - CompressionsRatio, 82.359749768048587
+2023-10-12 00:29:42,000 - root - INFO - CompressionRate, 102.42991954460904
+2023-10-12 00:29:42,000 - root - INFO - LongestPause, 39.68
+2023-10-12 00:29:42,000 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,000 - root - INFO - ------------------------
+2023-10-12 00:29:42,000 - root - INFO - IncidentID, 23-03051
+2023-10-12 00:29:42,000 - root - INFO - CaseStart, 1/31/2023 6:09:11 PM
+2023-10-12 00:29:42,000 - root - INFO - CompressionsRatio, 84.347258789813367
+2023-10-12 00:29:42,000 - root - INFO - CompressionRate, 140.72041046690609
+2023-10-12 00:29:42,000 - root - INFO - LongestPause, 43.284
+2023-10-12 00:29:42,001 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,001 - root - INFO - ------------------------
+2023-10-12 00:29:42,001 - root - INFO - IncidentID, 23-03295
+2023-10-12 00:29:42,001 - root - INFO - CaseStart, 2/3/2023 4:31:41 AM
+2023-10-12 00:29:42,001 - root - INFO - CompressionsRatio, 95.1941045126544
+2023-10-12 00:29:42,001 - root - INFO - CompressionRate, 119.71105671222114
+2023-10-12 00:29:42,001 - root - INFO - LongestPause, 12.811
+2023-10-12 00:29:42,001 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,001 - root - INFO - ------------------------
+2023-10-12 00:29:42,001 - root - INFO - IncidentID, 23-03499
+2023-10-12 00:29:42,001 - root - INFO - CaseStart, 2/4/2023 8:56:35 AM
+2023-10-12 00:29:42,001 - root - INFO - CompressionsRatio, 89.645700190604344
+2023-10-12 00:29:42,001 - root - INFO - CompressionRate, 111.45713244461493
+2023-10-12 00:29:42,001 - root - INFO - LongestPause, 26.474999999999998
+2023-10-12 00:29:42,001 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,002 - root - INFO - ------------------------
+2023-10-12 00:29:42,002 - root - INFO - IncidentID, 23-03782
+2023-10-12 00:29:42,002 - root - INFO - CaseStart, 2/7/2023 6:23:36 AM
+2023-10-12 00:29:42,002 - root - INFO - CompressionsRatio, 92.422338231502962
+2023-10-12 00:29:42,002 - root - INFO - CompressionRate, 125.95455896607432
+2023-10-12 00:29:42,002 - root - INFO - LongestPause, 20.807
+2023-10-12 00:29:42,002 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,002 - root - INFO - ------------------------
+2023-10-12 00:29:42,002 - root - INFO - IncidentID, 23-03797
+2023-10-12 00:29:42,002 - root - INFO - CaseStart, 2/7/2023 10:24:00 AM
+2023-10-12 00:29:42,002 - root - INFO - CompressionsRatio, 91.023551401869156
+2023-10-12 00:29:42,002 - root - INFO - CompressionRate, 132.65009586821495
+2023-10-12 00:29:42,002 - root - INFO - LongestPause, 19.872
+2023-10-12 00:29:42,002 - root - INFO - NumberOfShocks, 1
+2023-10-12 00:29:42,002 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,003 - root - INFO - ------------------------
+2023-10-12 00:29:42,003 - root - INFO - IncidentID, 23-03901
+2023-10-12 00:29:42,003 - root - INFO - CaseStart, 2/8/2023 11:08:00 PM
+2023-10-12 00:29:42,003 - root - INFO - CompressionsRatio, 73.676277066634754
+2023-10-12 00:29:42,003 - root - INFO - CompressionRate, 153.11115140035176
+2023-10-12 00:29:42,003 - root - INFO - LongestPause, 70.398
+2023-10-12 00:29:42,003 - root - INFO - NumberOfShocks, 1
+2023-10-12 00:29:42,003 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,003 - root - INFO - ------------------------
+2023-10-12 00:29:42,004 - root - INFO - IncidentID, 23-03959
+2023-10-12 00:29:42,004 - root - INFO - CaseStart, 2/9/2023 12:53:23 PM
+2023-10-12 00:29:42,004 - root - INFO - CompressionsRatio, 78.354816133316447
+2023-10-12 00:29:42,004 - root - INFO - CompressionRate, 147.81333849636602
+2023-10-12 00:29:42,004 - root - INFO - LongestPause, 96.235
+2023-10-12 00:29:42,004 - root - INFO - NumberOfShocks, 3
+2023-10-12 00:29:42,004 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,004 - root - INFO - ------------------------
+2023-10-12 00:29:42,004 - root - INFO - IncidentID, 23-03998
+2023-10-12 00:29:42,004 - root - INFO - CaseStart, 2/9/2023 6:35:39 PM
+2023-10-12 00:29:42,004 - root - INFO - CompressionsRatio, 49.378881987577643
+2023-10-12 00:29:42,004 - root - INFO - CompressionRate, 134.16765264586158
+2023-10-12 00:29:42,004 - root - INFO - LongestPause, 32.414
+2023-10-12 00:29:42,005 - root - INFO - NumberOfShocks, 1
+2023-10-12 00:29:42,005 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:42,005 - root - INFO - ------------------------
+2023-10-12 00:29:42,005 - root - INFO - IncidentID, 23-04140
+2023-10-12 00:29:42,005 - root - INFO - CaseStart, 2/11/2023 2:03:24 AM
+2023-10-12 00:29:42,005 - root - INFO - CompressionsRatio, 95.127339224218474
+2023-10-12 00:29:42,005 - root - INFO - CompressionRate, 102.68843683744962
+2023-10-12 00:29:42,005 - root - INFO - LongestPause, 15.742999999999999
+2023-10-12 00:29:42,005 - root - INFO - NumberOfShocks, 2
+2023-10-12 00:29:42,005 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,006 - root - INFO - ------------------------
+2023-10-12 00:29:42,006 - root - INFO - IncidentID, 23-04301
+2023-10-12 00:29:42,006 - root - INFO - CaseStart, 2/12/2023 7:15:28 AM
+2023-10-12 00:29:42,006 - root - INFO - CompressionsRatio, 87.293937723400845
+2023-10-12 00:29:42,006 - root - INFO - CompressionRate, 128.91513563605727
+2023-10-12 00:29:42,006 - root - INFO - LongestPause, 55.768
+2023-10-12 00:29:42,006 - root - INFO - NumberOfShocks, 3
+2023-10-12 00:29:42,006 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,006 - root - INFO - ------------------------
+2023-10-12 00:29:42,006 - root - INFO - IncidentID, 23-04359
+2023-10-12 00:29:42,006 - root - INFO - CaseStart, 2/12/2023 10:05:21 PM
+2023-10-12 00:29:42,006 - root - INFO - CompressionsRatio, 93.759814647959843
+2023-10-12 00:29:42,007 - root - INFO - CompressionRate, 112.88382667350979
+2023-10-12 00:29:42,007 - root - INFO - LongestPause, 14.203999999999999
+2023-10-12 00:29:42,007 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,007 - root - INFO - ------------------------
+2023-10-12 00:29:42,007 - root - INFO - IncidentID, 23-04554
+2023-10-12 00:29:42,007 - root - INFO - CaseStart, 2/14/2023 1:59:09 PM
+2023-10-12 00:29:42,007 - root - INFO - CompressionsRatio, 86.174507438681147
+2023-10-12 00:29:42,007 - root - INFO - CompressionRate, 167.08970405727922
+2023-10-12 00:29:42,007 - root - INFO - LongestPause, 59.012
+2023-10-12 00:29:42,007 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,007 - root - INFO - ------------------------
+2023-10-12 00:29:42,008 - root - INFO - IncidentID, 23-04792
+2023-10-12 00:29:42,008 - root - INFO - CaseStart, 2/16/2023 2:28:34 PM
+2023-10-12 00:29:42,008 - root - INFO - CompressionsRatio, 93.186727245642771
+2023-10-12 00:29:42,008 - root - INFO - CompressionRate, 136.40224127322696
+2023-10-12 00:29:42,008 - root - INFO - LongestPause, 15.629
+2023-10-12 00:29:42,008 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:42,008 - root - INFO - ------------------------
+2023-10-12 00:29:42,008 - root - INFO - IncidentID, 23-04893
+2023-10-12 00:29:42,008 - root - INFO - CaseStart, 2/17/2023 3:08:15 PM
+2023-10-12 00:29:42,008 - root - INFO - CompressionsRatio, 88.623110694058113
+2023-10-12 00:29:42,008 - root - INFO - CompressionRate, 120.39512805032426
+2023-10-12 00:29:42,008 - root - INFO - LongestPause, 48.33
+2023-10-12 00:29:42,008 - root - INFO - NumberOfShocks, 5
+2023-10-12 00:29:42,008 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,009 - root - INFO - ------------------------
+2023-10-12 00:29:42,009 - root - INFO - IncidentID, 23-05005
+2023-10-12 00:29:42,009 - root - INFO - CaseStart, 2/18/2023 5:20:16 PM
+2023-10-12 00:29:42,009 - root - INFO - CompressionsRatio, 85.949911547400191
+2023-10-12 00:29:42,009 - root - INFO - CompressionRate, 139.32226919170134
+2023-10-12 00:29:42,009 - root - INFO - LongestPause, 91.663
+2023-10-12 00:29:42,009 - root - INFO - NumberOfShocks, 1
+2023-10-12 00:29:42,009 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,010 - root - INFO - ------------------------
+2023-10-12 00:29:42,010 - root - INFO - IncidentID, 23-05047
+2023-10-12 00:29:42,010 - root - INFO - CaseStart, 2/19/2023 4:10:10 AM
+2023-10-12 00:29:42,010 - root - INFO - CompressionsRatio, 91.516241131328741
+2023-10-12 00:29:42,010 - root - INFO - CompressionRate, 131.23466259880738
+2023-10-12 00:29:42,010 - root - INFO - LongestPause, 16.612
+2023-10-12 00:29:42,010 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,010 - root - INFO - ------------------------
+2023-10-12 00:29:42,010 - root - INFO - IncidentID, 23-05105
+2023-10-12 00:29:42,010 - root - INFO - CaseStart, 2/19/2023 12:45:09 PM
+2023-10-12 00:29:42,011 - root - INFO - CompressionsRatio, 87.165862893738364
+2023-10-12 00:29:42,011 - root - INFO - CompressionRate, 144.21594197589656
+2023-10-12 00:29:42,011 - root - INFO - LongestPause, 30.112
+2023-10-12 00:29:42,011 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:42,011 - root - INFO - ------------------------
+2023-10-12 00:29:42,011 - root - INFO - IncidentID, 23-05206
+2023-10-12 00:29:42,011 - root - INFO - CaseStart, 2/19/2023 2:15:46 PM
+2023-10-12 00:29:42,011 - root - INFO - CompressionsRatio, 90.496078788984121
+2023-10-12 00:29:42,011 - root - INFO - CompressionRate, 101.72999999999999
+2023-10-12 00:29:42,011 - root - INFO - LongestPause, 45.512
+2023-10-12 00:29:42,011 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,011 - root - INFO - ------------------------
+2023-10-12 00:29:42,012 - root - INFO - IncidentID, 23-05139
+2023-10-12 00:29:42,012 - root - INFO - CaseStart, 2/20/2023 6:40:00 AM
+2023-10-12 00:29:42,012 - root - INFO - CompressionsRatio, 92.382873099596637
+2023-10-12 00:29:42,012 - root - INFO - CompressionRate, 128.62683095347765
+2023-10-12 00:29:42,012 - root - INFO - LongestPause, 17.070999999999998
+2023-10-12 00:29:42,012 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,012 - root - INFO - ------------------------
+2023-10-12 00:29:42,012 - root - INFO - IncidentID, 23-05417
+2023-10-12 00:29:42,012 - root - INFO - CaseStart, 2/21/2023 4:47:58 PM
+2023-10-12 00:29:42,012 - root - INFO - CompressionsRatio, 82.8817360371668
+2023-10-12 00:29:42,012 - root - INFO - CompressionRate, 133.54100066402978
+2023-10-12 00:29:42,012 - root - INFO - LongestPause, 183.24599999999998
+2023-10-12 00:29:42,012 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:42,012 - root - INFO - ------------------------
+2023-10-12 00:29:42,012 - root - INFO - IncidentID, 23-05439
+2023-10-12 00:29:42,012 - root - INFO - CaseStart, 2/23/2023 1:12:23 PM
+2023-10-12 00:29:42,013 - root - INFO - CompressionsRatio, 90.33238733712318
+2023-10-12 00:29:42,013 - root - INFO - CompressionRate, 136.58261631580021
+2023-10-12 00:29:42,013 - root - INFO - LongestPause, 28.227999999999998
+2023-10-12 00:29:42,013 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,013 - root - INFO - ------------------------
+2023-10-12 00:29:42,013 - root - INFO - IncidentID, 23-05481
+2023-10-12 00:29:42,013 - root - INFO - CaseStart, 2/23/2023 10:09:47 PM
+2023-10-12 00:29:42,013 - root - INFO - CompressionsRatio, 90.155177904519263
+2023-10-12 00:29:42,014 - root - INFO - CompressionRate, 124.54009744456596
+2023-10-12 00:29:42,014 - root - INFO - LongestPause, 25.18
+2023-10-12 00:29:42,014 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,014 - root - INFO - ------------------------
+2023-10-12 00:29:42,014 - root - INFO - IncidentID, 23-05612
+2023-10-12 00:29:42,014 - root - INFO - CaseStart, 2/25/2023 8:50:19 AM
+2023-10-12 00:29:42,014 - root - INFO - CompressionsRatio, None
+2023-10-12 00:29:42,014 - root - INFO - CompressionRate, None
+2023-10-12 00:29:42,014 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,014 - root - INFO - ------------------------
+2023-10-12 00:29:42,014 - root - INFO - IncidentID, 23-05639
+2023-10-12 00:29:42,014 - root - INFO - CaseStart, 2/25/2023 4:49:13 PM
+2023-10-12 00:29:42,014 - root - INFO - CompressionsRatio, 84.104373687067763
+2023-10-12 00:29:42,015 - root - INFO - CompressionRate, 144.86229455029826
+2023-10-12 00:29:42,015 - root - INFO - LongestPause, 44.202
+2023-10-12 00:29:42,015 - root - INFO - NumberOfShocks, 1
+2023-10-12 00:29:42,015 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,015 - root - INFO - ------------------------
+2023-10-12 00:29:42,015 - root - INFO - IncidentID, 23-06109
+2023-10-12 00:29:42,015 - root - INFO - CaseStart, 3/2/2023 9:12:54 AM
+2023-10-12 00:29:42,015 - root - INFO - CompressionsRatio, 93.817369515885019
+2023-10-12 00:29:42,015 - root - INFO - CompressionRate, 126.99275489067894
+2023-10-12 00:29:42,015 - root - INFO - LongestPause, 16.939
+2023-10-12 00:29:42,015 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,015 - root - INFO - ------------------------
+2023-10-12 00:29:42,015 - root - INFO - IncidentID, 23-06193
+2023-10-12 00:29:42,015 - root - INFO - CaseStart, 3/3/2023 3:39:03 AM
+2023-10-12 00:29:42,016 - root - INFO - CompressionsRatio, 93.613325613503761
+2023-10-12 00:29:42,016 - root - INFO - CompressionRate, 113.06133587422582
+2023-10-12 00:29:42,016 - root - INFO - LongestPause, 11.418
+2023-10-12 00:29:42,016 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,016 - root - INFO - ------------------------
+2023-10-12 00:29:42,016 - root - INFO - IncidentID, 23-06252
+2023-10-12 00:29:42,016 - root - INFO - CaseStart, 3/3/2023 7:14:52 PM
+2023-10-12 00:29:42,016 - root - INFO - CompressionsRatio, 93.16143174410891
+2023-10-12 00:29:42,017 - root - INFO - CompressionRate, 132.16115478798812
+2023-10-12 00:29:42,017 - root - INFO - LongestPause, 12.664
+2023-10-12 00:29:42,017 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,017 - root - INFO - ------------------------
+2023-10-12 00:29:42,017 - root - INFO - IncidentID, 23-06352
+2023-10-12 00:29:42,017 - root - INFO - CaseStart, 3/3/2023 10:32:10 PM
+2023-10-12 00:29:42,017 - root - INFO - CompressionsRatio, 88.166966634362453
+2023-10-12 00:29:42,017 - root - INFO - CompressionRate, 139.04071633237822
+2023-10-12 00:29:42,017 - root - INFO - LongestPause, 47.085
+2023-10-12 00:29:42,017 - root - INFO - NumberOfShocks, 2
+2023-10-12 00:29:42,017 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,017 - root - INFO - ------------------------
+2023-10-12 00:29:42,018 - root - INFO - IncidentID, 23-06468
+2023-10-12 00:29:42,018 - root - INFO - CaseStart, 3/5/2023 5:01:24 AM
+2023-10-12 00:29:42,018 - root - INFO - CompressionsRatio, 87.676274994636941
+2023-10-12 00:29:42,018 - root - INFO - CompressionRate, 123.88829785562798
+2023-10-12 00:29:42,018 - root - INFO - LongestPause, 58.799
+2023-10-12 00:29:42,018 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,018 - root - INFO - ------------------------
+2023-10-12 00:29:42,018 - root - INFO - IncidentID, 23-06528
+2023-10-12 00:29:42,018 - root - INFO - CaseStart, 3/6/2023 5:23:19 PM
+2023-10-12 00:29:42,018 - root - INFO - CompressionsRatio, 87.878839971807253
+2023-10-12 00:29:42,019 - root - INFO - CompressionRate, 120.54209103840681
+2023-10-12 00:29:42,019 - root - INFO - LongestPause, 29.325999999999997
+2023-10-12 00:29:42,019 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,019 - root - INFO - ------------------------
+2023-10-12 00:29:42,019 - root - INFO - IncidentID, 23-06652
+2023-10-12 00:29:42,019 - root - INFO - CaseStart, 3/7/2023 9:26:40 PM
+2023-10-12 00:29:42,019 - root - INFO - CompressionsRatio, 93.267721684540945
+2023-10-12 00:29:42,019 - root - INFO - CompressionRate, 113.3856971418427
+2023-10-12 00:29:42,019 - root - INFO - LongestPause, 17.070999999999998
+2023-10-12 00:29:42,019 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,020 - root - INFO - ------------------------
+2023-10-12 00:29:42,020 - root - INFO - IncidentID, 23-06788
+2023-10-12 00:29:42,020 - root - INFO - CaseStart, 3/8/2023 1:14:22 PM
+2023-10-12 00:29:42,020 - root - INFO - CompressionsRatio, 87.162040860292279
+2023-10-12 00:29:42,020 - root - INFO - CompressionRate, 152.88721562619685
+2023-10-12 00:29:42,020 - root - INFO - LongestPause, 64.845
+2023-10-12 00:29:42,020 - root - INFO - NumberOfShocks, 2
+2023-10-12 00:29:42,020 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,020 - root - INFO - ------------------------
+2023-10-12 00:29:42,020 - root - INFO - IncidentID, 23-07211
+2023-10-12 00:29:42,020 - root - INFO - CaseStart, 3/12/2023 2:43:21 PM
+2023-10-12 00:29:42,021 - root - INFO - CompressionsRatio, 91.126766111665518
+2023-10-12 00:29:42,021 - root - INFO - CompressionRate, 101.72999999999999
+2023-10-12 00:29:42,021 - root - INFO - LongestPause, 33.486
+2023-10-12 00:29:42,021 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,021 - root - INFO - ------------------------
+2023-10-12 00:29:42,021 - root - INFO - IncidentID, 23-07233
+2023-10-12 00:29:42,021 - root - INFO - CaseStart, 3/12/2023 11:11:41 PM
+2023-10-12 00:29:42,021 - root - INFO - CompressionsRatio, 86.409681757059616
+2023-10-12 00:29:42,021 - root - INFO - CompressionRate, 123.70750477309441
+2023-10-12 00:29:42,021 - root - INFO - LongestPause, 9.182
+2023-10-12 00:29:42,021 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,022 - root - INFO - ------------------------
+2023-10-12 00:29:42,022 - root - INFO - IncidentID, 23-07310
+2023-10-12 00:29:42,022 - root - INFO - CaseStart, 3/13/2023 4:43:33 PM
+2023-10-12 00:29:42,022 - root - INFO - CompressionsRatio, None
+2023-10-12 00:29:42,022 - root - INFO - CompressionRate, None
+2023-10-12 00:29:42,022 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,022 - root - INFO - ------------------------
+2023-10-12 00:29:42,022 - root - INFO - IncidentID, 23-07550
+2023-10-12 00:29:42,022 - root - INFO - CaseStart, 3/15/2023 8:42:45 PM
+2023-10-12 00:29:42,022 - root - INFO - CompressionsRatio, 84.768080614875032
+2023-10-12 00:29:42,022 - root - INFO - CompressionRate, 126.41202324050487
+2023-10-12 00:29:42,022 - root - INFO - LongestPause, 43.415
+2023-10-12 00:29:42,022 - root - INFO - NumberOfShocks, 1
+2023-10-12 00:29:42,023 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,023 - root - INFO - ------------------------
+2023-10-12 00:29:42,023 - root - INFO - IncidentID, 23-07690
+2023-10-12 00:29:42,023 - root - INFO - CaseStart, 3/17/2023 12:10:07 PM
+2023-10-12 00:29:42,023 - root - INFO - CompressionsRatio, 89.020938766699459
+2023-10-12 00:29:42,023 - root - INFO - CompressionRate, 125.50637051993941
+2023-10-12 00:29:42,023 - root - INFO - LongestPause, 52.114999999999995
+2023-10-12 00:29:42,023 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,023 - root - INFO - ------------------------
+2023-10-12 00:29:42,023 - root - INFO - IncidentID, 23-07855
+2023-10-12 00:29:42,023 - root - INFO - CaseStart, 3/18/2023 10:35:06 PM
+2023-10-12 00:29:42,024 - root - INFO - CompressionsRatio, 87.823635997584049
+2023-10-12 00:29:42,024 - root - INFO - CompressionRate, 122.83641590800191
+2023-10-12 00:29:42,024 - root - INFO - LongestPause, 34.994
+2023-10-12 00:29:42,024 - root - INFO - NumberOfShocks, 2
+2023-10-12 00:29:42,024 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,024 - root - INFO - ------------------------
+2023-10-12 00:29:42,024 - root - INFO - IncidentID, 23-07852
+2023-10-12 00:29:42,024 - root - INFO - CaseStart, 3/18/2023 10:36:12 PM
+2023-10-12 00:29:42,024 - root - INFO - CompressionsRatio, 94.92683772162593
+2023-10-12 00:29:42,024 - root - INFO - CompressionRate, 124.400878189607
+2023-10-12 00:29:42,024 - root - INFO - LongestPause, 15.021999999999999
+2023-10-12 00:29:42,025 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,025 - root - INFO - ------------------------
+2023-10-12 00:29:42,025 - root - INFO - IncidentID, 23-08094
+2023-10-12 00:29:42,025 - root - INFO - CaseStart, 3/21/2023 12:07:17 PM
+2023-10-12 00:29:42,025 - root - INFO - CompressionsRatio, 87.811111870429855
+2023-10-12 00:29:42,025 - root - INFO - CompressionRate, 101.72999999999999
+2023-10-12 00:29:42,025 - root - INFO - LongestPause, 40.236
+2023-10-12 00:29:42,025 - root - INFO - NumberOfShocks, 5
+2023-10-12 00:29:42,025 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:42,025 - root - INFO - ------------------------
+2023-10-12 00:29:42,025 - root - INFO - IncidentID, 23-08182
+2023-10-12 00:29:42,025 - root - INFO - CaseStart, 3/22/2023 4:21:30 PM
+2023-10-12 00:29:42,025 - root - INFO - CompressionsRatio, 92.039242554556182
+2023-10-12 00:29:42,026 - root - INFO - CompressionRate, 127.14673279603224
+2023-10-12 00:29:42,026 - root - INFO - LongestPause, 16.006
+2023-10-12 00:29:42,026 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,026 - root - INFO - ------------------------
+2023-10-12 00:29:42,026 - root - INFO - IncidentID, 23-08418
+2023-10-12 00:29:42,026 - root - INFO - CaseStart, 3/25/2023 5:20:41 AM
+2023-10-12 00:29:42,026 - root - INFO - CompressionsRatio, 93.030913301782292
+2023-10-12 00:29:42,026 - root - INFO - CompressionRate, 136.52868505536262
+2023-10-12 00:29:42,026 - root - INFO - LongestPause, 48.15
+2023-10-12 00:29:42,026 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,027 - root - INFO - ------------------------
+2023-10-12 00:29:42,027 - root - INFO - IncidentID, 23-08546
+2023-10-12 00:29:42,027 - root - INFO - CaseStart, 3/26/2023 12:36:27 PM
+2023-10-12 00:29:42,027 - root - INFO - CompressionsRatio, 82.815725142916946
+2023-10-12 00:29:42,027 - root - INFO - CompressionRate, 102.15989840380111
+2023-10-12 00:29:42,027 - root - INFO - LongestPause, 98.429999999999993
+2023-10-12 00:29:42,027 - root - INFO - NumberOfShocks, 4
+2023-10-12 00:29:42,027 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:42,027 - root - INFO - ------------------------
+2023-10-12 00:29:42,027 - root - INFO - IncidentID, 23-08588
+2023-10-12 00:29:42,027 - root - INFO - CaseStart, 3/26/2023 11:57:27 PM
+2023-10-12 00:29:42,027 - root - INFO - CompressionsRatio, 92.937085732913175
+2023-10-12 00:29:42,027 - root - INFO - CompressionRate, 122.44527941410603
+2023-10-12 00:29:42,028 - root - INFO - LongestPause, 12.418
+2023-10-12 00:29:42,028 - root - INFO - NumberOfShocks, 1
+2023-10-12 00:29:42,028 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:42,028 - root - INFO - ------------------------
+2023-10-12 00:29:42,028 - root - INFO - IncidentID, 23-08939
+2023-10-12 00:29:42,028 - root - INFO - CaseStart, 3/30/2023 7:48:26 PM
+2023-10-12 00:29:42,028 - root - INFO - CompressionsRatio, 90.4268551443581
+2023-10-12 00:29:42,028 - root - INFO - CompressionRate, 113.19616921984375
+2023-10-12 00:29:42,028 - root - INFO - LongestPause, 20.887999999999998
+2023-10-12 00:29:42,028 - root - INFO - AnyROSC, No
+2023-10-12 00:29:42,028 - root - INFO - ------------------------
+2023-10-12 00:29:42,028 - root - INFO - IncidentID, 23-09037
+2023-10-12 00:29:42,028 - root - INFO - CaseStart, 3/31/2023 8:20:23 PM
+2023-10-12 00:29:42,028 - root - INFO - CompressionsRatio, 71.1287244972846
+2023-10-12 00:29:42,029 - root - INFO - CompressionRate, 118.31154185022027
+2023-10-12 00:29:42,029 - root - INFO - LongestPause, 40.629999999999995
+2023-10-12 00:29:42,029 - root - INFO - AnyROSC, Yes
+2023-10-12 00:29:42,029 - root - INFO - ------------------------
+2023-10-12 00:29:42,029 - root - INFO - The number of cases is 67
+2023-10-12 00:29:42,029 - root - INFO - The number of cases with ROSC: 14
+2023-10-12 00:29:42,029 - root - INFO - The longest pause was 183.25 seconds with incident number 23-05417.
+2023-10-12 00:29:42,029 - root - INFO - The average longest pause is 36.36 seconds
+2023-10-12 00:29:42,029 - root - INFO - The average compression ratio is 85.16.
+2023-10-12 00:29:42,029 - root - INFO - The case with the lowest compression ratio was 23-09037 with a ratio of 71.1287244972846
+2023-10-12 00:29:42,030 - root - INFO - The average compression rate is 122.28 per minute.
+2023-10-12 00:29:42,030 - root - INFO - The fastest compression rate was 167.09 per minute with incident number 23-04554.
+2023-10-12 00:29:42,030 - root - INFO - The number of cases in January was 22.
+2023-10-12 00:29:42,030 - root - INFO - The number of cases in February was 23.
+2023-10-12 00:29:42,030 - root - INFO - The number of cases in March was 22.

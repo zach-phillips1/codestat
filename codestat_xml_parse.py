@@ -16,7 +16,7 @@ current_time = time.strftime("%Y-%m-%d_%H-%M-%S")
 logging.basicConfig(
     filename=f'logs/CodeStat_data{current_time}.log',  # Specify the name of your log file
     level=logging.INFO,  # Set the logging level (you can adjust this)
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
 
@@ -40,15 +40,15 @@ def print_cases():
     # [11] = CPREdited
 
     for child in reversed(root):
-        logging.info(child[0].tag, child[0].text)
-        logging.info(child[1].tag, child[1].text)
-        logging.info(child[3].tag, child[3].text)
-        logging.info(child[4].tag, child[4].text)
+        logging.info(f"{child[0].tag}, {child[0].text}")
+        logging.info(f"{child[1].tag}, {child[1].text}")
+        logging.info(f"{child[3].tag}, {child[3].text}")
+        logging.info(f"{child[4].tag}, {child[4].text}")
         if child[8].text != None:  
-            logging.info(child[8].tag, child[8].text)
+            logging.info(f"{child[8].tag}, {child[8].text}")
         if child[9].text != None:
-            logging.info(child[9].tag, child[9].text)
-        logging.info(child[10].tag, child[10].text)
+            logging.info(f"{child[9].tag}, {child[9].text}")
+        logging.info(f"{child[10].tag}, {child[10].text}")
         logging.info("------------------------")
 
 
