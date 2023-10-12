@@ -13,9 +13,8 @@ import logging
 
 USER_NAME = "zphillips"
 PASSWORD = "Summer2023!"
+XML_FILE_PATH = "XML_files/emscharts/emsCharts_6-7_10-11.xml"
 
-
-file_path = "XML_files/emscharts/emsCharts_6-7_10-11.xml"
 logging.basicConfig(
     filename='logs/CARES_input.log',  # Specify the name of your log file
     level=logging.INFO,  # Set the logging level (you can adjust this)
@@ -23,7 +22,7 @@ logging.basicConfig(
 )
 
 # Parse the XML file
-tree = ET.parse(file_path)
+tree = ET.parse(XML_FILE_PATH)
 root = tree.getroot()
 
 # [0] = DATE_DISPATCHED
