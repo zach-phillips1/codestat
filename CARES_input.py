@@ -18,7 +18,7 @@ PASSWORD = "Summer2023!"
 file_path = "XML_files/emscharts/emsCharts_6-7_10-11.xml"
 logging.basicConfig(
     filename='logs/CARES_input.log',  # Specify the name of your log file
-    level=logging.WARNING,  # Set the logging level (you can adjust this)
+    level=logging.INFO,  # Set the logging level (you can adjust this)
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 
