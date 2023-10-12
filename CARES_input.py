@@ -494,6 +494,13 @@ def main():
         match who_first_defib:
             case "N/A":
                 button_who_defib_NA.click()
+                # Check if there is time inputted
+                if case[19].text:
+                    # Log an error when there is time inputted but "N/A" is selected
+                    logging.error("Error: 'N/A' selected, but first defibrillation time is provided.")
+                    cases_that_need_looking.append(
+                    f"Case {case[2].text} needs defib checked."
+                    )
             case "AED":
                 button_who_defib_non_law_first.click()
             case "Manual":
@@ -612,20 +619,23 @@ def main():
             start_cpr_minutes_input.send_keys(start_cpr_minutes)
         # [19] = DATE_TIME_OF_DEFIB
         # NAME = DefibTime_Hours
-        # Split the date and time
-        if case[19].text:
-            date_of_first_defib, first_defib_time = case[19].text.split()
+        # Checks to make sure that 'N/A' was not checked in defib type before attempting to enter time. 
+        # Causes crash if 'N/A' checked, and attempts to enter defib times
+        if case[20].text != "N/A":
+            # Split the date and time
+            if case[19].text:
+                date_of_first_defib, first_defib_time = case[19].text.split()
 
-            # Separate the hours and minutes
-            first_defib_hours, first_defib_minutes = first_defib_time.split(":")
+                # Separate the hours and minutes
+                first_defib_hours, first_defib_minutes = first_defib_time.split(":")
 
-            first_defib_hours_input = driver.find_element(By.NAME, "DefibTime_Hours")
-            first_defib_hours_input.send_keys(first_defib_hours)
+                first_defib_hours_input = driver.find_element(By.NAME, "DefibTime_Hours")
+                first_defib_hours_input.send_keys(first_defib_hours)
 
-            first_defib_minutes_input = driver.find_element(
-                By.NAME, "DefibTime_Minutes"
-            )
-            first_defib_minutes_input.send_keys(first_defib_minutes)
+                first_defib_minutes_input = driver.find_element(
+                    By.NAME, "DefibTime_Minutes"
+                )
+                first_defib_minutes_input.send_keys(first_defib_minutes)
 
         # [24] = DATE_TIME_CIRCULATION_RESTORED
         # Split the date and time
