@@ -6,7 +6,11 @@ CARES_input utilizes the CARES report from emsCharts.
     Change "XML_FILE_PATH" to correct file
     Verify USER_NAME and PASSWORD is correct
 
-    Uses Selenium for webscraping and ElementTree for scraping.
+    Uses Selenium for webscraping and ElementTree for XML processing.
     Most sections have a comment to inform what each section is.
 
     Log file located in logs/CARES_input{date_time}.log
+
+codestat_xml_parse uses CodeStat XML exports to perform data analysis. 
+
+# TODO: Figure out formating
