@@ -17,8 +17,8 @@ PASSWORD = "Summer2023!"
 
 file_path = "XML_files/emscharts/emsCharts_6-7_10-11.xml"
 logging.basicConfig(
-    filename='log/CARES_input.log',  # Specify the name of your log file
-    level=logging.DEBUG,  # Set the logging level (you can adjust this)
+    filename='logs/CARES_input.log',  # Specify the name of your log file
+    level=logging.WARNING,  # Set the logging level (you can adjust this)
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 
@@ -333,7 +333,7 @@ def main():
             destination_hospital_drop_down.select_by_value(str(cares_hospital_value))
         else:
             # Handle the case when the hospital name is not found in the mapping
-            print(f"Hospital mapping not found for '{destination_hospital}'")
+            logging.warning(f"Hospital mapping not found for '{destination_hospital}'")
 
         # [12] = WHO_WITNESSED
         witnessed = case[12].text
