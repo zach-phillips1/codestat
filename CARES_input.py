@@ -320,7 +320,7 @@ def main():
         # Map the hospitals from emsCharts to the value of CARES.
         hospital_mapping = {
             "Crozer-Chester Medical Center": 1010,
-            "Main Line Health - Lankenau Medical Center": 1011,
+            "Lankenau Medical Center": 1011,
             "Main Line Health - Bryn Mawr Hospital": 1165,
             "Mercy Fitzgerald Hospital": 973,
             "Taylor Hospital": 1571,
