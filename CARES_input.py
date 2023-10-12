@@ -292,6 +292,7 @@ def main():
             # Do something when the race field is empty or missing
             pass
 
+        # TODO: Figure out the warning with race_values
         # Handle the case where there is only one value
         elif len(race_values) == 1:
             race_value = race_values[0].strip()
@@ -387,6 +388,7 @@ def main():
             By.CSS_SELECTOR, 'input[name="CardiacEtiology"][value="6"]'
         )
 
+        # TODO: Handle the drowning problem. It adds more fields to fill out.
         match etiology:
             case "Presumed Cardiac":
                 button_etiology_cardiac.click()
@@ -395,12 +397,12 @@ def main():
             case "Traumatic Cause":
                 button_etiology_trauma.click()
             case "Respiratory":
-                button_etiology_respiratory
+                button_etiology_respiratory.click()
             case "Drug Overdose":
                 button_etiology_overdose.click()
             case "Drowning":
-                button_etiology_drowning.click()
                 # There will need to be more, it might error out
+                button_etiology_drowning.click()
             case "Exsanguination-Medical (Non-Traumatic)":
                 button_etiology_exsanguination.click()
             case "Electrocution":
