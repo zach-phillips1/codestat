@@ -1,5 +1,7 @@
 import xml.etree.ElementTree as ET
 import os
+import time
+import logging
 
 directory_path = 'XML_files/codestat'
 file_name = '1-1-23_3-31-23_CPR summary report.xml'
@@ -7,6 +9,15 @@ file_path = os.path.join(directory_path, file_name)
 
 tree = ET.parse(file_path)
 root = tree.getroot()
+
+# TODO: Find some way to make the export prettier. 
+
+current_time = time.strftime("%Y-%m-%d_%H-%M-%S")
+logging.basicConfig(
+    filename=f'logs/CodeStat_data{current_time}.log',  # Specify the name of your log file
+    level=logging.INFO,  # Set the logging level (you can adjust this)
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
 
 
 def print_cases():
@@ -29,16 +40,16 @@ def print_cases():
     # [11] = CPREdited
 
     for child in reversed(root):
-        print(child[0].tag, child[0].text)
-        print(child[1].tag, child[1].text)
-        print(child[3].tag, child[3].text)
-        print(child[4].tag, child[4].text)
+        logging.info(child[0].tag, child[0].text)
+        logging.info(child[1].tag, child[1].text)
+        logging.info(child[3].tag, child[3].text)
+        logging.info(child[4].tag, child[4].text)
         if child[8].text != None:  
-            print(child[8].tag, child[8].text)
+            logging.info(child[8].tag, child[8].text)
         if child[9].text != None:
-            print(child[9].tag, child[9].text)
-        print(child[10].tag, child[10].text)
-        print("------------------------")
+            logging.info(child[9].tag, child[9].text)
+        logging.info(child[10].tag, child[10].text)
+        logging.info("------------------------")
 
 
 def average_longest_pause(num_cases: int):
@@ -58,7 +69,7 @@ def average_longest_pause(num_cases: int):
         if child[8].text != None:
             sum_pauses += float(child[8].text)
     average_longest_pause = sum_pauses / num_cases
-    print(f"The average longest pause is {average_longest_pause:.2f} seconds")
+    logging.info(f"The average longest pause is {average_longest_pause:.2f} seconds")
 
 
 def get_average_compression_ratio(num_cases: int):
@@ -77,7 +88,7 @@ def get_average_compression_ratio(num_cases: int):
         if child[3].text != None:
             sum_compression_ratio += float(child[3].text)
     average_compression_ratio = sum_compression_ratio / num_cases
-    print(f"The average compression ratio is {average_compression_ratio:.2f}.")
+    logging.info(f"The average compression ratio is {average_compression_ratio:.2f}.")
 
 def get_lowest_compression_ratio(num_cases: int):
     '''
@@ -96,7 +107,7 @@ def get_lowest_compression_ratio(num_cases: int):
                 lowest_compression_ratio = float(child[3].text)
                 case_number = child[0].text
     
-    print(f"The case with the lowest compression ratio was {case_number} with a ratio of {lowest_compression_ratio}")
+    logging.info(f"The case with the lowest compression ratio was {case_number} with a ratio of {lowest_compression_ratio}")
 
 
 def get_average_compression_rate(num_cases: int):
@@ -114,7 +125,7 @@ def get_average_compression_rate(num_cases: int):
         if child[4].text != None:
             sum_compression_rate += float(child[4].text)
     average_compression_rate = sum_compression_rate / num_cases
-    print(f"The average compression rate is {average_compression_rate:.2f} per minute.")
+    logging.info(f"The average compression rate is {average_compression_rate:.2f} per minute.")
 
 
 def get_num_cases() -> int:
@@ -126,7 +137,7 @@ def get_num_cases() -> int:
     sum = 0
     for child in root:
         sum += 1
-    print(f"The number of cases is {sum}")
+    logging.info(f"The number of cases is {sum}")
     return sum
 
 
@@ -143,7 +154,7 @@ def max_longest_pause():
             if float(child[8].text) > max_pause:
                 max_pause = float(child[8].text)
                 incident_num = child[0].text
-    print(f"The longest pause was {max_pause:.2f} seconds with incident number {incident_num}.")
+    logging.info(f"The longest pause was {max_pause:.2f} seconds with incident number {incident_num}.")
 
 
 def count_rosc() -> int:
@@ -170,7 +181,7 @@ def num_jan_cases():
         if child[1].text != None:
             if child[1].text.startswith("1/"):
                 sum += 1
-    print(f"The number of cases in January was {sum}.")
+    logging.info(f"The number of cases in January was {sum}.")
 
 
 def num_feb_cases():
@@ -184,7 +195,7 @@ def num_feb_cases():
         if child[1].text != None:
             if child[1].text.startswith("2/"):
                 sum += 1
-    print(f"The number of cases in February was {sum}.")
+    logging.info(f"The number of cases in February was {sum}.")
 
 
 def num_mar_cases():
@@ -198,7 +209,7 @@ def num_mar_cases():
         if child[1].text != None:
             if child[1].text.startswith("3/"):
                 sum += 1
-    print(f"The number of cases in March was {sum}.")
+    logging.info(f"The number of cases in March was {sum}.")
 
 
 def max_compression_rate():
@@ -214,7 +225,7 @@ def max_compression_rate():
             if float(child[4].text) > max_rate:
                 max_rate = float(child[4].text)
                 incident_num = child[0].text
-    print(f"The fastest compression rate was {max_rate:.2f} per minute with incident number {incident_num}.")
+    logging.info(f"The fastest compression rate was {max_rate:.2f} per minute with incident number {incident_num}.")
 
 
 def main():
@@ -226,7 +237,7 @@ def main():
     print_cases()
     print()
     num_cases = get_num_cases()
-    print(f"The number of cases with ROSC: {count_rosc()}")
+    logging.info(f"The number of cases with ROSC: {count_rosc()}")
     max_longest_pause()
     average_longest_pause(num_cases)
     get_average_compression_ratio(num_cases)
