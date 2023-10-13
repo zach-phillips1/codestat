@@ -15,6 +15,8 @@ CARES_input utilizes the CARES report from emsCharts.
 
     Log file located in logs/CARES_input{date_time}.log
 
+    Unfortunately, there are still a lot of validation errors in the CARES form. So just about all reports need to be adjusted still.
+
 codestat_xml_parse uses CodeStat XML exports to perform data analysis. 
 
 # TODO: Figure out formating for README
