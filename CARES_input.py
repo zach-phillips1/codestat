@@ -10,11 +10,11 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import WebDriverException
 import time
 import logging
+import sys
 
-# TODO: Maybe look into using command line for this so it's not hard coded into script.
-USER_NAME = "zphillips"
-PASSWORD = "Summer2023!"
-XML_FILE_PATH = "XML_files/emscharts/emsCharts_6-7_10-11.xml"
+USER_NAME = sys.argv[1] # First CLI arguement
+PASSWORD = sys.argv[2] # Second CLI argument
+XML_FILE_PATH = f"XML_files/emscharts/emsCharts_{sys.argv[3]}_{sys.argv[4]}.xml" # If following the format "mon-day"
 
 
 current_time = time.strftime("%Y-%m-%d_%H-%M-%S")
