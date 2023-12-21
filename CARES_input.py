@@ -11,10 +11,9 @@ from selenium.common.exceptions import WebDriverException
 import time
 import logging
 import sys
+from secrets import CARES_username, CARES_password
 
-USER_NAME = sys.argv[1] # First CLI arguement
-PASSWORD = sys.argv[2] # Second CLI argument
-XML_FILE_PATH = f"XML_files/emscharts/emsCharts_{sys.argv[3]}_{sys.argv[4]}.xml" # If following the format "mon-day"
+XML_FILE_PATH = f"XML_files/emscharts/emsCharts_{sys.argv[1]}_{sys.argv[2]}.xml" # If following the format "mon-day"
 
 
 current_time = time.strftime("%Y-%m-%d_%H-%M-%S")
@@ -89,11 +88,11 @@ def main():
     time.sleep(2)
 
     user_name_input = driver.find_element(By.NAME, "username")
-    user_name_input.send_keys(USER_NAME)
+    user_name_input.send_keys(CARES_username)
     # time.sleep(2)
 
     password_input = driver.find_element(By.NAME, "password")
-    password_input.send_keys(PASSWORD)
+    password_input.send_keys(CARES_password)
 
     login_button = driver.find_element(
         By.CSS_SELECTOR, 'input[type="submit"][value="Login"]'
@@ -421,6 +420,7 @@ def main():
         )
         button_resus_attempted.click()
 
+        # TODO: If AED_use_no_defib, change first rhythm to unknown unshock, same with shockable
         # [16] = AED_USE
         aed_use = case[16].text
         button_AED_use_with_defib = driver.find_element(
