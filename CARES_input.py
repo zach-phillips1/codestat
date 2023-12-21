@@ -104,6 +104,7 @@ def main():
     driver.get("https://mycares.net/secure/formCaresRev4.jsp")
 
     for case in unique_cases:
+        logging.info(f"Case {case[2].text} has been started.")
         # Extract the required data from the case element
         # [3] = REF__ADDRESS_LINE_1
         incident_address = case[3].text.upper()

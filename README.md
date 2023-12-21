@@ -1,22 +1,32 @@
-This is the repo for Crozer Cardiac arrest data.
+# Crozer Cardiac Arrest Data Repository
+This repository is dedicated to the Crozer Cardiac arrest data project. It includes scripts for processing and analyzing CARES report data from emsCharts and performing data analysis on CodeStat XML exports.
 
-CARES_input utilizes the CARES report from emsCharts. 
-    Download the CARES report from emsCharts in XML format and place in the "XML_files/emscharts/" directory.
-        Current naming convention is "emsCharts_{start_date}_{end_date}.xml"
-    
-    When running the script from the CLI, arguements are as followed.
-        [1] USERNAME
-        [2] PASSWORD
-        [3] emsCharts Report start date "Month-Day"
-        [4] emsCharts Report end date "Month-Day"
+# CARES_input
+CARES_input is a script designed to utilize the CARES report from emsCharts.
 
-    Uses Selenium for webscraping and ElementTree for XML processing.
-    Most sections have a comment to inform what each section is.
+## Usage
+Download the CARES Report:
 
-    Log file located in logs/CARES_input{date_time}.log
+Obtain the CARES report from emsCharts in XML format.
+Place the downloaded report in the XML_files/emscharts/ directory.
+The current naming convention for the report is emsCharts_{start_date}_{end_date}.xml.
+## Running the Script:
 
-    Unfortunately, there are still a lot of validation errors in the CARES form. So just about all reports need to be adjusted still.
+### When running the script from the command line interface (CLI), provide the following arguments:
+USERNAME: Your username.
+PASSWORD: Your password.
+emsCharts Report start date: Format "Month-Day".
+emsCharts Report end date: Format "Month-Day".
+Features
+Web Scraping: Utilizes Selenium for web scraping.
+XML Processing: Uses ElementTree for XML data processing.
+Logging: Generates a log file located in logs/CARES_input{date_time}.log.
+Comments: Most sections of the script are commented to describe their purpose.
+Note
+The CARES form often has numerous validation errors, and most reports require manual adjustments.
+codestat_xml_parse
+codestat_xml_parse is used for performing data analysis on CodeStat XML exports.
 
-codestat_xml_parse uses CodeStat XML exports to perform data analysis. 
-
-# TODO: Figure out formating for README
+### TODO
+ Improve the formatting of the README.md file.
+ Additional items to be added.
