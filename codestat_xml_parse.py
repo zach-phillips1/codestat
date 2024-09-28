@@ -1,26 +1,54 @@
+import tkinter as tk
+from tkinter import filedialog, messagebox
 import xml.etree.ElementTree as ET
 import os
 import time
 import logging
 
-directory_path = 'XML_files/codestat/'
-file_name = 'CPR_Summary_YTD_9-26.xml'
-file_path = os.path.join(directory_path, file_name)
+# directory_path = 'XML_files/codestat/'
+# file_name = 'CPR_Summary_YTD_9-26.xml'
+# file_path = os.path.join(directory_path, file_name)
 
-tree = ET.parse(file_path)
-root = tree.getroot()
+def open_file():
+    filepath = filedialog.askopenfilename(
+        filetypes=[("XML Files", "*.xml"), ("All Files", "*.*")]
+    )
+    if not filepath:
+        return
+    
+    try:
+        process_file(filepath)
+    except Exception as e:
+        messagebox.showerror("Error", f"Failed to open or process file: {e}")
 
-# TODO: Find some way to make the export prettier. 
-
-current_time = time.strftime("%Y-%m-%d_%H-%M-%S")
-logging.basicConfig(
-    filename=f'logs/CodeStat_data{current_time}.log',  # Specify the name of your log file
-    level=logging.INFO,  # Set the logging level (you can adjust this)
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
+def process_file(file_path):
+    
 
 
-def print_cases():
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+
+    # TODO: Find some way to make the export prettier. 
+
+    current_time = time.strftime("%Y-%m-%d_%H-%M-%S")
+    logging.basicConfig(
+        filename=f'logs/CodeStat_data{current_time}.log',  # Specify the name of your log file
+        level=logging.INFO,  # Set the logging level (you can adjust this)
+        format='%(asctime)s - %(levelname)s - %(message)s'
+    )
+
+    print_cases()
+    num_cases = len(root)
+    logging.info(f"The number of cases with ROSC: {count_rosc()}")
+    max_longest_pause()
+    average_longest_pause(num_cases)
+    get_average_compression_ratio(num_cases)
+    get_lowest_compression_ratio(num_cases)
+    get_average_compression_rate(num_cases)
+    max_compression_rate()
+
+
+def print_cases(root):
     '''
     This function prints out the case list.
     Returns:
@@ -52,7 +80,7 @@ def print_cases():
         logging.info("------------------------")
 
 
-def average_longest_pause(num_cases: int):
+def average_longest_pause(num_cases: int, root):
     '''
     This function gets the average longest pause in compressions.
     Args:
@@ -72,7 +100,7 @@ def average_longest_pause(num_cases: int):
     logging.info(f"The average longest pause is {average_longest_pause:.2f} seconds")
 
 
-def get_average_compression_ratio(num_cases: int):
+def get_average_compression_ratio(num_cases: int, root):
     '''
     This function gets the average compression ratio.
     Args:
@@ -90,7 +118,7 @@ def get_average_compression_ratio(num_cases: int):
     average_compression_ratio = sum_compression_ratio / num_cases
     logging.info(f"The average compression ratio is {average_compression_ratio:.2f}.")
 
-def get_lowest_compression_ratio(num_cases: int):
+def get_lowest_compression_ratio(num_cases: int, root):
     '''
     This function gets the case with the lowest compression ratio
     Args:
@@ -110,7 +138,7 @@ def get_lowest_compression_ratio(num_cases: int):
     logging.info(f"The case with the lowest compression ratio was {case_number} with a ratio of {lowest_compression_ratio}")
 
 
-def get_average_compression_rate(num_cases: int):
+def get_average_compression_rate(num_cases: int, root):
     '''
     This function gets the average compression rate
     Args:
@@ -127,21 +155,21 @@ def get_average_compression_rate(num_cases: int):
     average_compression_rate = sum_compression_rate / num_cases
     logging.info(f"The average compression rate is {average_compression_rate:.2f} per minute.")
 
+# TODO: Remove this and use len(root)
+# def get_num_cases() -> int:
+    # '''
+    # This function counts the number of cases and prints it out.
+    # Returns:
+    #     (int): Returns the sum of the cases.
+    # '''
+    # sum = 0
+    # for child in root:
+    #     sum += 1
+    # logging.info(f"The number of cases is {sum}")
+    # return sum
 
-def get_num_cases() -> int:
-    '''
-    This function counts the number of cases and prints it out.
-    Returns:
-        (int): Returns the sum of the cases.
-    '''
-    sum = 0
-    for child in root:
-        sum += 1
-    logging.info(f"The number of cases is {sum}")
-    return sum
 
-
-def max_longest_pause():
+def max_longest_pause(root):
     '''
     Finds the case with the longest pause.
     Returns:
@@ -157,7 +185,7 @@ def max_longest_pause():
     logging.info(f"The longest pause was {max_pause:.2f} seconds with incident number {incident_num}.")
 
 
-def count_rosc() -> int:
+def count_rosc(root) -> int:
     '''
     Counts the number of cases that had ROSC.
     Returns:
@@ -170,7 +198,7 @@ def count_rosc() -> int:
     return num_rosc
 
 
-def num_jan_cases():
+def num_jan_cases(root):
     '''
     Gets the number of cases in January
     Returns:
@@ -184,7 +212,7 @@ def num_jan_cases():
     logging.info(f"The number of cases in January was {sum}.")
 
 
-def num_feb_cases():
+def num_feb_cases(root):
     '''
     Gets the number of cases in February
     Returns:
@@ -198,7 +226,7 @@ def num_feb_cases():
     logging.info(f"The number of cases in February was {sum}.")
 
 
-def num_mar_cases():
+def num_mar_cases(root):
     '''
     Gets the number of cases in March
     Returns:
@@ -212,7 +240,7 @@ def num_mar_cases():
     logging.info(f"The number of cases in March was {sum}.")
 
 
-def max_compression_rate():
+def max_compression_rate(root):
     '''
     Finds the case with the fastest compression rate.
     Returns:
@@ -244,9 +272,9 @@ def main():
     get_lowest_compression_ratio(num_cases)
     get_average_compression_rate(num_cases)
     max_compression_rate()
-    num_jan_cases()
-    num_feb_cases()
-    num_mar_cases()
+    # num_jan_cases()
+    # num_feb_cases()
+    # num_mar_cases()
 
 
 if __name__ == "__main__":
