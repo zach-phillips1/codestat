@@ -3,8 +3,8 @@ import os
 import time
 import logging
 
-directory_path = 'XML_files/codestat'
-file_name = '1-1-23_3-31-23_CPR summary report.xml'
+directory_path = 'XML_files/codestat/'
+file_name = 'CPR_Summary_YTD_9-26.xml'
 file_path = os.path.join(directory_path, file_name)
 
 tree = ET.parse(file_path)
@@ -29,9 +29,9 @@ def print_cases():
     # [0] = IncidentID
     # [1] = CaseStart
     # [2] = Device
-    # [3] = CompressionsRatio
-    # [4] = CompressionRate
-    # [5] = VentilationRate
+    # [3] = CPRRatio
+    # [4] = CompressionsRatio
+    # [5] = CompressionRate
     # [6] = CompressionDepth
     # [7] = GoodCompressionsWithTargetDepth
     # [8] = LongestPause
@@ -102,9 +102,9 @@ def get_lowest_compression_ratio(num_cases: int):
     lowest_compression_ratio = 100.0
     case_number = ""
     for child in root:
-        if child[3].text != None and child[0].text != "23-03998":
-            if float(child[3].text) < lowest_compression_ratio:
-                lowest_compression_ratio = float(child[3].text)
+        if child[4].text != None and child[0].text != "23-03998":
+            if float(child[4].text) < lowest_compression_ratio:
+                lowest_compression_ratio = float(child[4].text)
                 case_number = child[0].text
     
     logging.info(f"The case with the lowest compression ratio was {case_number} with a ratio of {lowest_compression_ratio}")
@@ -122,8 +122,8 @@ def get_average_compression_rate(num_cases: int):
     average_compression_rate = 0.0
     sum_compression_rate = 0.0
     for child in root:
-        if child[4].text != None:
-            sum_compression_rate += float(child[4].text)
+        if child[5].text != None:
+            sum_compression_rate += float(child[5].text)
     average_compression_rate = sum_compression_rate / num_cases
     logging.info(f"The average compression rate is {average_compression_rate:.2f} per minute.")
 
@@ -221,9 +221,9 @@ def max_compression_rate():
     max_rate = 0.0
     incident_num = ""
     for child in root:
-        if child[4].text != None:
-            if float(child[4].text) > max_rate:
-                max_rate = float(child[4].text)
+        if child[5].text != None:
+            if float(child[5].text) > max_rate:
+                max_rate = float(child[5].text)
                 incident_num = child[0].text
     logging.info(f"The fastest compression rate was {max_rate:.2f} per minute with incident number {incident_num}.")
 

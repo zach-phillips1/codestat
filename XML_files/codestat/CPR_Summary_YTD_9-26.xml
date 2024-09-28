@@ -1,0 +1,1473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CPRSummaryStatistics>
+  <IncidentStatistics>
+    <IncidentID>24066939</IncidentID>
+    <CaseStart>9/24/2024 12:08:21 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>86.995290666254917</CPRRatio>
+    <CompressionsRatio>86.98628374379166</CompressionsRatio>
+    <CompressionRate>101.72999999999999</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>46.199999999999996</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24065487</IncidentID>
+    <CaseStart>9/18/2024 3:18:05 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio></CPRRatio>
+    <CompressionsRatio></CompressionsRatio>
+    <CompressionRate></CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause></LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>No</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24063811</IncidentID>
+    <CaseStart>9/12/2024 4:41:06 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>90.152152881607222</CPRRatio>
+    <CompressionsRatio>90.272769534243821</CompressionsRatio>
+    <CompressionRate>121.77192376759543</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>15.841999999999999</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24063415</IncidentID>
+    <CaseStart>9/10/2024 4:30:28 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>90.308980304764191</CPRRatio>
+    <CompressionsRatio>90.6568090104198</CompressionsRatio>
+    <CompressionRate>101.72999999999999</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>40.253</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24063032</IncidentID>
+    <CaseStart>9/9/2024 9:42:10 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>91.499856678769348</CPRRatio>
+    <CompressionsRatio>91.680202560672654</CompressionsRatio>
+    <CompressionRate>135.10705737680334</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>17.119</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24061316</IncidentID>
+    <CaseStart>9/1/2024 11:38:23 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>100</CPRRatio>
+    <CompressionsRatio>100</CompressionsRatio>
+    <CompressionRate>126.79991853360488</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause></LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24060544</IncidentID>
+    <CaseStart>8/29/2024 5:02:20 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>69.970034119566833</CPRRatio>
+    <CompressionsRatio>68.623819336088715</CompressionsRatio>
+    <CompressionRate>124.92019460511378</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>161.94799999999998</LongestPause>
+    <NumberOfShocks>4</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24060309</IncidentID>
+    <CaseStart>8/28/2024 7:03:21 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>95.727836556001449</CPRRatio>
+    <CompressionsRatio>96.59978110178767</CompressionsRatio>
+    <CompressionRate>139.14611024602925</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>9.583</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24058201</IncidentID>
+    <CaseStart>8/20/2024 6:32:19 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>84.759103357338489</CPRRatio>
+    <CompressionsRatio>85.75265446032941</CompressionsRatio>
+    <CompressionRate>125.7890502793296</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>35.583999999999996</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24057944</IncidentID>
+    <CaseStart>8/19/2024 4:17:56 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>75.202706903135848</CPRRatio>
+    <CompressionsRatio>75.634319411017657</CompressionsRatio>
+    <CompressionRate>117.31686369823059</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>67.056</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24057861</IncidentID>
+    <CaseStart>8/19/2024 10:26:55 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>84.839155682551379</CPRRatio>
+    <CompressionsRatio>85.010600055304636</CompressionsRatio>
+    <CompressionRate>133.41609379211209</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>54.162</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24056586</IncidentID>
+    <CaseStart>8/13/2024 6:59:11 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>81.1158115183246</CPRRatio>
+    <CompressionsRatio>80.670157068062835</CompressionsRatio>
+    <CompressionRate>132.23749284716214</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>39.400999999999996</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24055632</IncidentID>
+    <CaseStart>8/9/2024 7:51:15 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>90.538215777832391</CPRRatio>
+    <CompressionsRatio>90.738605213906268</CompressionsRatio>
+    <CompressionRate>89.454376369390559</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>25.785999999999998</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24052866</IncidentID>
+    <CaseStart>7/30/2024 2:15:41 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>82.2343259371698</CPRRatio>
+    <CompressionsRatio>84.353737982197373</CompressionsRatio>
+    <CompressionRate>133.36912318953432</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>134.064</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24052250</IncidentID>
+    <CaseStart>7/27/2024 10:44:59 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>89.399030874626362</CPRRatio>
+    <CompressionsRatio>90.011696340716256</CompressionsRatio>
+    <CompressionRate>112.25746921666229</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>15.678999999999999</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24052063</IncidentID>
+    <CaseStart>7/27/2024 7:36:30 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>83.603571848196452</CPRRatio>
+    <CompressionsRatio>89.161174739266755</CompressionsRatio>
+    <CompressionRate>100.40570414201183</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>14.696</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24051062</IncidentID>
+    <CaseStart>7/23/2024 5:10:10 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>77.71331243298998</CPRRatio>
+    <CompressionsRatio>78.248714086017131</CompressionsRatio>
+    <CompressionRate>117.24385655788559</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>72.512</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24049877</IncidentID>
+    <CaseStart>7/18/2024 1:38:23 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>97.5058456742011</CPRRatio>
+    <CompressionsRatio>97.5058456742011</CompressionsRatio>
+    <CompressionRate>106.32425806451613</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>1.565</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24049325</IncidentID>
+    <CaseStart>7/16/2024 6:02:16 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>90.8612058532292</CPRRatio>
+    <CompressionsRatio>92.680614941812991</CompressionsRatio>
+    <CompressionRate>112.13473761874019</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>24.247</LongestPause>
+    <NumberOfShocks>6</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24049054</IncidentID>
+    <CaseStart>7/15/2024 8:09:13 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>86.344101323466617</CPRRatio>
+    <CompressionsRatio>85.442815805701827</CompressionsRatio>
+    <CompressionRate>114.07282253025709</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>140.552</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24047278</IncidentID>
+    <CaseStart>7/8/2024 4:55:30 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>78.251069091658508</CPRRatio>
+    <CompressionsRatio>80.4054936160213</CompressionsRatio>
+    <CompressionRate>133.14931968693557</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>46.528</LongestPause>
+    <NumberOfShocks>7</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24046849</IncidentID>
+    <CaseStart>7/6/2024 9:29:03 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>89.349678192741848</CPRRatio>
+    <CompressionsRatio>90.799332106006773</CompressionsRatio>
+    <CompressionRate>160.787287043665</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>42.105</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24045521</IncidentID>
+    <CaseStart>6/30/2024 11:59:33 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>86.243489485613068</CPRRatio>
+    <CompressionsRatio>86.945949596986011</CompressionsRatio>
+    <CompressionRate>132.04618839398205</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>103.226</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-45430</IncidentID>
+    <CaseStart>6/30/2024 5:39:20 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>96.813261823500724</CPRRatio>
+    <CompressionsRatio>97.121404193076543</CompressionsRatio>
+    <CompressionRate>101.72999999999999</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>6.733</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24045242</IncidentID>
+    <CaseStart>6/29/2024 9:53:33 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>76.186930394017878</CPRRatio>
+    <CompressionsRatio>76.621115667376316</CompressionsRatio>
+    <CompressionRate>115.18781612391889</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>74.280999999999992</LongestPause>
+    <NumberOfShocks>6</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24044948</IncidentID>
+    <CaseStart>6/28/2024 5:55:44 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>60.349358478899376</CPRRatio>
+    <CompressionsRatio>61.060442108517556</CompressionsRatio>
+    <CompressionRate>125.30351477449455</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>23.387</LongestPause>
+    <NumberOfShocks>2</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24044189</IncidentID>
+    <CaseStart>6/25/2024 4:23:22 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>93.569615970225</CPRRatio>
+    <CompressionsRatio>94.285230925393336</CompressionsRatio>
+    <CompressionRate>130.39915847075352</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>14.088999999999999</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>f24042389</IncidentID>
+    <CaseStart>6/18/2024 6:49:34 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>86.407732740678028</CPRRatio>
+    <CompressionsRatio>87.233216918897938</CompressionsRatio>
+    <CompressionRate>117.41801118811053</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>16.694</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>TR2400256</IncidentID>
+    <CaseStart>6/17/2024 3:22:29 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>88.984982359736492</CPRRatio>
+    <CompressionsRatio>86.549689344031975</CompressionsRatio>
+    <CompressionRate>126.23627544256412</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>22.166</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24042097</IncidentID>
+    <CaseStart>6/17/2024 2:38:17 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>88.981280788177344</CPRRatio>
+    <CompressionsRatio>90.0631227916948</CompressionsRatio>
+    <CompressionRate>123.35963642844412</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>20.298</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24041468</IncidentID>
+    <CaseStart>6/15/2024 4:23:15 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>70.328125000000014</CPRRatio>
+    <CompressionsRatio>71.0703125</CompressionsRatio>
+    <CompressionRate>144.30977319587629</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>36.894</LongestPause>
+    <NumberOfShocks>2</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24041179</IncidentID>
+    <CaseStart>6/13/2024 9:37:07 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>88.522273936170208</CPRRatio>
+    <CompressionsRatio>89.4780585106383</CompressionsRatio>
+    <CompressionRate>130.08871042471043</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>10.633</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2-40647</IncidentID>
+    <CaseStart>6/11/2024 8:07:08 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>89.6907806287365</CPRRatio>
+    <CompressionsRatio>89.542034955233262</CompressionsRatio>
+    <CompressionRate>119.83806031933767</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>25.884999999999998</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24040153</IncidentID>
+    <CaseStart>6/9/2024 9:17:33 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>92.663682697334039</CPRRatio>
+    <CompressionsRatio>93.5749991831934</CompressionsRatio>
+    <CompressionRate>126.37928366863487</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>14.793</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24039780</IncidentID>
+    <CaseStart>6/8/2024 10:33:32 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>90.043449698618133</CPRRatio>
+    <CompressionsRatio>91.822645336775622</CompressionsRatio>
+    <CompressionRate>103.06692830032789</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>37.009</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>f24039451</IncidentID>
+    <CaseStart>6/6/2024 10:32:25 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>76.821784927105952</CPRRatio>
+    <CompressionsRatio>77.74138898174958</CompressionsRatio>
+    <CompressionRate>126.39580854946117</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>106.261</LongestPause>
+    <NumberOfShocks>4</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-37164</IncidentID>
+    <CaseStart>5/28/2024 11:16:54 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>91.04939440330196</CPRRatio>
+    <CompressionsRatio>91.546530058044226</CompressionsRatio>
+    <CompressionRate>115.17914268766569</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>40.663</LongestPause>
+    <NumberOfShocks>10</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24036070</IncidentID>
+    <CaseStart>5/24/2024 2:05:18 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>86.877514792899419</CPRRatio>
+    <CompressionsRatio>86.982414140150908</CompressionsRatio>
+    <CompressionRate>116.02478433208032</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>50.919</LongestPause>
+    <NumberOfShocks>6</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24035973</IncidentID>
+    <CaseStart>5/24/2024 6:39:57 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>87.798691529930366</CPRRatio>
+    <CompressionsRatio>89.044187104222786</CompressionsRatio>
+    <CompressionRate>102.66965483714147</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>40.318999999999996</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24034603</IncidentID>
+    <CaseStart>5/18/2024 5:19:32 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>89.795321637426909</CPRRatio>
+    <CompressionsRatio>90.158554811878616</CompressionsRatio>
+    <CompressionRate>144.00930862279435</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>45.184</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-33345</IncidentID>
+    <CaseStart>5/13/2024 2:51:46 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>96.147254309083564</CPRRatio>
+    <CompressionsRatio>95.454735463374547</CompressionsRatio>
+    <CompressionRate>117.42116837243003</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>10.828</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24032079</IncidentID>
+    <CaseStart>5/8/2024 2:21:09 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>90.324750699097777</CPRRatio>
+    <CompressionsRatio>91.275787474278474</CompressionsRatio>
+    <CompressionRate>125.20334022471909</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>17.07</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24031812</IncidentID>
+    <CaseStart>5/6/2024 9:58:07 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>85.76640966477197</CPRRatio>
+    <CompressionsRatio>85.954002288630008</CompressionsRatio>
+    <CompressionRate>124.13819529845279</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>99.823</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24031525</IncidentID>
+    <CaseStart>5/5/2024 7:22:42 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>90.797602339948327</CPRRatio>
+    <CompressionsRatio>90.987788722603327</CompressionsRatio>
+    <CompressionRate>121.04309888947645</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>24.509</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-30264</IncidentID>
+    <CaseStart>4/30/2024 2:54:22 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>72.424283148648144</CPRRatio>
+    <CompressionsRatio>71.942920672930072</CompressionsRatio>
+    <CompressionRate>103.87575265295428</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>140.281</LongestPause>
+    <NumberOfShocks>2</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24028835</IncidentID>
+    <CaseStart>4/25/2024 4:16:56 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>90.51189009629995</CPRRatio>
+    <CompressionsRatio>90.790388219673176</CompressionsRatio>
+    <CompressionRate>112.23418039199324</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>52.949999999999996</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24028802</IncidentID>
+    <CaseStart>4/24/2024 10:54:31 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>92.075919606478038</CPRRatio>
+    <CompressionsRatio>92.285919720608547</CompressionsRatio>
+    <CompressionRate>115.45118950377781</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>22.903</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-27560</IncidentID>
+    <CaseStart>4/19/2024 4:49:23 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>91.2739822180627</CPRRatio>
+    <CompressionsRatio>91.493916705662144</CompressionsRatio>
+    <CompressionRate>130.57138818148744</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>32.208999999999996</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24026763</IncidentID>
+    <CaseStart>4/16/2024 11:24:08 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>77.533855862734981</CPRRatio>
+    <CompressionsRatio>73.517191816201418</CompressionsRatio>
+    <CompressionRate>115.03903759398496</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>54.867</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24025732</IncidentID>
+    <CaseStart>4/12/2024 12:09:40 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>76.56269533691713</CPRRatio>
+    <CompressionsRatio>76.734591823978008</CompressionsRatio>
+    <CompressionRate>136.48248447204969</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>59.93</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24025041</IncidentID>
+    <CaseStart>4/9/2024 5:31:30 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>84.963434138718313</CPRRatio>
+    <CompressionsRatio>85.316273334391454</CompressionsRatio>
+    <CompressionRate>135.05518392807997</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>42.907</LongestPause>
+    <NumberOfShocks>5</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24023590</IncidentID>
+    <CaseStart>4/3/2024 7:45:45 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>90.200071330779238</CPRRatio>
+    <CompressionsRatio>89.4913655242237</CompressionsRatio>
+    <CompressionRate>131.99281559707555</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>17.840999999999998</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>TR2400130</IncidentID>
+    <CaseStart>3/30/2024 1:20:46 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>90.030380930123869</CPRRatio>
+    <CompressionsRatio>89.418088338396814</CompressionsRatio>
+    <CompressionRate>133.83950236045541</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>14.76</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24019605</IncidentID>
+    <CaseStart>3/17/2024 9:29:26 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio></CPRRatio>
+    <CompressionsRatio></CompressionsRatio>
+    <CompressionRate></CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause></LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>No</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24019195</IncidentID>
+    <CaseStart>3/16/2024 6:35:45 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>90.055531199766179</CPRRatio>
+    <CompressionsRatio>87.504618340353218</CompressionsRatio>
+    <CompressionRate>109.77904496340186</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>17.66</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024031307333500-MEDIC 102</IncidentID>
+    <CaseStart>3/13/2024 7:33:35 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>68.816556421507642</CPRRatio>
+    <CompressionsRatio>88.775658881508463</CompressionsRatio>
+    <CompressionRate>133.88471044969265</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>34.814</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-17889</IncidentID>
+    <CaseStart>3/11/2024 8:06:04 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>88.904162433238611</CPRRatio>
+    <CompressionsRatio>89.170583281262736</CompressionsRatio>
+    <CompressionRate>144.0412593219236</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>25.918</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-16650</IncidentID>
+    <CaseStart>3/5/2024 10:42:23 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>78.72304516598075</CPRRatio>
+    <CompressionsRatio>78.92921298586343</CompressionsRatio>
+    <CompressionRate>101.72999999999999</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>81.35799999999999</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024030507584400-</IncidentID>
+    <CaseStart>3/5/2024 9:01:20 AM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio>91.8113282412459</CPRRatio>
+    <CompressionsRatio>92.156862745098039</CompressionsRatio>
+    <CompressionRate>124.92464136553477</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>23.491999999999997</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-16272</IncidentID>
+    <CaseStart>3/4/2024 12:25:01 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>82.241333900605767</CPRRatio>
+    <CompressionsRatio>83.683826657752391</CompressionsRatio>
+    <CompressionRate>126.23842088438998</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>37.085</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-15288</IncidentID>
+    <CaseStart>2/29/2024 12:00:18 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>80.623581936617143</CPRRatio>
+    <CompressionsRatio>78.467393690990278</CompressionsRatio>
+    <CompressionRate>102.46793782383419</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>53.285999999999994</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>No</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24014903</IncidentID>
+    <CaseStart>2/27/2024 11:40:18 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>96.926347760060736</CPRRatio>
+    <CompressionsRatio>96.927866362946091</CompressionsRatio>
+    <CompressionRate>104.88296315153058</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>11.959999999999999</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24014214</IncidentID>
+    <CaseStart>2/25/2024 10:59:20 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>49.060518731988473</CPRRatio>
+    <CompressionsRatio>39.127761767531219</CompressionsRatio>
+    <CompressionRate>132.63439599714081</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>95.743</LongestPause>
+    <NumberOfShocks>3</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24014194</IncidentID>
+    <CaseStart>2/25/2024 9:47:10 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>85.194962180803316</CPRRatio>
+    <CompressionsRatio>81.871672488423144</CompressionsRatio>
+    <CompressionRate>132.11947110675806</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>38.024</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24014055</IncidentID>
+    <CaseStart>2/24/2024 5:11:47 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>87.821199559054136</CPRRatio>
+    <CompressionsRatio>82.248823885602491</CompressionsRatio>
+    <CompressionRate>133.60894822298394</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>46.986999999999995</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>No</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024022321402900-</IncidentID>
+    <CaseStart>2/23/2024 10:43:05 PM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio>93.852179836512249</CPRRatio>
+    <CompressionsRatio>93.84366485013625</CompressionsRatio>
+    <CompressionRate>111.59528707686553</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>9.722999999999999</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24012682</IncidentID>
+    <CaseStart>2/17/2024 11:14:03 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>95.469752719550726</CPRRatio>
+    <CompressionsRatio>94.620331354466487</CompressionsRatio>
+    <CompressionRate>122.17710474695959</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>19.773999999999997</LongestPause>
+    <NumberOfShocks>4</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024021713011100-37823764</IncidentID>
+    <CaseStart>2/17/2024 1:00:57 PM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio>93.32386363636364</CPRRatio>
+    <CompressionsRatio>94.470373376623371</CompressionsRatio>
+    <CompressionRate>139.50099359682048</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>8.384</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024021621362300-</IncidentID>
+    <CaseStart>2/16/2024 9:38:45 PM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio>78.232493227157036</CPRRatio>
+    <CompressionsRatio>78.232493227157036</CompressionsRatio>
+    <CompressionRate>125.77922077922078</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>81.59899999999999</LongestPause>
+    <NumberOfShocks>2</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024021620343900-</IncidentID>
+    <CaseStart>2/16/2024 8:37:01 PM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio>88.6372993001235</CPRRatio>
+    <CompressionsRatio>88.801976121860832</CompressionsRatio>
+    <CompressionRate>128.93504973668811</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>20.122999999999998</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24012134</IncidentID>
+    <CaseStart>2/16/2024 8:03:08 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>93.649293029813</CPRRatio>
+    <CompressionsRatio>93.168304515487009</CompressionsRatio>
+    <CompressionRate>119.38413671444322</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>22.805</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024021611383200-</IncidentID>
+    <CaseStart>2/16/2024 11:38:40 AM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio>88.5779000161786</CPRRatio>
+    <CompressionsRatio>88.569810710241043</CompressionsRatio>
+    <CompressionRate>128.91364902506965</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>21.726</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24012007</IncidentID>
+    <CaseStart>2/16/2024 10:43:49 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>89.958515283842786</CPRRatio>
+    <CompressionsRatio>90.171397379912662</CompressionsRatio>
+    <CompressionRate>126.90524586880321</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>44.021</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024021312403100-</IncidentID>
+    <CaseStart>2/13/2024 11:41:12 AM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio>66.954175717520911</CPRRatio>
+    <CompressionsRatio>67.2101030641956</CompressionsRatio>
+    <CompressionRate>134.17607872008043</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>288.461</LongestPause>
+    <NumberOfShocks>4</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024021302504100-</IncidentID>
+    <CaseStart>2/13/2024 2:49:32 AM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio></CPRRatio>
+    <CompressionsRatio></CompressionsRatio>
+    <CompressionRate></CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause></LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-011209</IncidentID>
+    <CaseStart>2/12/2024 10:23:34 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>91.186040318191814</CPRRatio>
+    <CompressionsRatio>91.722149531628133</CompressionsRatio>
+    <CompressionRate>128.4147858194118</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>16.776</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024021107462600-</IncidentID>
+    <CaseStart>2/11/2024 7:46:34 AM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio>81.753337804060237</CPRRatio>
+    <CompressionsRatio>81.632310019712421</CompressionsRatio>
+    <CompressionRate>133.43511450381681</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>38.846</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24010728</IncidentID>
+    <CaseStart>2/11/2024 3:05:26 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>76.234142805364257</CPRRatio>
+    <CompressionsRatio>76.277636824936565</CompressionsRatio>
+    <CompressionRate>101.98191281596037</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>61.101</LongestPause>
+    <NumberOfShocks>4</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24010421</IncidentID>
+    <CaseStart>2/9/2024 6:57:22 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>95.291847212613334</CPRRatio>
+    <CompressionsRatio>95.654759737343582</CompressionsRatio>
+    <CompressionRate>117.12112061769615</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>14.203</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24010233</IncidentID>
+    <CaseStart>2/9/2024 5:13:46 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>82.732771995885841</CPRRatio>
+    <CompressionsRatio>83.609643847079127</CompressionsRatio>
+    <CompressionRate>117.40800202476113</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>67.899999999999991</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024020713463900-MICU 103A</IncidentID>
+    <CaseStart>2/7/2024 1:46:39 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>93.672400376310989</CPRRatio>
+    <CompressionsRatio>94.027527730994848</CompressionsRatio>
+    <CompressionRate>123.7535480964181</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>9.0919999999999987</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024020602321200-37823764</IncidentID>
+    <CaseStart>2/6/2024 2:31:58 AM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio>99.936850968285157</CPRRatio>
+    <CompressionsRatio>99.936850968285157</CompressionsRatio>
+    <CompressionRate>134.67000835421888</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>0.074</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24009459</IncidentID>
+    <CaseStart>2/6/2024 12:15:34 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>88.1007631396378</CPRRatio>
+    <CompressionsRatio>88.697098016698959</CompressionsRatio>
+    <CompressionRate>121.96119710128892</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>24.311999999999998</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24009051</IncidentID>
+    <CaseStart>2/4/2024 7:46:26 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>84.270216962524657</CPRRatio>
+    <CompressionsRatio>85.051700436315826</CompressionsRatio>
+    <CompressionRate>125.79393908812398</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>22.558999999999997</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024013006532900-37823764</IncidentID>
+    <CaseStart>1/30/2024 6:53:15 AM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio></CPRRatio>
+    <CompressionsRatio></CompressionsRatio>
+    <CompressionRate></CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause></LongestPause>
+    <NumberOfShocks>2</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>No</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24007187</IncidentID>
+    <CaseStart>1/27/2024 7:15:03 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>89.0099280444485</CPRRatio>
+    <CompressionsRatio>89.273157846798441</CompressionsRatio>
+    <CompressionRate>132.10755628255348</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>42.661</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024012708121200-</IncidentID>
+    <CaseStart>1/27/2024 5:11:49 AM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio>89.655492905384477</CPRRatio>
+    <CompressionsRatio>89.655492905384477</CompressionsRatio>
+    <CompressionRate>122.8860230045312</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>17.785</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24006905</IncidentID>
+    <CaseStart>1/26/2024 3:42:57 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>94.8288598867274</CPRRatio>
+    <CompressionsRatio>95.1674464417631</CompressionsRatio>
+    <CompressionRate>130.30561923690985</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>25.206</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24006848</IncidentID>
+    <CaseStart>1/25/2024 8:44:12 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>97.465689332501569</CPRRatio>
+    <CompressionsRatio>97.980349344978166</CompressionsRatio>
+    <CompressionRate>132.02777067100826</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>5.603</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24005847</IncidentID>
+    <CaseStart>1/22/2024 5:19:36 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio></CPRRatio>
+    <CompressionsRatio></CompressionsRatio>
+    <CompressionRate></CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause></LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>No</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-05789</IncidentID>
+    <CaseStart>1/21/2024 8:16:40 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>79.2004048582996</CPRRatio>
+    <CompressionsRatio>80.433624547197951</CompressionsRatio>
+    <CompressionRate>133.25992849354665</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>118.54899999999999</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-05748</IncidentID>
+    <CaseStart>1/21/2024 5:23:25 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>87.452956298200519</CPRRatio>
+    <CompressionsRatio>87.417994858611834</CompressionsRatio>
+    <CompressionRate>124.62338853259308</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>23.083</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24005623</IncidentID>
+    <CaseStart>1/21/2024 3:27:23 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>81.6714199743583</CPRRatio>
+    <CompressionsRatio>82.822679818938212</CompressionsRatio>
+    <CompressionRate>135.153835125448</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>42.678</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024011917102000-</IncidentID>
+    <CaseStart>1/19/2024 5:09:11 PM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio>90.208223252901234</CPRRatio>
+    <CompressionsRatio>90.199416818333034</CompressionsRatio>
+    <CompressionRate>123.51421188630491</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>22.016</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-05282</IncidentID>
+    <CaseStart>1/19/2024 3:31:41 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>92.834095834336622</CPRRatio>
+    <CompressionsRatio>92.2297134601493</CompressionsRatio>
+    <CompressionRate>117.03385515116703</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>20.691</LongestPause>
+    <NumberOfShocks>1</NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>2024011812195400-</IncidentID>
+    <CaseStart>1/18/2024 9:19:31 AM</CaseStart>
+    <Device>LIFEPAK® 20</Device>
+    <CPRRatio>69.790596767769941</CPRRatio>
+    <CompressionsRatio>69.790596767769941</CompressionsRatio>
+    <CompressionRate>111.87553178558405</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>136.938</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-04601</IncidentID>
+    <CaseStart>1/17/2024 3:27:34 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>88.5196550088571</CPRRatio>
+    <CompressionsRatio>89.199891563232185</CompressionsRatio>
+    <CompressionRate>124.93694539022772</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>32.012</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-04543</IncidentID>
+    <CaseStart>1/16/2024 8:22:42 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>93.1452043735828</CPRRatio>
+    <CompressionsRatio>93.271045789654877</CompressionsRatio>
+    <CompressionRate>101.72999999999999</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>21.232</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-04270</IncidentID>
+    <CaseStart>1/15/2024 9:02:16 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>77.328470831991709</CPRRatio>
+    <CompressionsRatio>77.559462978258736</CompressionsRatio>
+    <CompressionRate>128.25532508436444</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>301.762</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-003234</IncidentID>
+    <CaseStart>1/11/2024 4:59:13 PM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>93.095986245331119</CPRRatio>
+    <CompressionsRatio>94.252089879646633</CompressionsRatio>
+    <CompressionRate>126.2023881775993</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>12.745999999999999</LongestPause>
+    <NumberOfShocks>6</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24002732</IncidentID>
+    <CaseStart>1/10/2024 6:20:36 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>95.991961232394942</CPRRatio>
+    <CompressionsRatio>95.957926127615451</CompressionsRatio>
+    <CompressionRate>153.09027927381675</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>11.353</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24-01858</IncidentID>
+    <CaseStart>1/8/2024 9:20:43 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>84.511314395763122</CPRRatio>
+    <CompressionsRatio>90.75050351026016</CompressionsRatio>
+    <CompressionRate>123.63041753035238</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>38.451</LongestPause>
+    <NumberOfShocks>4</NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>24001846</IncidentID>
+    <CaseStart>1/8/2024 8:48:19 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>89.19946717084909</CPRRatio>
+    <CompressionsRatio>89.252105534547965</CompressionsRatio>
+    <CompressionRate>137.51807660471064</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>24.442999999999998</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24001572</IncidentID>
+    <CaseStart>1/7/2024 12:28:18 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>87.3551219916325</CPRRatio>
+    <CompressionsRatio>87.416428482664344</CompressionsRatio>
+    <CompressionRate>101.72999999999999</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>65.925</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>No</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+  <IncidentStatistics>
+    <IncidentID>F24000097</IncidentID>
+    <CaseStart>1/1/2024 10:49:09 AM</CaseStart>
+    <Device>LIFEPAK® 15</Device>
+    <CPRRatio>92.22549241566675</CPRRatio>
+    <CompressionsRatio>92.57414534752094</CompressionsRatio>
+    <CompressionRate>138.39712203727851</CompressionRate>
+    <CompressionDepth></CompressionDepth>
+    <GoodCompressionsWithTargetDepth></GoodCompressionsWithTargetDepth>
+    <LongestPause>44.742</LongestPause>
+    <NumberOfShocks></NumberOfShocks>
+    <AnyROSC>Yes</AnyROSC>
+    <CPREdited>Yes</CPREdited>
+  </IncidentStatistics>
+</CPRSummaryStatistics>

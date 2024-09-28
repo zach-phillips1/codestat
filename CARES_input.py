@@ -353,12 +353,14 @@ def main():
             By.CSS_SELECTOR, 'input[name="ArrestWitnessStatusID"][value="3"]'
         )
 
-        if witnessed == "Witnessed by Healthcare Provider":
-            radio_button_witness_911.click()
-        elif witnessed == "Witnessed by Bystander":
-            radio_button_witness_bystander.click()
-        else:
-            radio_button_unwitnessed.click()
+        match witnessed:
+            case "Witnessed by Healthcare Provider":
+                radio_button_witness_911.click()
+            case "Witnessed by Bystander":
+                radio_button_witness_bystander.click()
+            case _:
+                radio_button_unwitnessed.click()
+
 
         # [13] = ETIOLOGY
         etiology = case[13].text
