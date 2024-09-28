@@ -19,6 +19,9 @@ def open_file():
 
     try:
         process_file(filepath)
+
+        # Closes the gui after processing the file.
+        root.destroy()
     except Exception as e:
         messagebox.showerror("Error", f"Failed to open or process file: {e}")
 
@@ -137,7 +140,7 @@ def get_lowest_compression_ratio(num_cases: int, root):
                 case_number = child[0].text
 
     logging.info(
-        f"The case with the lowest compression ratio was {case_number} with a ratio of {lowest_compression_ratio}"
+        f"The case with the lowest compression ratio was {case_number} with a ratio of {lowest_compression_ratio:.2f}"
     )
 
 
