@@ -1,0 +1,69 @@
+2024-08-25 09:06:31,643 - INFO - Case 24038071 has been started.
+2024-08-25 09:06:34,052 - WARNING - Hospital mapping not found for 'None'
+2024-08-25 09:06:40,678 - INFO - Case 24038071 has been entered.
+2024-08-25 09:06:44,918 - INFO - Case 24038597 has been started.
+2024-08-25 09:06:55,682 - INFO - Case 24038597 has been entered.
+2024-08-25 09:06:59,934 - INFO - Case 24-38791 has been started.
+2024-08-25 09:07:09,053 - INFO - Case 24-38791 has been entered.
+2024-08-25 09:07:13,370 - INFO - Case f24039451 has been started.
+2024-08-25 09:07:25,819 - INFO - Case f24039451 has been entered.
+2024-08-25 09:07:30,236 - INFO - Case 24039780 has been started.
+2024-08-25 09:07:31,641 - WARNING - Hospital mapping not found for 'None'
+2024-08-25 09:07:37,855 - INFO - Case 24039780 has been entered.
+2024-08-25 09:07:42,087 - INFO - Case F24040153 has been started.
+2024-08-25 09:07:44,075 - WARNING - Hospital mapping not found for 'None'
+2024-08-25 09:07:50,783 - INFO - Case F24040153 has been entered.
+2024-08-25 09:07:55,052 - INFO - Case 24-40647 has been started.
+2024-08-25 09:07:56,896 - WARNING - Hospital mapping not found for 'None'
+2024-08-25 09:08:03,317 - INFO - Case 24-40647 has been entered.
+2024-08-25 09:08:07,585 - INFO - Case F24041179 has been started.
+2024-08-25 09:08:10,232 - WARNING - Hospital mapping not found for 'None'
+2024-08-25 09:08:17,587 - INFO - Case F24041179 has been entered.
+2024-08-25 09:08:21,912 - INFO - Case 24041190 has been started.
+2024-08-25 09:08:25,072 - WARNING - Hospital mapping not found for 'None'
+2024-08-25 09:08:32,406 - INFO - Case 24041190 has been entered.
+2024-08-25 09:08:36,769 - INFO - Case F24041468 has been started.
+2024-08-25 09:08:39,616 - WARNING - Hospital mapping not found for 'Penn Presbyterian Medical Center'
+2024-08-25 09:08:47,149 - INFO - Case F24041468 has been entered.
+2024-08-25 09:08:51,593 - INFO - Case 24041868 has been started.
+2024-08-25 09:09:02,467 - INFO - Case 24041868 has been entered.
+2024-08-25 09:09:06,953 - INFO - Case TR2400256 has been started.
+2024-08-25 09:09:17,673 - INFO - Case TR2400256 has been entered.
+2024-08-25 09:09:21,990 - INFO - Case 24042097 has been started.
+2024-08-25 09:09:33,000 - INFO - Case 24042097 has been entered.
+2024-08-25 09:09:37,394 - INFO - Case f24042389 has been started.
+2024-08-25 09:09:47,717 - INFO - Case f24042389 has been entered.
+2024-08-25 09:09:52,051 - INFO - Case 24-43320 has been started.
+2024-08-25 09:09:56,424 - WARNING - 24-43320 needs initial rhythm
+2024-08-25 09:10:02,318 - INFO - Case 24-43320 has been entered.
+2024-08-25 09:10:06,645 - INFO - Case F24043457 has been started.
+2024-08-25 09:10:09,400 - WARNING - Hospital mapping not found for 'None'
+2024-08-25 09:10:16,676 - INFO - Case F24043457 has been entered.
+2024-08-25 09:10:20,973 - INFO - Case F24043670 has been started.
+2024-08-25 09:10:25,396 - WARNING - F24043670 needs initial rhythm
+2024-08-25 09:10:31,707 - INFO - Case F24043670 has been entered.
+2024-08-25 09:10:36,084 - INFO - Case F24043741 has been started.
+2024-08-25 09:10:39,040 - WARNING - Hospital mapping not found for 'None'
+2024-08-25 09:10:46,728 - INFO - Case F24043741 has been entered.
+2024-08-25 09:10:51,046 - INFO - Case 24043749 has been started.
+2024-08-25 09:11:01,493 - INFO - Case 24043749 has been entered.
+2024-08-25 09:11:05,946 - INFO - Case F24044189 has been started.
+2024-08-25 09:11:08,933 - WARNING - Hospital mapping not found for 'None'
+2024-08-25 09:11:16,355 - INFO - Case F24044189 has been entered.
+2024-08-25 09:11:20,748 - INFO - Case 24044206 has been started.
+2024-08-25 09:11:25,294 - ERROR - Error: 'N/A' selected, but first defibrillation time is provided.
+2024-08-25 09:11:25,295 - WARNING - 24044206 needs defib checked.
+2024-08-25 09:11:31,955 - INFO - Case 24044206 has been entered.
+2024-08-25 09:11:36,340 - INFO - Case F24044948 has been started.
+2024-08-25 09:11:46,945 - INFO - Case F24044948 has been entered.
+2024-08-25 09:11:51,331 - INFO - Case F24045242 has been started.
+2024-08-25 09:12:03,223 - INFO - Case F24045242 has been entered.
+2024-08-25 09:12:07,554 - INFO - Case 24045350 has been started.
+2024-08-25 09:12:19,156 - INFO - Case 24045350 has been entered.
+2024-08-25 09:12:23,506 - INFO - Case 24-45430 has been started.
+2024-08-25 09:12:26,337 - WARNING - Hospital mapping not found for 'None'
+2024-08-25 09:12:33,721 - INFO - Case 24-45430 has been entered.
+2024-08-25 09:12:38,041 - INFO - Case F24045521 has been started.
+2024-08-25 09:12:48,876 - INFO - Case F24045521 has been entered.
+2024-08-25 09:12:53,233 - WARNING - The following cases need to be reviewed ['Case 24-43320 needs initial rhythm checked.', 'Case F24043670 needs initial rhythm checked.', 'Case 24044206 needs defib checked.']
+2024-08-25 09:12:53,233 - INFO - Finished at 2024-08-25_09-12-53

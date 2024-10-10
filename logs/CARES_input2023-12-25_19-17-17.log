@@ -1,0 +1,120 @@
+2023-12-25 19:17:54,486 - INFO - Case 23-74115 has been started.
+2023-12-25 19:17:55,754 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:18:02,756 - INFO - Case 23-74115 has been entered.
+2023-12-25 19:18:07,035 - INFO - Case 23-74183 has been started.
+2023-12-25 19:18:14,780 - INFO - Case 23-74183 has been entered.
+2023-12-25 19:18:18,976 - INFO - Case 23-74190 has been started.
+2023-12-25 19:18:20,077 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:18:20,424 - ERROR - Error: 'N/A' selected, but first defibrillation time is provided.
+2023-12-25 19:18:20,424 - WARNING - 23-74190 needs defib checked.
+2023-12-25 19:18:26,372 - INFO - Case 23-74190 has been entered.
+2023-12-25 19:18:30,608 - INFO - Case 23-74435 has been started.
+2023-12-25 19:18:31,869 - WARNING - 23-74435 needs to be checked for etiology
+2023-12-25 19:18:37,754 - INFO - Case 23-74435 has been entered.
+2023-12-25 19:18:42,011 - INFO - Case 23-74739 has been started.
+2023-12-25 19:18:43,199 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:18:49,358 - INFO - Case 23-74739 has been entered.
+2023-12-25 19:18:53,557 - INFO - Case 23-74805 has been started.
+2023-12-25 19:18:54,750 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:19:01,054 - INFO - Case 23-74805 has been entered.
+2023-12-25 19:19:05,269 - INFO - Case 23-75253 has been started.
+2023-12-25 19:19:06,472 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:19:12,698 - INFO - Case 23-75253 has been entered.
+2023-12-25 19:19:16,889 - INFO - Case 23075258 has been started.
+2023-12-25 19:19:18,090 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:19:24,153 - INFO - Case 23075258 has been entered.
+2023-12-25 19:19:28,351 - INFO - Case F23075474 has been started.
+2023-12-25 19:19:29,423 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:19:35,565 - INFO - Case F23075474 has been entered.
+2023-12-25 19:19:39,755 - INFO - Case 23-76388 has been started.
+2023-12-25 19:19:47,550 - INFO - Case 23-76388 has been entered.
+2023-12-25 19:19:51,749 - INFO - Case F23076388B has been started.
+2023-12-25 19:19:52,978 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:19:58,970 - INFO - Case F23076388B has been entered.
+2023-12-25 19:20:03,135 - INFO - Case 23076700 has been started.
+2023-12-25 19:20:04,226 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:20:10,204 - INFO - Case 23076700 has been entered.
+2023-12-25 19:20:14,398 - INFO - Case 23-77040 has been started.
+2023-12-25 19:20:15,648 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:20:16,094 - ERROR - Error: 'N/A' selected, but first defibrillation time is provided.
+2023-12-25 19:20:16,094 - WARNING - 23-77040 needs defib checked.
+2023-12-25 19:20:22,046 - INFO - Case 23-77040 has been entered.
+2023-12-25 19:20:26,222 - INFO - Case 23-77082 has been started.
+2023-12-25 19:20:33,822 - INFO - Case 23-77082 has been entered.
+2023-12-25 19:20:37,993 - INFO - Case F23077509 has been started.
+2023-12-25 19:20:45,214 - INFO - Case F23077509 has been entered.
+2023-12-25 19:20:49,419 - INFO - Case 23-77597 has been started.
+2023-12-25 19:20:50,681 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:20:51,151 - ERROR - Error: 'N/A' selected, but first defibrillation time is provided.
+2023-12-25 19:20:51,151 - WARNING - 23-77597 needs defib checked.
+2023-12-25 19:20:56,977 - INFO - Case 23-77597 has been entered.
+2023-12-25 19:21:01,399 - INFO - Case 23-77772 has been started.
+2023-12-25 19:21:09,445 - INFO - Case 23-77772 has been entered.
+2023-12-25 19:21:13,632 - INFO - Case F23078315 has been started.
+2023-12-25 19:21:21,279 - INFO - Case F23078315 has been entered.
+2023-12-25 19:21:25,520 - INFO - Case 23079709 has been started.
+2023-12-25 19:21:26,941 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:21:33,182 - INFO - Case 23079709 has been entered.
+2023-12-25 19:21:37,423 - INFO - Case 23-79863 has been started.
+2023-12-25 19:21:38,473 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:21:44,427 - INFO - Case 23-79863 has been entered.
+2023-12-25 19:21:48,621 - INFO - Case F23081004 has been started.
+2023-12-25 19:21:49,628 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:21:55,609 - INFO - Case F23081004 has been entered.
+2023-12-25 19:21:59,880 - INFO - Case 23-81047 has been started.
+2023-12-25 19:22:07,543 - INFO - Case 23-81047 has been entered.
+2023-12-25 19:22:11,790 - INFO - Case 23-81664 has been started.
+2023-12-25 19:22:19,535 - INFO - Case 23-81664 has been entered.
+2023-12-25 19:22:23,748 - INFO - Case 23-81833 has been started.
+2023-12-25 19:22:24,920 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:22:30,967 - INFO - Case 23-81833 has been entered.
+2023-12-25 19:22:35,178 - INFO - Case 23-81983 has been started.
+2023-12-25 19:22:43,155 - INFO - Case 23-81983 has been entered.
+2023-12-25 19:22:47,431 - INFO - Case 23-82238 has been started.
+2023-12-25 19:22:48,959 - WARNING - 23-82238 needs initial rhythm
+2023-12-25 19:22:54,523 - INFO - Case 23-82238 has been entered.
+2023-12-25 19:22:58,873 - INFO - Case F23082639 has been started.
+2023-12-25 19:23:06,525 - INFO - Case F23082639 has been entered.
+2023-12-25 19:23:10,716 - INFO - Case 23-82815 has been started.
+2023-12-25 19:23:12,287 - ERROR - Error: 'N/A' selected, but first defibrillation time is provided.
+2023-12-25 19:23:12,288 - WARNING - 23-82815 needs defib checked.
+2023-12-25 19:23:17,945 - INFO - Case 23-82815 has been entered.
+2023-12-25 19:23:22,146 - INFO - Case 23-83295 has been started.
+2023-12-25 19:23:23,562 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:23:30,127 - INFO - Case 23-83295 has been entered.
+2023-12-25 19:23:34,358 - INFO - Case 23-83976 has been started.
+2023-12-25 19:23:35,417 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:23:41,475 - INFO - Case 23-83976 has been entered.
+2023-12-25 19:23:45,693 - INFO - Case 23-84086 has been started.
+2023-12-25 19:23:47,026 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:23:53,294 - INFO - Case 23-84086 has been entered.
+2023-12-25 19:23:57,484 - INFO - Case 23084193 has been started.
+2023-12-25 19:24:05,239 - INFO - Case 23084193 has been entered.
+2023-12-25 19:24:09,419 - INFO - Case 23-84329 has been started.
+2023-12-25 19:24:17,022 - INFO - Case 23-84329 has been entered.
+2023-12-25 19:24:21,200 - INFO - Case 23-84572 has been started.
+2023-12-25 19:24:29,124 - INFO - Case 23-84572 has been entered.
+2023-12-25 19:24:33,311 - INFO - Case 23-85030 has been started.
+2023-12-25 19:24:34,896 - WARNING - 23-85030 needs initial rhythm
+2023-12-25 19:24:40,746 - INFO - Case 23-85030 has been entered.
+2023-12-25 19:24:44,904 - INFO - Case 23-85149t has been started.
+2023-12-25 19:24:46,285 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:24:52,395 - INFO - Case 23-85149t has been entered.
+2023-12-25 19:24:56,572 - INFO - Case F23085412 has been started.
+2023-12-25 19:24:57,721 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:25:03,789 - INFO - Case F23085412 has been entered.
+2023-12-25 19:25:08,044 - INFO - Case 23-85553 has been started.
+2023-12-25 19:25:15,452 - INFO - Case 23-85553 has been entered.
+2023-12-25 19:25:19,624 - INFO - Case F23086098 has been started.
+2023-12-25 19:25:27,180 - INFO - Case F23086098 has been entered.
+2023-12-25 19:25:31,364 - INFO - Case F23086837 has been started.
+2023-12-25 19:25:32,489 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:25:38,645 - INFO - Case F23086837 has been entered.
+2023-12-25 19:25:42,910 - INFO - Case 23-87021 has been started.
+2023-12-25 19:25:44,301 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:25:50,322 - INFO - Case 23-87021 has been entered.
+2023-12-25 19:25:54,511 - INFO - Case 23-87155 has been started.
+2023-12-25 19:25:55,535 - WARNING - Hospital mapping not found for 'None'
+2023-12-25 19:26:01,466 - INFO - Case 23-87155 has been entered.
+2023-12-25 19:26:05,684 - WARNING - The following cases need to be reviewed ['Case 23-74190 needs defib checked.', 'Case 23-74435 needs etiology checked.', 'Case 23-77040 needs defib checked.', 'Case 23-77597 needs defib checked.', 'Case 23-82238 needs initial rhythm checked.', 'Case 23-82815 needs defib checked.', 'Case 23-85030 needs initial rhythm checked.']
+2023-12-25 19:26:05,686 - INFO - Finished at 2023-12-25_19-26-05

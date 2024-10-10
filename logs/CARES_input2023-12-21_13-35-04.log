@@ -1,0 +1,44 @@
+2023-12-21 13:35:12,616 - INFO - Case 23-69527 has been started.
+2023-12-21 13:35:20,718 - INFO - Case 23-69527 has been entered.
+2023-12-21 13:35:24,877 - INFO - Case 23069643 has been started.
+2023-12-21 13:35:32,925 - INFO - Case 23069643 has been entered.
+2023-12-21 13:35:37,085 - INFO - Case 23-69650 has been started.
+2023-12-21 13:35:44,453 - INFO - Case 23-69650 has been entered.
+2023-12-21 13:35:48,608 - INFO - Case 23-70574 has been started.
+2023-12-21 13:35:56,195 - INFO - Case 23-70574 has been entered.
+2023-12-21 13:36:00,356 - INFO - Case 23-70712 has been started.
+2023-12-21 13:36:07,950 - INFO - Case 23-70712 has been entered.
+2023-12-21 13:36:12,109 - INFO - Case 23-70778 has been started.
+2023-12-21 13:36:14,336 - WARNING - 23-70778 needs initial rhythm
+2023-12-21 13:36:19,914 - INFO - Case 23-70778 has been entered.
+2023-12-21 13:36:24,079 - INFO - Case 23071085 has been started.
+2023-12-21 13:36:26,018 - ERROR - Error: 'N/A' selected, but first defibrillation time is provided.
+2023-12-21 13:36:26,018 - WARNING - 23071085 needs defib checked.
+2023-12-21 13:36:31,756 - INFO - Case 23071085 has been entered.
+2023-12-21 13:36:35,922 - INFO - Case 23-71120 has been started.
+2023-12-21 13:36:43,576 - INFO - Case 23-71120 has been entered.
+2023-12-21 13:36:47,739 - INFO - Case 23-71203 has been started.
+2023-12-21 13:36:49,020 - WARNING - Hospital mapping not found for 'None'
+2023-12-21 13:36:55,190 - INFO - Case 23-71203 has been entered.
+2023-12-21 13:36:59,344 - INFO - Case 23-71742 has been started.
+2023-12-21 13:37:00,861 - WARNING - Hospital mapping not found for 'None'
+2023-12-21 13:37:01,489 - WARNING - 23-71742 needs initial rhythm
+2023-12-21 13:37:07,101 - INFO - Case 23-71742 has been entered.
+2023-12-21 13:37:11,269 - INFO - Case 23-72202 has been started.
+2023-12-21 13:37:13,552 - WARNING - Hospital mapping not found for 'None'
+2023-12-21 13:37:20,115 - INFO - Case 23-72202 has been entered.
+2023-12-21 13:37:24,270 - INFO - Case 23-72416 has been started.
+2023-12-21 13:37:31,722 - INFO - Case 23-72416 has been entered.
+2023-12-21 13:37:35,897 - INFO - Case 23-72636 has been started.
+2023-12-21 13:37:37,322 - WARNING - Hospital mapping not found for 'None'
+2023-12-21 13:37:43,548 - INFO - Case 23-72636 has been entered.
+2023-12-21 13:37:47,723 - INFO - Case F23072642 has been started.
+2023-12-21 13:37:48,979 - WARNING - Hospital mapping not found for 'None'
+2023-12-21 13:37:55,110 - INFO - Case F23072642 has been entered.
+2023-12-21 13:37:59,272 - INFO - Case 23-72932 has been started.
+2023-12-21 13:38:00,606 - WARNING - Hospital mapping not found for 'None'
+2023-12-21 13:38:06,822 - INFO - Case 23-72932 has been entered.
+2023-12-21 13:38:10,976 - INFO - Case 23-73117 has been started.
+2023-12-21 13:38:18,739 - INFO - Case 23-73117 has been entered.
+2023-12-21 13:38:22,903 - INFO - Case 23-74115 has been started.
+2023-12-21 13:38:24,228 - WARNING - Hospital mapping not found for 'None'

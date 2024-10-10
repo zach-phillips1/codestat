@@ -1,0 +1,3 @@
+2023-12-21 13:19:11,895 - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+2023-12-21 13:19:12,894 - WARNING - Unable to obtain driver using Selenium Manager: Selenium Manager failed for: C:\Users\Zach\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json.
+The chromedriver version cannot be discovered

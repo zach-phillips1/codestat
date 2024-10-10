@@ -1,0 +1,22 @@
+2024-01-01 10:48:40,066 - INFO - Case 23-87021 has been started.
+2024-01-01 10:48:41,969 - WARNING - Hospital mapping not found for 'None'
+2024-01-01 10:48:48,396 - INFO - Case 23-87021 has been entered.
+2024-01-01 10:48:52,552 - INFO - Case 23-87155 has been started.
+2024-01-01 10:48:54,065 - WARNING - Hospital mapping not found for 'None'
+2024-01-01 10:49:00,207 - INFO - Case 23-87155 has been entered.
+2024-01-01 10:49:04,354 - INFO - Case F23087530 has been started.
+2024-01-01 10:49:12,140 - INFO - Case F23087530 has been entered.
+2024-01-01 10:49:16,296 - INFO - Case F23088674 has been started.
+2024-01-01 10:49:17,909 - WARNING - Hospital mapping not found for 'None'
+2024-01-01 10:49:24,411 - INFO - Case F23088674 has been entered.
+2024-01-01 10:49:28,563 - INFO - Case F23088628 has been started.
+2024-01-01 10:49:37,108 - INFO - Case F23088628 has been entered.
+2024-01-01 10:49:41,253 - INFO - Case 23-88888 has been started.
+2024-01-01 10:49:42,913 - WARNING - Hospital mapping not found for 'None'
+2024-01-01 10:49:49,256 - INFO - Case 23-88888 has been entered.
+2024-01-01 10:49:53,401 - INFO - Case 23-89304 has been started.
+2024-01-01 10:50:02,467 - INFO - Case 23-89304 has been entered.
+2024-01-01 10:50:06,632 - INFO - Case 23089790 has been started.
+2024-01-01 10:50:14,933 - INFO - Case 23089790 has been entered.
+2024-01-01 10:50:19,098 - WARNING - The following cases need to be reviewed []
+2024-01-01 10:50:19,098 - INFO - Finished at 2024-01-01_10-50-19
