@@ -4,10 +4,21 @@ import xml.etree.ElementTree as ET
 import os
 import time
 import logging
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
 
 # directory_path = 'XML_files/codestat/'
 # file_name = 'CPR_Summary_YTD_9-26.xml'
 # file_path = os.path.join(directory_path, file_name)
+
+
+# Initialize lists to store extracted data for use in Pandas
+incident_ids = []
+cpr_ratios = []
+compression_rates = []
+longest_pauses = []
+roscs = []
 
 
 def open_file():
@@ -49,6 +60,58 @@ def process_file(file_path):
     get_lowest_compression_ratio(num_cases, root)
     get_average_compression_rate(num_cases, root)
     max_compression_rate(root)
+
+    for child in root:
+        # Check and append IncidentID
+        incident_ids.append(child.find('IncidentID').text if child.find('IncidentID') is not None else None)
+        
+        # Check and append CPRRatio
+        cpr_ratios.append(float(child.find('CPRRatio').text) if child.find('CPRRatio') is not None and child.find('CPRRatio').text else None)
+        
+        # Check and append CompressionRate
+        compression_rates.append(float(child.find('CompressionRate').text) if child.find('CompressionRate') is not None and child.find('CompressionRate').text else None)
+        
+        # Check and append LongestPause
+        longest_pauses.append(float(child.find('LongestPause').text) if child.find('LongestPause') is not None and child.find('LongestPause').text else None)
+        
+        # Check and append ROSC
+        roscs.append(1 if child.find('AnyROSC') is not None and child.find('AnyROSC').text == 'Yes' else 0)
+
+
+        # At this point, we have lists of data, and we can clean and visualize them below.
+        visualize_data()
+
+def visualize_data():
+    # Create a DataFrame
+    df = pd.DataFrame({
+        'IncidentID': incident_ids,
+        'CPRRatio': pd.to_numeric(cpr_ratios, errors='coerce'),
+        'CompressionRate': pd.to_numeric(compression_rates, errors='coerce'),
+        'LongestPause': pd.to_numeric(longest_pauses, errors='coerce'),
+        'AnyROSC': roscs
+    })
+    
+    # Drop rows with missing values (optional, based on the data)
+    df = df.dropna()
+
+    # Example visualizations
+
+    # Boxplot for Compression Rate based on ROSC outcome
+    plt.figure(figsize=(10,6))
+    sns.boxplot(x='AnyROSC', y='CompressionRate', data=df)
+    plt.title('Compression Rate vs ROSC')
+    plt.xlabel('ROSC (1 = Yes, 0 = No)')
+    plt.ylabel('Compression Rate')
+    plt.show()
+
+    # Scatter plot for CPR Ratio vs Longest Pause
+    plt.figure(figsize=(10,6))
+    sns.scatterplot(x='CPRRatio', y='LongestPause', hue='AnyROSC', data=df)
+    plt.title('CPR Ratio vs Longest Pause by ROSC Outcome')
+    plt.xlabel('CPR Ratio')
+    plt.ylabel('Longest Pause (seconds)')
+    plt.show()
+
 
 
 def print_cases(root):
@@ -272,7 +335,13 @@ def max_compression_rate(root):
 root = tk.Tk()
 root.title("CPR Statistics Analyzer")
 
-open_button = tk.Button(root, text="Open XML File", command=open_file)
+open_button = tk.Button(root, text="Open XML File and Visualize", command=open_file)
 open_button.pack(pady=10)
+
+
+
+
+
+
 
 root.mainloop()
